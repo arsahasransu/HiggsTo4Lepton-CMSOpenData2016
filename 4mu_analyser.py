@@ -4,9 +4,9 @@ import os
 import ROOT
 from ROOT import RDataFrame, TFile
 
-# import utils
+import utils
 
-# @utils.time_eval
+@utils.time_eval
 def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
 
     val_lumis = None
