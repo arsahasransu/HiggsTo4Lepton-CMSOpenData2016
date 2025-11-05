@@ -1,0 +1,7 @@
+*__pycache__*
+.DS_Store*
+Datasets/*
+
+*.root
+*_copy.py
+*.pdf
