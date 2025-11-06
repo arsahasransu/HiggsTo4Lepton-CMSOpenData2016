@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 
@@ -5,6 +6,7 @@ import ROOT
 from ROOT import RDataFrame, TFile
 
 import utils
+
 
 @utils.time_eval
 def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
@@ -44,6 +46,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
 
     # Create a DataFrame from the input ROOT file
     df = RDataFrame("Events", input_file)
+    print(df.Count().GetValue())
     if val_lumis:
         df = df.Filter("is_valid(run, luminosityBlock)")
 
@@ -439,10 +442,11 @@ if __name__ == "__main__":
 
     ROOT.gInterpreter.Declare(CPPFUNC_MakeHiggsAnalysis)
 
-    # analyse_4mu_data("./trialdata/127C2975-1B1C-A046-AABF-62B77E757A86.root", "output_file.root",
-    #                  "../Datasets/DoubleMuon/Year2016EraH/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON_MuonPhys.txt")
-    # analyse_4mu_data("../Datasets/DoubleMuon/Year2016Era*/*.root", "output_file.root",
-    #                  "../Datasets/DoubleMuon/Year2016EraH/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON_MuonPhys.txt")
-    # # analyse_4mu_data("../Datasets/GluGluHToZZTo4L/*.root", "output_file.root")
-    analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root", "output_file.root")
-
+    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_doublemuon_2016H.root", "muon_2016_cert.txt")
+    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
+                     "output_file_doublemuon_2016G.root", "muon_2016_cert.txt")
+    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_singlemuon_2016H.root", "muon_2016_cert.txt")
+    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_singlemuon_2016G.root", "muon_2016_cert.txt")
