@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import warnings
 
 import ROOT
 from ROOT import RDataFrame, TFile
@@ -18,35 +19,25 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
 
         # Convert keys to integers for easier comparison
         val_lumis = {int(run): ranges for run, ranges in val_lumis_unconvert.items()}
+    else:
+        warnings.warn("Lumi file not found! Proceeding with analysis.")
 
     # Convert to val_lumis to C++ code
     if val_lumis:
-        cpp_map = "std::map<int, std::vector<std::pair<int, int>>> validLumis = {\n"
+        cpp_map = "validLumis = {\n"
         for run, ranges in val_lumis.items():
             cpp_map += f"  {{{run}, {{"
             cpp_map += ", ".join([f"{{{start}, {end}}}" for start, end in ranges])
             cpp_map += "}},\n"
         cpp_map += "};\n"
-    
-        # Declare C++ function
-        ROOT.gInterpreter.Declare(f"""
-        {cpp_map}
-        bool is_valid(int run, int lumi) {{
-            auto it = validLumis.find(run);
-            if (it == validLumis.end()) return false;
-            for (auto& range : it->second) {{
-                if (lumi >= range.first && lumi <= range.second)
-                    return true;
-                }}
-            return false;
-        }}
-        """)
+        
+        ROOT.gInterpreter.Declare(cpp_map)
         
     histograms = []
 
     # Create a DataFrame from the input ROOT file
     df = RDataFrame("Events", input_file)
-    print(df.Count().GetValue())
+    print(f"Analysing for {df.Count().GetValue()} events in path: {input_file}")
     if val_lumis:
         df = df.Filter("is_valid(run, luminosityBlock)")
 
@@ -442,11 +433,22 @@ if __name__ == "__main__":
 
     ROOT.gInterpreter.Declare(CPPFUNC_MakeHiggsAnalysis)
 
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_doublemuon_2016H.root", "muon_2016_cert.txt")
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
-                     "output_file_doublemuon_2016G.root", "muon_2016_cert.txt")
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singlemuon_2016H.root", "muon_2016_cert.txt")
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singlemuon_2016G.root", "muon_2016_cert.txt")
+    # Declare C++ function
+    ROOT.gInterpreter.Declare(f"""
+    std::map<int, std::vector<std::pair<int, int>>> validLumis;
+                              
+    bool is_valid(int run, int lumi) {{
+        auto it = validLumis.find(run);
+        if (it == validLumis.end()) return false;
+        for (auto& range : it->second) {{
+            if (lumi >= range.first && lumi <= range.second)
+                return true;
+            }}
+        return false;
+    }}
+    """)
+
+    analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root",
+                     "partout_onemu_2016H.root", "muon_2016_cert.txt")
+    analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
+                     "partout_twomu_2016H.root", "muon_2016_cert.txt")
