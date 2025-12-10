@@ -711,7 +711,21 @@ if __name__ == "__main__":
     }}
     """)
 
-    analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root",
-                     "partout_onemu_2016H.root", "muon_2016_cert.txt")
-    analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
-                     "partout_twomu_2016H.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root",
+    #                  "partout_onemu_2016H.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
+    #                  "partout_twomu_2016H.root", "muon_2016_cert.txt")
+
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_doublemuon_2016H.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
+    #                  "output_file_doublemuon_2016G.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_singlemuon_2016H.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_singlemuon_2016G.root", "muon_2016_cert.txt")
+    with open("SingleMuon_2016H_UL_files.txt") as ifl:
+        for i, line in enumerate(ifl):
+            print(f"Processing {line.strip()}")
+            analyse_4mu_data(line.strip(),
+                             f"output_file_singlemuon_2016G_UL_{i}.root", "muon_2016_cert.txt")
