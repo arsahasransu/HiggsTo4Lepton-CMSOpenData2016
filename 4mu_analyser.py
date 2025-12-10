@@ -55,27 +55,55 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     df = df.Filter(HLTstr)
     df_s1 = df.Filter(f"PV_npvsGood >= 1")
 
-    # # Histograms for muon kinematics - Pre muon
-    # histograms.append(df_s1.Histo1D(("h_muhlt_n", "Muon N; N; Events", 20, 0, 20), "nMuon"))
-    # histograms.append(df_s1.Histo1D(("h_muhlt_pt", "Muon p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "Muon_pt"))
-    # histograms.append(df_s1.Histo1D(("h_muhlt_eta", "Muon #eta; #eta; Events", 52, -2.6, 2.6), "Muon_eta"))
-    # histograms.append(df_s1.Histo1D(("h_muhlt_phi", "Muon #phi; #phi; Events", 68, -3.4, 3.4), "Muon_phi"))
-    # histograms.append(df_s1.Histo1D(("h_muhlt_charge", "Muon charge; charge; Events", 10, -5, 5), "Muon_charge"))
-    # histograms.append(df_s1.Histo1D(("h_muhlt_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "Muon_fsrPhotonIdx"))
-    # histograms.append(df_s1.Histo1D(("h_muhlt_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "Muon_cleanmask"))
-    # histograms.append(df_s1.Histo1D(("h_muhlt_tightid", "Muon tight idenitifcation; tight id; Events", 10, -1, 9), "Muon_tightId"))
+    # Histograms for muon kinematics - Pre muon
+    histograms.append(df_s1.Histo1D(("h_muhlt_n", "Muon N; N; Events", 20, 0, 20), "nMuon"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_pt", "Muon p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "Muon_pt"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_eta", "Muon #eta; #eta; Events", 52, -2.6, 2.6), "Muon_eta"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_phi", "Muon #phi; #phi; Events", 68, -3.4, 3.4), "Muon_phi"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_dxy", "Muon d_{xy}; d_{xy}; Events", 150, -0.75, 0.75), "Muon_dxy"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_dz", "Muon d_{z}; d_{z}; Events", 300, -1.5, 1.5), "Muon_dz"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_charge", "Muon charge; charge; Events", 10, -5, 5), "Muon_charge"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "Muon_fsrPhotonIdx"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "Muon_cleanmask"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_isglobal", "Muon is Global; is global; Events", 10, -1, 9), "Muon_isGlobal"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_isstandalone", "Muon is Standalone; is standalone; Events", 10, -1, 9), "Muon_isStandalone"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_istracker", "Muon is Tracker; is tracker; Events", 10, -1, 9), "Muon_isTracker"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_ntrackerlayers", "Muon hit count in tracker layers; number of tracker layers; Events", 23, -1, 22), "Muon_nTrackerLayers"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_highptid", "Muon cut based high pT identification; high pt id; Events", 10, -1, 9), "Muon_highPtId"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_looseid", "Muon loose idenitifcation; tight id; Events", 10, -1, 9), "Muon_looseId"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_mediumid", "Muon medium idenitifcation; tight id; Events", 10, -1, 9), "Muon_mediumId"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_tightid", "Muon tight idenitifcation; tight id; Events", 10, -1, 9), "Muon_tightId"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_pfisoid", "Muon PF isolation idenitifcation; pf iso id; Events", 10, -1, 9), "Muon_pfIsoId"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_puppiisoid", "Muon PUPPI isolation idenitifcation; puppi iso id; Events", 10, -1, 9), "Muon_puppiIsoId"))
+    histograms.append(df_s1.Histo1D(("h_muhlt_relpfiso03", "Muon relative PF isolation all dR < 0.3; rel PF iso. dR < 0.3; Events", 100, 0, 1), "Muon_pfRelIso03_all"))
 
     # ==================================
     # Step 2 - Good muons only
     # ==================================
-    muobject_selstr = "Muon_tightId == 1 && Muon_cleanmask == 1"
+    # muobject_selstr = "Muon_tightId == 1 && Muon_cleanmask == 1"
+    muobject_selstr = "Muon_looseId == 1 && Muon_pt > 5 && abs(Muon_eta) < 2.4 && "\
+                      "abs(Muon_dxy) < 0.5 && abs(Muon_dz) < 1.0 && Muon_pfIsoId >= 2 && "\
+                      "(Muon_isTracker || Muon_isGlobal) && "\
+                      "Muon_pfRelIso03_all < 0.35"
     df_s1 = df_s1.Define("MuTight_pt", f"Muon_pt[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_eta", f"Muon_eta[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_phi", f"Muon_phi[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_dxy", f"Muon_dxy[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_dz", f"Muon_dz[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_charge", f"Muon_charge[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_fsrPhotonIdx", f"Muon_fsrPhotonIdx[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_cleanmask", f"Muon_cleanmask[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_isGlobal", f"Muon_isGlobal[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_isStandalone", f"Muon_isStandalone[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_isTracker", f"Muon_isTracker[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_nTrackerLayers", f"Muon_nTrackerLayers[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_highPtId", f"Muon_highPtId[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_looseId", f"Muon_looseId[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_mediumId", f"Muon_mediumId[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_tightId", f"Muon_tightId[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_pfIsoId", f"Muon_pfIsoId[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_puppiIsoId", f"Muon_puppiIsoId[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_pfRelIso03_all", f"Muon_pfRelIso03_all[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_n", f"MuTight_pt.size()")
 
     histograms.append(df_s1.Histo1D(("hprefilt_mutight_n", "Muon N; N; Events", 20, 0, 20), "MuTight_n"))
@@ -83,13 +111,25 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
 
     # Histograms for muon kinematics - Post muon
     histograms.append(df_s2.Histo1D(("hpostfilt_mutight_n", "Muon N; N; Events", 20, 0, 20), "MuTight_n"))
-    histograms.append(df_s2.Histo1D(("h_mutight_pt", "Muon p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "MuTight_pt"))
-    histograms.append(df_s2.Histo1D(("h_mutight_eta", "Muon #eta; #eta; Events", 52, -2.6, 2.6), "MuTight_eta"))
-    histograms.append(df_s2.Histo1D(("h_mutight_phi", "Muon #phi; #phi; Events", 68, -3.4, 3.4), "MuTight_phi"))
-    histograms.append(df_s2.Histo1D(("h_mutight_charge", "Muon charge; charge; Events", 10, -5, 5), "MuTight_charge"))
-    histograms.append(df_s2.Histo1D(("h_mutight_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "MuTight_fsrPhotonIdx"))
-    histograms.append(df_s2.Histo1D(("h_mutight_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "MuTight_cleanmask"))
-    histograms.append(df_s2.Histo1D(("h_mutight_tightid", "Muon tight idenitifcation; tight id; Events", 10, -1, 9), "MuTight_tightId"))
+    histograms.append(df_s1.Histo1D(("h_mutight_pt", "Muon p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "MuTight_pt"))
+    histograms.append(df_s1.Histo1D(("h_mutight_eta", "Muon #eta; #eta; Events", 52, -2.6, 2.6), "MuTight_eta"))
+    histograms.append(df_s1.Histo1D(("h_mutight_phi", "Muon #phi; #phi; Events", 68, -3.4, 3.4), "MuTight_phi"))
+    histograms.append(df_s1.Histo1D(("h_mutight_dxy", "Muon d_{xy}; d_{xy}; Events", 150, -0.75, 0.75), "MuTight_dxy"))
+    histograms.append(df_s1.Histo1D(("h_mutight_dz", "Muon d_{z}; d_{z}; Events", 300, -1.5, 1.5), "MuTight_dz"))
+    histograms.append(df_s1.Histo1D(("h_mutight_charge", "Muon charge; charge; Events", 10, -5, 5), "MuTight_charge"))
+    histograms.append(df_s1.Histo1D(("h_mutight_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "MuTight_fsrPhotonIdx"))
+    histograms.append(df_s1.Histo1D(("h_mutight_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "MuTight_cleanmask"))
+    histograms.append(df_s1.Histo1D(("h_mutight_isglobal", "Muon is Global; is global; Events", 10, -1, 9), "MuTight_isGlobal"))
+    histograms.append(df_s1.Histo1D(("h_mutight_isstandalone", "Muon is Standalone; is standalone; Events", 10, -1, 9), "MuTight_isStandalone"))
+    histograms.append(df_s1.Histo1D(("h_mutight_istracker", "Muon is Tracker; is tracker; Events", 10, -1, 9), "MuTight_isTracker"))
+    histograms.append(df_s1.Histo1D(("h_mutight_ntrackerlayers", "Muon hit count in tracker layers; number of tracker layers; Events", 23, -1, 22), "MuTight_nTrackerLayers"))
+    histograms.append(df_s1.Histo1D(("h_mutight_highptid", "Muon cut based high pT identification; high pt id; Events", 10, -1, 9), "MuTight_highPtId"))
+    histograms.append(df_s1.Histo1D(("h_mutight_looseid", "Muon loose idenitifcation; tight id; Events", 10, -1, 9), "MuTight_looseId"))
+    histograms.append(df_s1.Histo1D(("h_mutight_mediumid", "Muon medium idenitifcation; tight id; Events", 10, -1, 9), "MuTight_mediumId"))
+    histograms.append(df_s1.Histo1D(("h_mutight_tightid", "Muon tight idenitifcation; tight id; Events", 10, -1, 9), "MuTight_tightId"))
+    histograms.append(df_s1.Histo1D(("h_mutight_pfisoid", "Muon PF isolation idenitifcation; pf iso id; Events", 10, -1, 9), "MuTight_pfIsoId"))
+    histograms.append(df_s1.Histo1D(("h_mutight_puppiisoid", "Muon PUPPI isolation idenitifcation; puppi iso id; Events", 10, -1, 9), "MuTight_puppiIsoId"))
+    histograms.append(df_s1.Histo1D(("h_mutight_relpfiso03", "Muon relative PF isolation all dR < 0.3; rel PF iso. dR < 0.3; Events", 100, 0, 1), "MuTight_pfRelIso03_all"))
 
     # ==================================
     # Step 3 - Make Z
@@ -182,12 +222,12 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     histograms.append(df_s4.Histo1D(("h_z2mun_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "z2mun_fsrPhotonIdx"))
     histograms.append(df_s4.Histo1D(("h_z2_mass", "M; M (GeV/c); Events", 160, -10, 150), "z2_mass"))
 
-    # # Calculate the invariant mass of the four muons
-    # df_s3 = df_s3.Define("M4Mu", "M4Mu(Muon_sel_pt, Muon_sel_eta, Muon_sel_phi, Muon_sel_charge, Muon_sel_fsrPhotonIdx," \
-    #                     "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
-    # # Special Filter below for the one histogram only
-    # df_4muM = df_s3.Filter("M4Mu > 0")
-    # histograms.append(df_4muM.Histo1D(("h_muon_4MuM", "Muon M; M (GeV/c); Events", 200, 70, 470), "M4Mu"))
+    # Calculate the invariant mass of the four muons
+    df_s4 = df_s4.Define("M4Mu", "M4Mu(MuTight_pt, MuTight_eta, MuTight_phi, MuTight_charge, MuTight_fsrPhotonIdx," \
+                        "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+    # Special Filter below for the one histogram only
+    df_4muM = df_s4.Filter("M4Mu > 0")
+    histograms.append(df_4muM.Histo1D(("h_muon_4MuM", "Muon M; M (GeV/c); Events", 250, 0, 500), "M4Mu"))
 
     # # Step 4 - Make ZZ
     # df_s3 = df_s3.Define("M_ZZ", "MakeHiggsAnalysis(Muon_sel_pt, Muon_sel_eta, Muon_sel_phi, Muon_sel_charge, Muon_sel_fsrPhotonIdx," \
