@@ -10,7 +10,7 @@ import utils
 
 
 @utils.time_eval
-def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
+def analyse_4mu_data(input_file, output_file, lumi_json_path="", save_snapshot_path=None):
 
     val_lumis = None
     if os.path.exists(lumi_json_path):
@@ -64,7 +64,6 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     histograms.append(df_s1.Histo1D(("h_muhlt_dz", "Muon d_{z}; d_{z}; Events", 300, -1.5, 1.5), "Muon_dz"))
     histograms.append(df_s1.Histo1D(("h_muhlt_charge", "Muon charge; charge; Events", 10, -5, 5), "Muon_charge"))
     histograms.append(df_s1.Histo1D(("h_muhlt_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "Muon_fsrPhotonIdx"))
-    # histograms.append(df_s1.Histo1D(("h_muhlt_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "Muon_cleanmask"))
     histograms.append(df_s1.Histo1D(("h_muhlt_isglobal", "Muon is Global; is global; Events", 10, -1, 9), "Muon_isGlobal"))
     histograms.append(df_s1.Histo1D(("h_muhlt_isstandalone", "Muon is Standalone; is standalone; Events", 10, -1, 9), "Muon_isStandalone"))
     histograms.append(df_s1.Histo1D(("h_muhlt_istracker", "Muon is Tracker; is tracker; Events", 10, -1, 9), "Muon_isTracker"))
@@ -92,7 +91,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     df_s1 = df_s1.Define("MuTight_dz", f"Muon_dz[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_charge", f"Muon_charge[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_fsrPhotonIdx", f"Muon_fsrPhotonIdx[{muobject_selstr}]")
-    # df_s1 = df_s1.Define("MuTight_cleanmask", f"Muon_cleanmask[{muobject_selstr}]")
+    df_s1 = df_s1.Define("MuTight_cleanmask", f"Muon_cleanmask[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_isGlobal", f"Muon_isGlobal[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_isStandalone", f"Muon_isStandalone[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_isTracker", f"Muon_isTracker[{muobject_selstr}]")
@@ -118,7 +117,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     histograms.append(df_s1.Histo1D(("h_mutight_dz", "Muon d_{z}; d_{z}; Events", 300, -1.5, 1.5), "MuTight_dz"))
     histograms.append(df_s1.Histo1D(("h_mutight_charge", "Muon charge; charge; Events", 10, -5, 5), "MuTight_charge"))
     histograms.append(df_s1.Histo1D(("h_mutight_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "MuTight_fsrPhotonIdx"))
-    # histograms.append(df_s1.Histo1D(("h_mutight_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "MuTight_cleanmask"))
+    histograms.append(df_s1.Histo1D(("h_mutight_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "MuTight_cleanmask"))
     histograms.append(df_s1.Histo1D(("h_mutight_isglobal", "Muon is Global; is global; Events", 10, -1, 9), "MuTight_isGlobal"))
     histograms.append(df_s1.Histo1D(("h_mutight_isstandalone", "Muon is Standalone; is standalone; Events", 10, -1, 9), "MuTight_isStandalone"))
     histograms.append(df_s1.Histo1D(("h_mutight_istracker", "Muon is Tracker; is tracker; Events", 10, -1, 9), "MuTight_isTracker"))
@@ -229,16 +228,11 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     df_4muM = df_s4.Filter("M4Mu > 0")
     histograms.append(df_4muM.Histo1D(("h_muon_4MuM", "Muon M; M (GeV/c); Events", 250, 0, 500), "M4Mu"))
 
-    # Print Higgs event numbers
+    # Keep the higgs event details for later
     df_4muM = df_4muM.Filter("M4Mu > 115.0 && M4Mu < 135.0")
-    disp = df_4muM.Display(["run", "M4Mu"])
-    disp.Print()
-
-    # # Step 4 - Make ZZ
-    # df_s3 = df_s3.Define("M_ZZ", "MakeHiggsAnalysis(Muon_sel_pt, Muon_sel_eta, Muon_sel_phi, Muon_sel_charge, Muon_sel_fsrPhotonIdx," \
-    #                                                "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
-    # df_s4 = df_s3.Filter("M_ZZ > 0")
-    # histograms.append(df_s4.Histo1D(("h_M_ZZ", "M; M (GeV/c); Events", 200, 70, 470), "M_ZZ"))
+    if save_snapshot_path is not None:
+        cols_to_keep = ["run", "luminosityBlock", "event", "M4Mu", "MuTight_pt", "MuTight_eta", "MuTight_phi"]
+        df_4muM.Snapshot("Events", f"{save_snapshot_path}.root", cols_to_keep)
 
     # Write the histograms to the output file
     output_file = TFile(output_file, "RECREATE")
@@ -249,7 +243,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
 
 if __name__ == "__main__":
 
-    # ROOT.EnableImplicitMT()
+    ROOT.EnableImplicitMT()
 
     # Define function to calculate Z mass from 2 muons
     CPPFUNC_CalculateZ_FromMuPMuN = """
@@ -591,116 +585,6 @@ if __name__ == "__main__":
 
     ROOT.gInterpreter.Declare(CPPFUNC_InvariantMass4Muons)
 
-    # Define a function to find muon pairs with Z -> mu mu
-    CPPFUNC_MakeHiggsAnalysis = """
-        double MakeHiggsAnalysis(ROOT::VecOps::RVec<double> mu_pt,
-                                 ROOT::VecOps::RVec<double> mu_eta,
-                                 ROOT::VecOps::RVec<double> mu_phi,
-                                 ROOT::VecOps::RVec<double> mu_q,
-                                 ROOT::VecOps::RVec<int> mu_fsrgammaidx,
-                                 ROOT::VecOps::RVec<double> fsrgamma_pt,
-                                 ROOT::VecOps::RVec<double> fsrgamma_eta,
-                                 ROOT::VecOps::RVec<double> fsrgamma_phi) {
-
-            double M_H = -10.0;
-            ROOT::Math::PtEtaPhiMVector Z1, Z2;
-
-            if( mu_pt.size() < 4 || (mu_pt.size() != mu_eta.size()) || (mu_pt.size() != mu_phi.size()) 
-                                 || (mu_pt.size() != mu_q.size()) ) {
-                return M_H;
-            }
-
-            int mu1p = -1, mu1n = -1, mu2p = -1, mu2n = -1;
-            double mz1 = -10.0, mz2 = -10.0, mZ = 91.19;
-
-            // Separate muons by charge
-            ROOT::VecOps::RVec<unsigned int> mupos_idxs;
-            ROOT::VecOps::RVec<unsigned int> muneg_idxs;
-            for(unsigned int i=0; i<mu_pt.size(); i++) {
-                if(mu_q[i] > 0) {
-                    mupos_idxs.push_back(i);
-                }
-                else {
-                    muneg_idxs.push_back(i);
-                }
-            }
-
-            // For each combination make invariant mass
-            ROOT::VecOps::RVec<ROOT::Math::PtEtaPhiMVector> Zcands;
-            ROOT::VecOps::RVec<double> M_mup_mun;
-            ROOT::VecOps::RVec<unsigned int> mupos_is;
-            ROOT::VecOps::RVec<unsigned int> muneg_is;
-            for(auto& pos : mupos_idxs) {
-                for(auto& neg : muneg_idxs){
-                    ROOT::Math::PtEtaPhiMVector Zcand = CalculateZ_FromMuIdxs(mu_pt, mu_eta, mu_phi, mu_fsrgammaidx,
-                                                                              fsrgamma_pt, fsrgamma_eta, fsrgamma_phi, pos, neg);
-                    double mass = Zcand.M();
-                    if(mass > 12 && mass < 120) {
-                        Zcands.push_back(Zcand);
-                        M_mup_mun.push_back(mass);
-                        mupos_is.push_back(pos);
-                        muneg_is.push_back(neg);
-                    }
-                }
-            }
-
-            // Choose the mup-mun pair closest to Z - Find Z1
-            Z1 = Zcands[0];
-            mz1 = M_mup_mun[0];
-            mu1p = mupos_is[0];
-            mu1n = muneg_is[0];
-            for(unsigned int i=1; i<M_mup_mun.size(); i++) {
-                if(abs(mz1-mZ) > abs(M_mup_mun[i]-mZ)) {
-                    Z1 = Zcands[i];
-                    mz1 = M_mup_mun[i];
-                    mu1p = mupos_is[i];
-                    mu1n = muneg_is[i];
-                }
-            }
-
-            // Remove duplication for mu1p and mu1n
-            for(unsigned int i=0; i<M_mup_mun.size(); i++) {
-                if(mupos_is[i] == mu1p || muneg_is[i] == mu1n){
-                    Zcands.erase(Zcands.begin() + i);
-                    M_mup_mun.erase(M_mup_mun.begin() + i);
-                    mupos_is.erase(mupos_is.begin() + i);
-                    muneg_is.erase(muneg_is.begin() + i);
-                    i -= 1;
-                }
-            }
-
-            // Choose the mup-mun pair closest to Z after duplicate removal - Find Z2
-            if(M_mup_mun.size() > 0) {
-                Z2 = Zcands[0];
-                mz2 = M_mup_mun[0];
-                mu2p = mupos_is[0];
-                mu2n = muneg_is[0];
-                for(unsigned int i=1; i<M_mup_mun.size(); i++) {
-                    if(abs(mz2-mZ) > abs(M_mup_mun[i]-mZ)) {
-                        Z2 = Zcands[i];
-                        mz2 = M_mup_mun[i];
-                        mu2p = mupos_is[i];
-                        mu2n = muneg_is[i];
-                    }
-                }
-            }
-            else {
-                return M_H;
-            }
-
-            // Check for Z1Z2 assignment
-            if((mz1 == -10.0) || (mz2 == -10.0)) {
-                return M_H;
-            }
-            
-            M_H = (Z1+Z2).M();
-
-            return M_H;
-        }
-    """
-
-    ROOT.gInterpreter.Declare(CPPFUNC_MakeHiggsAnalysis)
-
     # Declare C++ function
     ROOT.gInterpreter.Declare(f"""
     std::map<int, std::vector<std::pair<int, int>>> validLumis;
@@ -716,22 +600,16 @@ if __name__ == "__main__":
     }}
     """)
 
-    # analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root",
-    #                  "partout_onemu_2016H.root", "muon_2016_cert.txt")
-    # analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
-    #                  "partout_twomu_2016H.root", "muon_2016_cert.txt")
+    analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root",
+                     "partout_onemu_2016H.root", "muon_2016_cert.txt", "onemu_parthiggs_2016H")
+    analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
+                     "partout_twomu_2016H.root", "muon_2016_cert.txt", "twomu_parthiggs_2016H")
 
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_doublemuon_2016H.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_doublemuon_2016H.root", "muon_2016_cert.txt")
     # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
     #                  "output_file_doublemuon_2016G.root", "muon_2016_cert.txt")
     # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
     #                  "output_file_singlemuon_2016H.root", "muon_2016_cert.txt")
     # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
     #                  "output_file_singlemuon_2016G.root", "muon_2016_cert.txt")
-
-    # with open("SingleMuon_2016H_UL_files.txt") as ifl:
-    #     for i, line in enumerate(ifl):
-    #         print(f"Processing {line.strip()}")
-    #         analyse_4mu_data(line.strip(),
-    #                          f"output_file_singlemuon_2016G_UL_{i}.root", "muon_2016_cert.txt")
