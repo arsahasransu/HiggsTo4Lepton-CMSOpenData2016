@@ -68,13 +68,14 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     # ==================================
     # Step 2 - Good muons only
     # ==================================
-    muobject_selstr = "Muon_tightId == 1 && Muon_cleanmask == 1"
+    muobject_selstr = "Muon_tightId == 1"
+    # muobject_selstr = "Muon_tightId == 1 && Muon_cleanmask == 1"
     df_s1 = df_s1.Define("MuTight_pt", f"Muon_pt[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_eta", f"Muon_eta[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_phi", f"Muon_phi[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_charge", f"Muon_charge[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_fsrPhotonIdx", f"Muon_fsrPhotonIdx[{muobject_selstr}]")
-    df_s1 = df_s1.Define("MuTight_cleanmask", f"Muon_cleanmask[{muobject_selstr}]")
+    # df_s1 = df_s1.Define("MuTight_cleanmask", f"Muon_cleanmask[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_tightId", f"Muon_tightId[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_n", f"MuTight_pt.size()")
 
@@ -88,7 +89,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     histograms.append(df_s2.Histo1D(("h_mutight_phi", "Muon #phi; #phi; Events", 68, -3.4, 3.4), "MuTight_phi"))
     histograms.append(df_s2.Histo1D(("h_mutight_charge", "Muon charge; charge; Events", 10, -5, 5), "MuTight_charge"))
     histograms.append(df_s2.Histo1D(("h_mutight_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "MuTight_fsrPhotonIdx"))
-    histograms.append(df_s2.Histo1D(("h_mutight_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "MuTight_cleanmask"))
+    # histograms.append(df_s2.Histo1D(("h_mutight_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "MuTight_cleanmask"))
     histograms.append(df_s2.Histo1D(("h_mutight_tightid", "Muon tight idenitifcation; tight id; Events", 10, -1, 9), "MuTight_tightId"))
 
     # ==================================
@@ -671,11 +672,16 @@ if __name__ == "__main__":
     }}
     """)
 
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_doublemuon_2016H.root", "muon_2016_cert.txt")
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
-                     "output_file_doublemuon_2016G.root", "muon_2016_cert.txt")
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singlemuon_2016H.root", "muon_2016_cert.txt")
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singlemuon_2016G.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_doublemuon_2016H.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
+    #                  "output_file_doublemuon_2016G.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_singlemuon_2016H.root", "muon_2016_cert.txt")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_singlemuon_2016G.root", "muon_2016_cert.txt")
+    with open("SingleMuon_2016H_UL_files.txt") as ifl:
+        for i, line in enumerate(ifl):
+            print(f"Processing {line.strip()}")
+            analyse_4mu_data(line.strip(),
+                             f"output_file_singlemuon_2016G_UL_{i}.root", "muon_2016_cert.txt")
