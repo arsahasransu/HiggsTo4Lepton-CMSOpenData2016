@@ -64,7 +64,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     histograms.append(df_s1.Histo1D(("h_muhlt_dz", "Muon d_{z}; d_{z}; Events", 300, -1.5, 1.5), "Muon_dz"))
     histograms.append(df_s1.Histo1D(("h_muhlt_charge", "Muon charge; charge; Events", 10, -5, 5), "Muon_charge"))
     histograms.append(df_s1.Histo1D(("h_muhlt_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "Muon_fsrPhotonIdx"))
-    histograms.append(df_s1.Histo1D(("h_muhlt_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "Muon_cleanmask"))
+    # histograms.append(df_s1.Histo1D(("h_muhlt_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "Muon_cleanmask"))
     histograms.append(df_s1.Histo1D(("h_muhlt_isglobal", "Muon is Global; is global; Events", 10, -1, 9), "Muon_isGlobal"))
     histograms.append(df_s1.Histo1D(("h_muhlt_isstandalone", "Muon is Standalone; is standalone; Events", 10, -1, 9), "Muon_isStandalone"))
     histograms.append(df_s1.Histo1D(("h_muhlt_istracker", "Muon is Tracker; is tracker; Events", 10, -1, 9), "Muon_isTracker"))
@@ -92,7 +92,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     df_s1 = df_s1.Define("MuTight_dz", f"Muon_dz[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_charge", f"Muon_charge[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_fsrPhotonIdx", f"Muon_fsrPhotonIdx[{muobject_selstr}]")
-    df_s1 = df_s1.Define("MuTight_cleanmask", f"Muon_cleanmask[{muobject_selstr}]")
+    # df_s1 = df_s1.Define("MuTight_cleanmask", f"Muon_cleanmask[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_isGlobal", f"Muon_isGlobal[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_isStandalone", f"Muon_isStandalone[{muobject_selstr}]")
     df_s1 = df_s1.Define("MuTight_isTracker", f"Muon_isTracker[{muobject_selstr}]")
@@ -118,7 +118,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     histograms.append(df_s1.Histo1D(("h_mutight_dz", "Muon d_{z}; d_{z}; Events", 300, -1.5, 1.5), "MuTight_dz"))
     histograms.append(df_s1.Histo1D(("h_mutight_charge", "Muon charge; charge; Events", 10, -5, 5), "MuTight_charge"))
     histograms.append(df_s1.Histo1D(("h_mutight_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "MuTight_fsrPhotonIdx"))
-    histograms.append(df_s1.Histo1D(("h_mutight_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "MuTight_cleanmask"))
+    # histograms.append(df_s1.Histo1D(("h_mutight_cleanmask", "Muon clean mask; clean mask; Events", 10, -1, 9), "MuTight_cleanmask"))
     histograms.append(df_s1.Histo1D(("h_mutight_isglobal", "Muon is Global; is global; Events", 10, -1, 9), "MuTight_isGlobal"))
     histograms.append(df_s1.Histo1D(("h_mutight_isstandalone", "Muon is Standalone; is standalone; Events", 10, -1, 9), "MuTight_isStandalone"))
     histograms.append(df_s1.Histo1D(("h_mutight_istracker", "Muon is Tracker; is tracker; Events", 10, -1, 9), "MuTight_isTracker"))
@@ -229,6 +229,11 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
     df_4muM = df_s4.Filter("M4Mu > 0")
     histograms.append(df_4muM.Histo1D(("h_muon_4MuM", "Muon M; M (GeV/c); Events", 250, 0, 500), "M4Mu"))
 
+    # Print Higgs event numbers
+    df_4muM = df_4muM.Filter("M4Mu > 115.0 && M4Mu < 135.0")
+    disp = df_4muM.Display(["run", "M4Mu"])
+    disp.Print()
+
     # # Step 4 - Make ZZ
     # df_s3 = df_s3.Define("M_ZZ", "MakeHiggsAnalysis(Muon_sel_pt, Muon_sel_eta, Muon_sel_phi, Muon_sel_charge, Muon_sel_fsrPhotonIdx," \
     #                                                "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
@@ -244,7 +249,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path=""):
 
 if __name__ == "__main__":
 
-    ROOT.EnableImplicitMT()
+    # ROOT.EnableImplicitMT()
 
     # Define function to calculate Z mass from 2 muons
     CPPFUNC_CalculateZ_FromMuPMuN = """
@@ -716,16 +721,17 @@ if __name__ == "__main__":
     # analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
     #                  "partout_twomu_2016H.root", "muon_2016_cert.txt")
 
-    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "output_file_doublemuon_2016H.root", "muon_2016_cert.txt")
+    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_doublemuon_2016H.root", "muon_2016_cert.txt")
     # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
     #                  "output_file_doublemuon_2016G.root", "muon_2016_cert.txt")
     # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
     #                  "output_file_singlemuon_2016H.root", "muon_2016_cert.txt")
     # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
     #                  "output_file_singlemuon_2016G.root", "muon_2016_cert.txt")
-    with open("SingleMuon_2016H_UL_files.txt") as ifl:
-        for i, line in enumerate(ifl):
-            print(f"Processing {line.strip()}")
-            analyse_4mu_data(line.strip(),
-                             f"output_file_singlemuon_2016G_UL_{i}.root", "muon_2016_cert.txt")
+
+    # with open("SingleMuon_2016H_UL_files.txt") as ifl:
+    #     for i, line in enumerate(ifl):
+    #         print(f"Processing {line.strip()}")
+    #         analyse_4mu_data(line.strip(),
+    #                          f"output_file_singlemuon_2016G_UL_{i}.root", "muon_2016_cert.txt")
