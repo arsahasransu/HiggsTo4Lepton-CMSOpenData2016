@@ -6,6 +6,7 @@ import warnings
 import ROOT
 from ROOT import RDataFrame, TFile
 
+import cpp_utils
 import utils
 
 
@@ -133,8 +134,8 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path="", save_snapshot_p
     # ==================================
     # Step 3 - Make Z
     # ==================================
-    df_s2 = df_s2.Define("M_ZToMuMu", "FindAll_ZToMuMu(MuTight_pt, MuTight_eta, MuTight_phi, MuTight_charge, MuTight_fsrPhotonIdx," \
-                                                       "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+    df_s2 = df_s2.Define("M_ZToMuMu", "FindAll_ZToLPLN(MuTight_pt, MuTight_eta, MuTight_phi, MuTight_charge, MuTight_fsrPhotonIdx," \
+                                                       "0.10565, FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
     df_s2 = df_s2.Define("n_ZToMuMu", f"M_ZToMuMu.size()")
 
     histograms.append(df_s2.Histo1D(("hprefilt_n_ZToMuMu", "Z #rightarrow #mu #mu N; N; Events", 15, -1, 14), "n_ZToMuMu"))
@@ -154,8 +155,9 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path="", save_snapshot_p
     # ==================================
     # Step 4 - Find two non-overlapping Z candidates
     # ==================================
-    df_s3 = df_s3.Define("ZZTo4MuIdxs", "Find_NonOverlappingZZ(MuTight_pt, MuTight_eta, MuTight_phi, MuTight_charge, MuTight_fsrPhotonIdx," \
-                                                               "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+    df_s3 = df_s3.Define("ZZTo4MuIdxs", "Find_NonOverlappingZZ_To_4Lep(MuTight_pt, MuTight_eta, MuTight_phi," \
+                                        "MuTight_charge, MuTight_fsrPhotonIdx, 0.10565," \
+                                        "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
     df_s3 = df_s3.Define("ZZTo4MuIdxs_n", "ZZTo4MuIdxs.size()")
 
     histograms.append(df_s3.Histo1D(("h_allZZTo4MuIdxs_n", "Muon N; N; Events", 10, 0, 10), "ZZTo4MuIdxs_n"))
@@ -173,8 +175,8 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path="", save_snapshot_p
     df_s4 = df_s4.Define("z1mun_phi", "MuTight_phi[z1munidx]")
     df_s4 = df_s4.Define("z1mun_charge", "MuTight_charge[z1munidx]")
     df_s4 = df_s4.Define("z1mun_fsrPhotonIdx", "MuTight_fsrPhotonIdx[z1munidx]")
-    df_s4 = df_s4.Define("z1_mass", "CalculateZ_FromMuPMuN(z1mup_pt, z1mup_eta, z1mup_phi, z1mup_fsrPhotonIdx,"\
-                                    "z1mun_pt, z1mun_eta, z1mun_phi, z1mun_fsrPhotonIdx,"\
+    df_s4 = df_s4.Define("z1_mass", "Zmass_FromLLpair(z1mup_pt, z1mup_eta, z1mup_phi, z1mup_fsrPhotonIdx,"\
+                                    "z1mun_pt, z1mun_eta, z1mun_phi, z1mun_fsrPhotonIdx, 0.10565,"\
                                     "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
 
     histograms.append(df_s4.Histo1D(("h_z1mupidx", "Muon Index; Index; Events", 20, 0, 20), "z1mupidx"))
@@ -203,8 +205,8 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path="", save_snapshot_p
     df_s4 = df_s4.Define("z2mun_phi", "MuTight_phi[z2munidx]")
     df_s4 = df_s4.Define("z2mun_charge", "MuTight_charge[z2munidx]")
     df_s4 = df_s4.Define("z2mun_fsrPhotonIdx", "MuTight_fsrPhotonIdx[z2munidx]")
-    df_s4 = df_s4.Define("z2_mass", "CalculateZ_FromMuPMuN(z2mup_pt, z2mup_eta, z2mup_phi, z2mup_fsrPhotonIdx,"\
-                                    "z2mun_pt, z2mun_eta, z2mun_phi, z2mun_fsrPhotonIdx,"\
+    df_s4 = df_s4.Define("z2_mass", "Zmass_FromLLpair(z2mup_pt, z2mup_eta, z2mup_phi, z2mup_fsrPhotonIdx,"\
+                                    "z2mun_pt, z2mun_eta, z2mun_phi, z2mun_fsrPhotonIdx, 0.10565,"\
                                     "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
 
     histograms.append(df_s4.Histo1D(("h_z2mupidx", "Muon Index; Index; Events", 20, 0, 20), "z2mupidx"))
@@ -222,14 +224,17 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path="", save_snapshot_p
     histograms.append(df_s4.Histo1D(("h_z2_mass", "M; M (GeV/c); Events", 160, -10, 150), "z2_mass"))
 
     # Calculate the invariant mass of the four muons
-    df_s4 = df_s4.Define("M4Mu", "M4Mu(MuTight_pt, MuTight_eta, MuTight_phi, MuTight_charge, MuTight_fsrPhotonIdx," \
-                        "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+    df_s4 = df_s4.Define("M4Mu", "Analysis_HTo4Lep(z1mup_pt, z1mup_eta, z1mup_phi, z1mup_fsrPhotonIdx," \
+                                                  "z1mun_pt, z1mun_eta, z1mun_phi, z1mun_fsrPhotonIdx," \
+                                                  "z2mup_pt, z2mup_eta, z2mup_phi, z2mup_fsrPhotonIdx," \
+                                                  "z2mun_pt, z2mun_eta, z2mun_phi, z1mun_fsrPhotonIdx," \
+                                                  "0.10565, 0.10565, FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
     # Special Filter below for the one histogram only
     df_4muM = df_s4.Filter("M4Mu > 0")
     histograms.append(df_4muM.Histo1D(("h_muon_4MuM", "Muon M; M (GeV/c); Events", 250, 0, 500), "M4Mu"))
 
     # Keep the higgs event details for later
-    df_4muM = df_4muM.Filter("M4Mu > 115.0 && M4Mu < 135.0")
+    df_4muM = df_4muM.Filter("M4Mu > 70")
     if save_snapshot_path is not None:
         cols_to_keep = ["run", "luminosityBlock", "event", "M4Mu"]
         df_4muM.Snapshot("Events", f"{save_snapshot_path}.root", cols_to_keep)
@@ -245,371 +250,18 @@ if __name__ == "__main__":
 
     ROOT.EnableImplicitMT()
 
-    # Define function to calculate Z mass from 2 muons
-    CPPFUNC_CalculateZ_FromMuPMuN = """
-        double CalculateZ_FromMuPMuN(double mup_pt,
-                                     double mup_eta,
-                                     double mup_phi,
-                                     double mup_fsrgammaidx,
-                                     double mun_pt,
-                                     double mun_eta,
-                                     double mun_phi,
-                                     double mun_fsrgammaidx,
-                                     ROOT::VecOps::RVec<double> fsrgamma_pt,
-                                     ROOT::VecOps::RVec<double> fsrgamma_eta,
-                                     ROOT::VecOps::RVec<double> fsrgamma_phi) {
+    cpp_utils.cpp_utils()
 
-            ROOT::Math::PtEtaPhiMVector mup(mup_pt, mup_eta, mup_phi, 0.10565);
-            ROOT::Math::PtEtaPhiMVector mun(mun_pt, mun_eta, mun_phi, 0.10565);
-            ROOT::Math::PtEtaPhiMVector Z = mup + mun;
-            if(mup_fsrgammaidx >= 0){
-                ROOT::Math::PtEtaPhiMVector gp(fsrgamma_pt[mup_fsrgammaidx], fsrgamma_eta[mup_fsrgammaidx], fsrgamma_phi[mup_fsrgammaidx], 0.0);
-                Z += gp;
-            }
-            if(mun_fsrgammaidx >= 0){
-                ROOT::Math::PtEtaPhiMVector gn(fsrgamma_pt[mun_fsrgammaidx], fsrgamma_eta[mun_fsrgammaidx], fsrgamma_phi[mun_fsrgammaidx], 0.0);
-                Z += gn;
-            }
-            return Z.M();
-        }
-    """
+    analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root",
+                     "partout_onemu_2016H.root", "muon_2016_cert.txt", "onemu_parthiggs_2016H")
+    analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
+                     "partout_twomu_2016H.root", "muon_2016_cert.txt", "twomu_parthiggs_2016H")
 
-    ROOT.gInterpreter.Declare(CPPFUNC_CalculateZ_FromMuPMuN)
-
-    # Define function to calculate Z mass from muon indices
-    CPPFUNC_CalculateZ_FromMuIdxs = """
-        ROOT::Math::PtEtaPhiMVector CalculateZ_FromMuIdxs(ROOT::VecOps::RVec<double> mu_pt,
-                                                              ROOT::VecOps::RVec<double> mu_eta,
-                                                              ROOT::VecOps::RVec<double> mu_phi,
-                                                              ROOT::VecOps::RVec<int> mu_fsrgammaidx,
-                                                              ROOT::VecOps::RVec<double> fsrgamma_pt,
-                                                              ROOT::VecOps::RVec<double> fsrgamma_eta,
-                                                              ROOT::VecOps::RVec<double> fsrgamma_phi,
-                                                              unsigned int mu1i, unsigned int mu2i) {
-
-            ROOT::Math::PtEtaPhiMVector mu1(mu_pt[mu1i], mu_eta[mu1i], mu_phi[mu1i], 0.10565);
-            ROOT::Math::PtEtaPhiMVector mu2(mu_pt[mu2i], mu_eta[mu2i], mu_phi[mu2i], 0.10565);
-            ROOT::Math::PtEtaPhiMVector Z = mu1 + mu2;
-            if(mu_fsrgammaidx[mu1i] >= 0){
-                int mu1gi = mu_fsrgammaidx[mu1i];
-                ROOT::Math::PtEtaPhiMVector fsrgamma_i(fsrgamma_pt[mu1gi], fsrgamma_eta[mu1gi], fsrgamma_phi[mu1gi], 0.0);
-                Z += fsrgamma_i;
-            }
-            if(mu_fsrgammaidx[mu2i] >= 0){
-                int mu2gi = mu_fsrgammaidx[mu2i];
-                ROOT::Math::PtEtaPhiMVector fsrgamma_j(fsrgamma_pt[mu2gi], fsrgamma_eta[mu2gi], fsrgamma_phi[mu2gi], 0.0);
-                Z += fsrgamma_j;
-            }
-            return Z;
-        }
-    """
-
-    ROOT.gInterpreter.Declare(CPPFUNC_CalculateZ_FromMuIdxs)
-
-    # Define a function to find muon pairs with Z -> mu mu
-    CPPFUNC_FindAll_ZToMuMu = """
-        ROOT::VecOps::RVec<double> FindAll_ZToMuMu(ROOT::VecOps::RVec<double> mu_pt,
-                                                   ROOT::VecOps::RVec<double> mu_eta,
-                                                   ROOT::VecOps::RVec<double> mu_phi,
-                                                   ROOT::VecOps::RVec<double> mu_q,
-                                                   ROOT::VecOps::RVec<int> mu_fsrgammaidx,
-                                                   ROOT::VecOps::RVec<double> fsrgamma_pt,
-                                                   ROOT::VecOps::RVec<double> fsrgamma_eta,
-                                                   ROOT::VecOps::RVec<double> fsrgamma_phi) {
-
-            ROOT::VecOps::RVec<double> M_Z;
-
-            if( mu_pt.size() < 4 || (mu_pt.size() != mu_eta.size()) || (mu_pt.size() != mu_phi.size()) 
-                                 || (mu_pt.size() != mu_q.size()) ) {
-                M_Z.push_back(-1);
-                return M_Z;
-            }
-
-            for(unsigned int i=0; i<mu_pt.size(); i++) {
-                for(unsigned int j=i+1; j<mu_pt.size(); j++) {
-                    if(mu_q[i]*mu_q[j] < 0) {
-                        ROOT::Math::PtEtaPhiMVector Z = CalculateZ_FromMuIdxs(mu_pt, mu_eta, mu_phi, mu_fsrgammaidx,
-                                                                              fsrgamma_pt, fsrgamma_eta, fsrgamma_phi, i, j);
-                        double mass = Z.M();
-                        if(mass > 12 && mass < 120) {
-                            M_Z.push_back(mass);
-                        }
-                    }
-                }
-            }
-
-            return M_Z;
-        }
-    """
-
-    ROOT.gInterpreter.Declare(CPPFUNC_FindAll_ZToMuMu)
-
-    # Define a function to find non-overlapping ZZ -> 2mu+ 2mu- candidates
-    CPPFUNC_Find_NonOverlappingZZ = """
-        ROOT::VecOps::RVec<double> Find_NonOverlappingZZ(ROOT::VecOps::RVec<double> mu_pt,
-                                                         ROOT::VecOps::RVec<double> mu_eta,
-                                                         ROOT::VecOps::RVec<double> mu_phi,
-                                                         ROOT::VecOps::RVec<double> mu_q,
-                                                         ROOT::VecOps::RVec<int> mu_fsrgammaidx,
-                                                         ROOT::VecOps::RVec<double> fsrgamma_pt,
-                                                         ROOT::VecOps::RVec<double> fsrgamma_eta,
-                                                         ROOT::VecOps::RVec<double> fsrgamma_phi) {
-
-            ROOT::VecOps::RVec<int> ZZTo4muIdxs;
-            double z_m = 91.19;
-
-            if( mu_pt.size() < 4 || (mu_pt.size() != mu_eta.size()) || (mu_pt.size() != mu_phi.size()) 
-                                 || (mu_pt.size() != mu_q.size()) ) {
-                return ZZTo4muIdxs;
-            }
-
-            int mup = -1, mun = -1;
-            double Zcandmass = -1.0;
-            for(unsigned int i=0; i<mu_pt.size(); i++) {
-                for(unsigned int j=i+1; j<mu_pt.size(); j++) {
-                    if(mu_q[i]*mu_q[j] < 0) {
-                        ROOT::Math::PtEtaPhiMVector Z = CalculateZ_FromMuIdxs(mu_pt, mu_eta, mu_phi, mu_fsrgammaidx,
-                                                                              fsrgamma_pt, fsrgamma_eta, fsrgamma_phi, i, j);
-                        double mass = Z.M();
-                        if(mass > 12 && mass < 120) {
-                            if(Zcandmass == -1.0) {
-                                Zcandmass = mass;
-                                mup = mu_q[i] > 0 ? i : j;
-                                mun = mu_q[i] < 0 ? i : j;
-                            }
-                            else {
-                                if(abs(mass-z_m) < abs(Zcandmass-z_m)) {
-                                    Zcandmass = mass;
-                                    mup = mu_q[i] > 0 ? i : j;
-                                    mun = mu_q[i] < 0 ? i : j;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            if(Zcandmass != -1.0) {
-                ZZTo4muIdxs.push_back(mup);
-                ZZTo4muIdxs.push_back(mun);
-            }
-
-            int mupz2 = -1, munz2 = -1;
-            double Z2candmass = -1.0;
-            for(unsigned int i=0; i<mu_pt.size(); i++) {
-
-                if(i == mup || i == mun) continue;
-
-                for(unsigned int j=i+1; j<mu_pt.size(); j++) {
-
-                    if(j == mup || j == mun) continue;
-
-                    if(mu_q[i]*mu_q[j] < 0) {
-                        ROOT::Math::PtEtaPhiMVector Z = CalculateZ_FromMuIdxs(mu_pt, mu_eta, mu_phi, mu_fsrgammaidx,
-                                                                              fsrgamma_pt, fsrgamma_eta, fsrgamma_phi, i, j);
-                        double mass = Z.M();
-                        if(mass > 12 && mass < 120) {
-                            if(Z2candmass == -1.0) {
-                                Z2candmass = mass;
-                                mupz2 = mu_q[i] > 0 ? i : j;
-                                munz2 = mu_q[i] < 0 ? i : j;
-                            }
-                            else {
-                                if(abs(mass-z_m) < abs(Z2candmass-z_m)) {
-                                    Z2candmass = mass;
-                                    mupz2 = mu_q[i] > 0 ? i : j;
-                                    munz2 = mu_q[i] < 0 ? i : j;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            if(Z2candmass != -1.0) {
-                ZZTo4muIdxs.push_back(mupz2);
-                ZZTo4muIdxs.push_back(munz2);
-            }
-
-            return ZZTo4muIdxs;
-        }
-    """
-
-    ROOT.gInterpreter.Declare(CPPFUNC_Find_NonOverlappingZZ)
-
-    # Define a function to calculate the invariant mass of four muons
-    CPPFUNC_InvariantMass4Muons = """
-        double M4Mu(ROOT::VecOps::RVec<double> mu_pt,
-                    ROOT::VecOps::RVec<double> mu_eta,
-                    ROOT::VecOps::RVec<double> mu_phi,
-                    ROOT::VecOps::RVec<double> mu_q,
-                    ROOT::VecOps::RVec<int> mu_fsrgammaidx,
-                    ROOT::VecOps::RVec<double> fsrgamma_pt,
-                    ROOT::VecOps::RVec<double> fsrgamma_eta,
-                    ROOT::VecOps::RVec<double> fsrgamma_phi) {
-
-            if( mu_pt.size() < 4 || (mu_pt.size() != mu_eta.size()) || (mu_pt.size() != mu_phi.size()) ) {
-                return -10;
-            }
-
-            double mass = -10.0;
-
-            // Find Z1
-            ROOT::Math::PtEtaPhiMVector Z1;
-            double z1_m = -10.0, z_m = 91.19;
-            int z1_mup_idx = -1, z1_mun_idx = -1;
-            for(unsigned int i=0; i<mu_pt.size(); i++) {
-                for(unsigned int j=i+1; j<mu_pt.size(); j++) {
-                    if(mu_q[i]*mu_q[j] < 0) {
-                        ROOT::Math::PtEtaPhiMVector Zcand = CalculateZ_FromMuIdxs(mu_pt, mu_eta, mu_phi, mu_fsrgammaidx,
-                                                                                  fsrgamma_pt, fsrgamma_eta, fsrgamma_phi, i, j);
-                        double Zcand_m = Zcand.M();
-                        if(abs(Zcand_m - z_m) < abs(z1_m - z_m)) {
-                            Z1 = Zcand;
-                            z1_m = Zcand_m;
-                            z1_mup_idx = mu_q[i] > 0 ? i : j;
-                            z1_mun_idx = mu_q[i] > 0 ? j : i;
-                        }
-                    }
-                }
-            }
-
-            if(z1_m < 12.0 || z1_m > 120.0) {
-                return mass;
-            }
-
-            // Find Z2
-            ROOT::Math::PtEtaPhiMVector Z2;
-            double z2_m = -10.0;
-            int z2_mup_idx = -1, z2_mun_idx = -1;
-            for(unsigned int i=0; i<mu_pt.size(); i++) {
-
-                if(i == z1_mup_idx || i == z1_mun_idx){
-                    continue;
-                }
-
-                for(unsigned int j=i+1; j<mu_pt.size(); j++) {
-
-                    if(j == z1_mup_idx || j == z1_mun_idx){
-                        continue;
-                    }
-
-                    if(mu_q[i]*mu_q[j] < 0) {
-                        ROOT::Math::PtEtaPhiMVector Zcand = CalculateZ_FromMuIdxs(mu_pt, mu_eta, mu_phi, mu_fsrgammaidx,
-                                                                                  fsrgamma_pt, fsrgamma_eta, fsrgamma_phi, i, j);
-                        double Zcand_m = Zcand.M();
-                        if(abs(Zcand_m - z_m) < abs(z2_m - z_m)) {
-                            Z2 = Zcand;
-                            z2_m = Zcand_m;
-                            z2_mup_idx = mu_q[i] > 0 ? i : j;
-                            z2_mun_idx = mu_q[i] > 0 ? j : i;
-                        }
-                    }
-                }
-            }
-
-            if(z2_m < 12.0 || z2_m > 120.0) {
-                return mass;
-            }
-
-            int muidxs[4] = {z1_mup_idx, z1_mun_idx, z2_mup_idx, z2_mun_idx};
-            // ROOT::Math::PtEtaPhiMVector ZZcand(0, 0, 0, 0);
-            // for(auto &mui : muidxs){
-            //     ROOT::Math::PtEtaPhiMVector mu(mu_pt[mui], mu_eta[mui], mu_phi[mui], 0.10565);
-            //     ZZcand += mu;
-            //     if(mu_fsrgammaidx[mui] >= 0){
-            //         int mugi = mu_fsrgammaidx[mui];
-            //         ROOT::Math::PtEtaPhiMVector fsrgamma(fsrgamma_pt[mugi], fsrgamma_eta[mugi], fsrgamma_phi[mugi], 0.0);
-            //         ZZcand += fsrgamma;
-            //     }
-            // }
-
-            // ===========            HIGGS ANALYSIS          ===========
-            if(Z1.M() < 40.0) {
-                return mass;
-            }
-
-            if(mu_pt[muidxs[0]] < 20 && mu_pt[muidxs[1]] < 20 && mu_pt[muidxs[2]] < 20 && mu_pt[muidxs[3]] < 20) {
-                return mass;
-            }
-
-            int countptgt10 = 0;
-            if(mu_pt[muidxs[0]] > 10) countptgt10++;
-            if(mu_pt[muidxs[1]] > 10) countptgt10++;
-            if(mu_pt[muidxs[2]] > 10) countptgt10++;
-            if(mu_pt[muidxs[3]] > 10) countptgt10++;
-            if(countptgt10 < 2) {
-                return mass;
-            }
-
-            ROOT::Math::PtEtaPhiMVector z1mup(mu_pt[muidxs[0]], mu_eta[muidxs[0]], mu_phi[muidxs[0]], 0.10565);
-            ROOT::Math::PtEtaPhiMVector z1mun(mu_pt[muidxs[1]], mu_eta[muidxs[1]], mu_phi[muidxs[1]], 0.10565);
-            ROOT::Math::PtEtaPhiMVector z2mup(mu_pt[muidxs[2]], mu_eta[muidxs[2]], mu_phi[muidxs[2]], 0.10565);
-            ROOT::Math::PtEtaPhiMVector z2mun(mu_pt[muidxs[3]], mu_eta[muidxs[3]], mu_phi[muidxs[3]], 0.10565);
-
-            int countdrlt0p02 = 0;
-            if(ROOT::Math::VectorUtil::DeltaR(z1mup, z1mun) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z1mup, z2mup) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z1mup, z2mun) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z1mun, z2mup) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z1mun, z2mun) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z2mup, z2mun) < 0.02) countdrlt0p02++;
-            if(countdrlt0p02 > 0) {
-                return mass;
-            }
-
-            int countmlt4 = 0;
-            if((z1mup + z1mun).M() < 4) countmlt4++;
-            if((z2mup + z1mun).M() < 4) countmlt4++;
-            if((z1mup + z2mun).M() < 4) countmlt4++;
-            if((z2mup + z2mun).M() < 4) countmlt4++;
-            if(countmlt4 > 0) {
-                return mass;
-            }
-
-            ROOT::Math::PtEtaPhiMVector Z12 = CalculateZ_FromMuIdxs(mu_pt, mu_eta, mu_phi, mu_fsrgammaidx,
-                                                                    fsrgamma_pt, fsrgamma_eta, fsrgamma_phi, z1_mup_idx, z2_mun_idx);
-            ROOT::Math::PtEtaPhiMVector Z21 = CalculateZ_FromMuIdxs(mu_pt, mu_eta, mu_phi, mu_fsrgammaidx,
-                                                                    fsrgamma_pt, fsrgamma_eta, fsrgamma_phi, z2_mup_idx, z1_mun_idx);
-            ROOT::Math::PtEtaPhiMVector Za = abs(Z12.M()-z_m) < abs(Z21.M()-z_m) ? Z12 : Z21;
-            ROOT::Math::PtEtaPhiMVector Zb = abs(Z12.M()-z_m) < abs(Z21.M()-z_m) ? Z21 : Z12;
-            if( (abs(Za.M()-z_m) < abs(Z1.M()-z_m)) && (Zb.M() < 12) ) {
-                return mass;
-            }
-
-            mass = (Z1+Z2).M();
-
-            return mass;
-        }
-    """
-
-    ROOT.gInterpreter.Declare(CPPFUNC_InvariantMass4Muons)
-
-    # Declare C++ function
-    ROOT.gInterpreter.Declare(f"""
-    std::map<int, std::vector<std::pair<int, int>>> validLumis;
-                              
-    bool is_valid(int run, int lumi) {{
-        auto it = validLumis.find(run);
-        if (it == validLumis.end()) return false;
-        for (auto& range : it->second) {{
-            if (lumi >= range.first && lumi <= range.second)
-                return true;
-            }}
-        return false;
-    }}
-    """)
-
-    # analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root",
-    #                  "partout_onemu_2016H.root", "muon_2016_cert.txt", "onemu_parthiggs_2016H")
-    # analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
-    #                  "partout_twomu_2016H.root", "muon_2016_cert.txt", "twomu_parthiggs_2016H")
-
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_doublemuon_2016H.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016H")
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
-                     "output_file_doublemuon_2016G.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016G")
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singlemuon_2016H.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016H")
-    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singlemuon_2016G.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016G")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_doublemuon_2016H.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016H")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
+    #                  "output_file_doublemuon_2016G.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016G")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_singlemuon_2016H.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016H")
+    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+    #                  "output_file_singlemuon_2016G.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016G")
