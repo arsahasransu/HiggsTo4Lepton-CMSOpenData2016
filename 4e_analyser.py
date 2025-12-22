@@ -228,17 +228,16 @@ if __name__ == "__main__":
 
     cpp_utils.cpp_utils()
 
-    analyse_4e_data("./Datasets/SingleElectron/Yeah2016EraH/*.root",
-                    "partout_oneelec_2016H.root", "all_2016_cert.txt", "oneel_parthiggs_2016H")
-    analyse_4e_data("./Datasets/DoubleElectron/Yeah2016EraH/*.root",
-                    "partout_twoelec_2016H.root", "all_2016_cert.txt", "twoel_parthiggs_2016H")
+    # analyse_4e_data("./Datasets/SingleElectron/Yeah2016EraH/*.root",
+    #                 "partout_oneelec_2016H.root", "all_2016_cert.txt", "oneel_parthiggs_2016H")
+    # analyse_4e_data("./Datasets/DoubleElectron/Yeah2016EraH/*.root",
+    #                 "partout_twoelec_2016H.root", "all_2016_cert.txt", "twoel_parthiggs_2016H")
 
-    # TODO Edit these configs
-    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "output_file_doublemuon_2016H.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016H")
-    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
-    #                  "output_file_doublemuon_2016G.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016G")
-    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "output_file_singlemuon_2016H.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016H")
-    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "output_file_singlemuon_2016G.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016G")
+    analyse_4e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleEG/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_doubleelectron_2016H.root", "all_2016_cert.txt", "twoel_higgsto4mu_2016H")
+    analyse_4e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleEG/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_doubleelectron_2016G.root", "all_2016_cert.txt", "twoel_higgsto4mu_2016G")
+    analyse_4e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleElectron/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_singleelectron_2016H.root", "all_2016_cert.txt", "oneel_higgsto4mu_2016H")
+    analyse_4e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleElectron/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_singleelectron_2016G.root", "all_2016_cert.txt", "oneel_higgsto4mu_2016G")
