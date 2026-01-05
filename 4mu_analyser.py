@@ -261,10 +261,10 @@ if __name__ == "__main__":
     #                  "partout_twomu_2016H.root", "muon_2016_cert.txt", "twomu_parthiggs_2016H")
 
     analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_doublemuon_2016H.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016H")
+                     "output_file_doublemuon_2016H.root", "muon_2016_cert.txt", "doublemu_2016H")
     analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
-                     "output_file_doublemuon_2016G.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016G")
+                     "output_file_doublemuon_2016G.root", "muon_2016_cert.txt", "doublemu_2016G")
     analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singlemuon_2016H.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016H")
+                     "output_file_singlemuon_2016H.root", "muon_2016_cert.txt", "singlemu_2016H")
     analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singlemuon_2016G.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016G")
+                     "output_file_singlemuon_2016G.root", "muon_2016_cert.txt", "singlemu_2016G")

@@ -210,10 +210,13 @@ def analyse_4e_data(input_file, output_file, lumi_json_path="", save_snapshot_pa
     histograms.append(df_4muM.Histo1D(("h_electron_4ElM", "Electron M; M (GeV/c); Events", 250, 0, 500), "M4El"))
 
     # Keep the higgs event details for later
-    df_4muM = df_4muM.Filter("M4El > 50")
+    df_4muM = df_4muM.Filter("M4El > 0")
     if save_snapshot_path is not None:
         cols_to_keep = ["run", "luminosityBlock", "event", "M4El"]
-        df_4muM.Snapshot("Events", f"{save_snapshot_path}.root", cols_to_keep)
+        try:
+            utils.write_event_snapshot(df_4muM, save_snapshot_path, cols_to_keep, tree_name="Events")
+        except Exception as e:
+            warnings.warn(f"write_event_snapshot failed: {e}")
 
     # Write the histograms to the output file
     output_file = TFile(output_file, "RECREATE")
@@ -234,10 +237,10 @@ if __name__ == "__main__":
     #                 "partout_twoelec_2016H.root", "all_2016_cert.txt", "twoel_parthiggs_2016H")
 
     analyse_4e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleEG/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_doubleelectron_2016H.root", "all_2016_cert.txt", "twoel_higgsto4mu_2016H")
+                     "output_file_doubleelectron_2016H.root", "all_2016_cert.txt", "doubleel_2016H")
     analyse_4e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleEG/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_doubleelectron_2016G.root", "all_2016_cert.txt", "twoel_higgsto4mu_2016G")
+                     "output_file_doubleelectron_2016G.root", "all_2016_cert.txt", "doubleel_2016G")
     analyse_4e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleElectron/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singleelectron_2016H.root", "all_2016_cert.txt", "oneel_higgsto4mu_2016H")
+                     "output_file_singleelectron_2016H.root", "all_2016_cert.txt", "singleel_2016H")
     analyse_4e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleElectron/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-                     "output_file_singleelectron_2016G.root", "all_2016_cert.txt", "oneel_higgsto4mu_2016G")
+                     "output_file_singleelectron_2016G.root", "all_2016_cert.txt", "singleel_2016G")
