@@ -237,7 +237,10 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path="", save_snapshot_p
     df_4muM = df_4muM.Filter("M4Mu > 0")
     if save_snapshot_path is not None:
         cols_to_keep = ["run", "luminosityBlock", "event", "M4Mu"]
-        df_4muM.Snapshot("Events", f"{save_snapshot_path}.root", cols_to_keep)
+        try:
+            utils.write_event_snapshot(df_4muM, save_snapshot_path, cols_to_keep, tree_name="Events")
+        except Exception as e:
+            warnings.warn(f"write_event_snapshot failed: {e}")
 
     # Write the histograms to the output file
     output_file = TFile(output_file, "RECREATE")
@@ -252,16 +255,16 @@ if __name__ == "__main__":
 
     cpp_utils.cpp_utils()
 
-    analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root",
-                     "partout_onemu_2016H.root", "muon_2016_cert.txt", "onemu_parthiggs_2016H")
-    analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
-                     "partout_twomu_2016H.root", "muon_2016_cert.txt", "twomu_parthiggs_2016H")
+    # analyse_4mu_data("./Datasets/SingleMuon/Year2016EraH/*.root",
+    #                  "partout_onemu_2016H.root", "muon_2016_cert.txt", "onemu_parthiggs_2016H")
+    # analyse_4mu_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
+    #                  "partout_twomu_2016H.root", "muon_2016_cert.txt", "twomu_parthiggs_2016H")
 
-    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "output_file_doublemuon_2016H.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016H")
-    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
-    #                  "output_file_doublemuon_2016G.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016G")
-    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "output_file_singlemuon_2016H.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016H")
-    # analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "output_file_singlemuon_2016G.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016G")
+    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_doublemuon_2016H.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016H")
+    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
+                     "output_file_doublemuon_2016G.root", "muon_2016_cert.txt", "twomu_higgsto4mu_2016G")
+    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_singlemuon_2016H.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016H")
+    analyse_4mu_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                     "output_file_singlemuon_2016G.root", "muon_2016_cert.txt", "onemu_higgsto4mu_2016G")
