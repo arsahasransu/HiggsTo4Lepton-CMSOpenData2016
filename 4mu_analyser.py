@@ -234,7 +234,7 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path="", save_snapshot_p
     histograms.append(df_4muM.Histo1D(("h_muon_4MuM", "Muon M; M (GeV/c); Events", 250, 0, 500), "M4Mu"))
 
     # Keep the higgs event details for later
-    df_4muM = df_4muM.Filter("M4Mu > 70")
+    df_4muM = df_4muM.Filter("M4Mu > 0")
     if save_snapshot_path is not None:
         cols_to_keep = ["run", "luminosityBlock", "event", "M4Mu"]
         df_4muM.Snapshot("Events", f"{save_snapshot_path}.root", cols_to_keep)
