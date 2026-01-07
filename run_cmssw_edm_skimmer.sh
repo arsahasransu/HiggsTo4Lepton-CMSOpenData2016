@@ -1,0 +1,1 @@
+cmsRun cmssw_edm_event_skim.py inputList=aodinfiles_doublemu_2016H.txt eventsJSON=doublemu_2016H.json outputFile=DoubleMuon2016H_4MuonSkimmed_MINIAOD.root 
