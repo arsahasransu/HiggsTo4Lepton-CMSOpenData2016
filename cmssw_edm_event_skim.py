@@ -62,10 +62,6 @@ eventid_list = load_eventid_strings(options.eventsJSON)
 
 process = cms.Process('SKIM')
 
-process.options = cms.untracked.PSet(
-    numberOfThreads = cms.untracked.uint32(32),   # ← change to your desired threads
-    numberOfStreams = cms.untracked.uint32(32)    # ← usually equal to threads
-)
 process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(-1))
 
 # Configure MessageLogger to report progress every 10000 events
