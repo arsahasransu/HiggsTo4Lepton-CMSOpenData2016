@@ -1,7 +1,10 @@
 *__pycache__*
+*.pyc
+*.log
 .DS_Store*
 Datasets/*
 
 *.root
 *_copy.py
 *.pdf
+Outreach_Crab*
