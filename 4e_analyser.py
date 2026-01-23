@@ -80,7 +80,7 @@ def analyse_4e_data(input_file, output_file, lumi_json_path="", save_snapshot_pa
     # Step 2 - Good electrons only
     # ==================================
     elobject_selstr = "Electron_pt > 7 && abs(Electron_eta) < 2.5 && Electron_mvaFall17V2noIso_WPL == 1 && " \
-                      "Electron_pfRelIso03_all < 0.35"
+                      "Electron_pfRelIso03_all < 0.35 && abs(Electron_dxy) < 0.5 && abs(Electron_dz) < 1"
     df_s1 = df_s1.Define("ElTight_pt", f"Electron_pt[{elobject_selstr}]")
     df_s1 = df_s1.Define("ElTight_eta", f"Electron_eta[{elobject_selstr}]")
     df_s1 = df_s1.Define("ElTight_phi", f"Electron_phi[{elobject_selstr}]")
@@ -118,7 +118,7 @@ def analyse_4e_data(input_file, output_file, lumi_json_path="", save_snapshot_pa
     # ==================================
     # Step 3 - Make Z
     # ==================================
-    df_s2 = df_s2.Define("ElTight_fsrPhotonIdx", "ROOT::VecOps::RVec<int>(Electron_pt.size(), -1)")
+    df_s2 = df_s2.Define("ElTight_fsrPhotonIdx", "ROOT::VecOps::RVec<int>(ElTight_pt.size(), -1)")
     df_s2 = df_s2.Define("M_ZToElEl", "FindAll_ZToLPLN(ElTight_pt, ElTight_eta, ElTight_phi, ElTight_charge, ElTight_fsrPhotonIdx," \
                                                        "0.00051, FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
     df_s2 = df_s2.Define("n_ZToElEl", f"M_ZToElEl.size()")

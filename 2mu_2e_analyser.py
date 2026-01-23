@@ -143,7 +143,7 @@ def analyse_2mu2e_data(input_file, output_file, lumi_json_path="", save_snapshot
     df_s1 = df_s1.Define("MuTight_n", f"MuTight_pt.size()")
 
     elobject_selstr = "Electron_pt > 7 && abs(Electron_eta) < 2.5 && Electron_mvaFall17V2noIso_WPL == 1 && " \
-                      "Electron_pfRelIso03_all < 0.35"
+                      "Electron_pfRelIso03_all < 0.35 && abs(Electron_dxy) < 0.5 && abs(Electron_dz) < 1"
     df_s1 = df_s1.Define("ElTight_pt", f"Electron_pt[{elobject_selstr}]")
     df_s1 = df_s1.Define("ElTight_eta", f"Electron_eta[{elobject_selstr}]")
     df_s1 = df_s1.Define("ElTight_phi", f"Electron_phi[{elobject_selstr}]")

@@ -17,7 +17,7 @@ def cpp_utils():
     }}
     """)
 
-    # Define function to calculate Z based utilities from 2 leptons and associated FSR Photons
+    # Define function to calculate Z four-vector from 2 leptons and associated FSR Photons
     CPPFUNC_ZFromLLpair = """
     ROOT::Math::PtEtaPhiMVector ZFromLLpair(double lp_pt,
                                             double lp_eta,
@@ -94,7 +94,7 @@ def cpp_utils():
 
     ROOT.gInterpreter.Declare(CPPFUNC_Zcand_FromLLpair)
 
-    # Define a function to find muon pairs with Z -> lep+ lep-
+    # Define a function to find lepton pairs with Z -> lep+ lep-
     CPPFUNC_FindAll_ZToLepPair = """
         ROOT::VecOps::RVec<double> FindAll_ZToLPLN(ROOT::VecOps::RVec<double> lep_pt,
                                                    ROOT::VecOps::RVec<double> lep_eta,
