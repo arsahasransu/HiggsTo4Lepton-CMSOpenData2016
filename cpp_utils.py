@@ -108,7 +108,7 @@ def cpp_utils():
 
             ROOT::VecOps::RVec<double> M_Z;
 
-            if( lep_pt.size() < 4 || (lep_pt.size() != lep_eta.size()) || (lep_pt.size() != lep_phi.size()) 
+            if( lep_pt.size() < 2 || (lep_pt.size() != lep_eta.size()) || (lep_pt.size() != lep_phi.size()) 
                 || (lep_pt.size() != lep_q.size()) ) {
                 M_Z.push_back(-1);
                 return M_Z;
@@ -247,85 +247,243 @@ def cpp_utils():
 
     # Define a function to perform Higgs Analysis and calculate the invariant mass of four leptons
     CPPFUNC_HiggsAna_4Lep = """
-        double Analysis_HTo4Lep(double z1lepp_pt, double z1lepp_eta, double z1lepp_phi, int z1lepp_fsrgammaidx,
-                                double z1lepn_pt, double z1lepn_eta, double z1lepn_phi, int z1lepn_fsrgammaidx,
-                                double z2lepp_pt, double z2lepp_eta, double z2lepp_phi, int z2lepp_fsrgammaidx,
-                                double z2lepn_pt, double z2lepn_eta, double z2lepn_phi, int z2lepn_fsrgammaidx,
-                                double z1lep_m, double z2lep_m,
-                                ROOT::VecOps::RVec<double> fsrgamma_pt,
-                                ROOT::VecOps::RVec<double> fsrgamma_eta,
-                                ROOT::VecOps::RVec<double> fsrgamma_phi) {
+    double Analysis_HTo4Lep(double z1lepp_pt, double z1lepp_eta, double z1lepp_phi, int z1lepp_fsrgammaidx,
+                            double z1lepn_pt, double z1lepn_eta, double z1lepn_phi, int z1lepn_fsrgammaidx,
+                            double z2lepp_pt, double z2lepp_eta, double z2lepp_phi, int z2lepp_fsrgammaidx,
+                            double z2lepn_pt, double z2lepn_eta, double z2lepn_phi, int z2lepn_fsrgammaidx,
+                            double z1lep_m, double z2lep_m,
+                            ROOT::VecOps::RVec<double> fsrgamma_pt,
+                            ROOT::VecOps::RVec<double> fsrgamma_eta,
+                            ROOT::VecOps::RVec<double> fsrgamma_phi) {
 
-            double mass = -10.0, z_m = 91.19;
-            ROOT::Math::PtEtaPhiMVector z1lepp(z1lepp_pt, z1lepp_eta, z1lepp_phi, z1lep_m);
-            ROOT::Math::PtEtaPhiMVector z1lepn(z1lepn_pt, z1lepn_eta, z1lepn_phi, z1lep_m);
-            ROOT::Math::PtEtaPhiMVector z2lepp(z2lepp_pt, z2lepp_eta, z2lepp_phi, z2lep_m);
-            ROOT::Math::PtEtaPhiMVector z2lepn(z2lepn_pt, z2lepn_eta, z2lepn_phi, z2lep_m);
-            ROOT::Math::PtEtaPhiMVector Z1 = ZFromLLpair(z1lepp_pt, z1lepp_eta, z1lepp_phi, z1lepp_fsrgammaidx,
-                                                         z1lepn_pt, z1lepn_eta, z1lepn_phi, z1lepn_fsrgammaidx,
-                                                         z1lep_m, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
-            ROOT::Math::PtEtaPhiMVector Z2 = ZFromLLpair(z2lepp_pt, z2lepp_eta, z2lepp_phi, z2lepp_fsrgammaidx,
-                                                         z2lepn_pt, z2lepn_eta, z2lepn_phi, z2lepn_fsrgammaidx,
-                                                         z2lep_m, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
-            
-            // GHOST REMOVAL
-            int countdrlt0p02 = 0;
-            if(ROOT::Math::VectorUtil::DeltaR(z1lepp, z1lepn) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z1lepp, z2lepp) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z1lepp, z2lepn) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z1lepn, z2lepp) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z1lepn, z2lepn) < 0.02) countdrlt0p02++;
-            if(ROOT::Math::VectorUtil::DeltaR(z2lepp, z2lepn) < 0.02) countdrlt0p02++;
-            if(countdrlt0p02 > 0) {
-                return mass;
-            }            
-
-            // LEPTON PT
-            if(z1lepp_pt<20 && z1lepn_pt<20 && z2lepp_pt<20 && z2lepn_pt<20) {
-                return mass;
-            }
-
-            int countptgt10 = 0;
-            if(z1lepp_pt > 10) countptgt10++;
-            if(z1lepn_pt > 10) countptgt10++;
-            if(z2lepp_pt > 10) countptgt10++;
-            if(z2lepn_pt > 10) countptgt10++;
-            if(countptgt10 < 2) {
-                return mass;
-            }
-
-            // QCD SUPRESSION
-            int countqcdsupression = 0;
-            if((z1lepp+z1lepn).M() < 4) countqcdsupression++;
-            if((z1lepp+z2lepn).M() < 4) countqcdsupression++;
-            if((z2lepp+z1lepn).M() < 4) countqcdsupression++;
-            if((z2lepp+z2lepn).M() < 4) countqcdsupression++;
-            if(countqcdsupression > 0) {
+        double mass = -10.0, z_m = 91.19;
+        ROOT::Math::PtEtaPhiMVector z1lepp(z1lepp_pt, z1lepp_eta, z1lepp_phi, z1lep_m);
+        ROOT::Math::PtEtaPhiMVector z1lepn(z1lepn_pt, z1lepn_eta, z1lepn_phi, z1lep_m);
+        ROOT::Math::PtEtaPhiMVector z2lepp(z2lepp_pt, z2lepp_eta, z2lepp_phi, z2lep_m);
+        ROOT::Math::PtEtaPhiMVector z2lepn(z2lepn_pt, z2lepn_eta, z2lepn_phi, z2lep_m);
+        ROOT::Math::PtEtaPhiMVector Z1 = ZFromLLpair(z1lepp_pt, z1lepp_eta, z1lepp_phi, z1lepp_fsrgammaidx,
+                                                        z1lepn_pt, z1lepn_eta, z1lepn_phi, z1lepn_fsrgammaidx,
+                                                        z1lep_m, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+        ROOT::Math::PtEtaPhiMVector Z2 = ZFromLLpair(z2lepp_pt, z2lepp_eta, z2lepp_phi, z2lepp_fsrgammaidx,
+                                                        z2lepn_pt, z2lepn_eta, z2lepn_phi, z2lepn_fsrgammaidx,
+                                                        z2lep_m, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+        
+        // GHOST REMOVAL
+        int countdrlt0p02 = 0;
+        if(ROOT::Math::VectorUtil::DeltaR(z1lepp, z1lepn) < 0.02) countdrlt0p02++;
+        if(ROOT::Math::VectorUtil::DeltaR(z1lepp, z2lepp) < 0.02) countdrlt0p02++;
+        if(ROOT::Math::VectorUtil::DeltaR(z1lepp, z2lepn) < 0.02) countdrlt0p02++;
+        if(ROOT::Math::VectorUtil::DeltaR(z1lepn, z2lepp) < 0.02) countdrlt0p02++;
+        if(ROOT::Math::VectorUtil::DeltaR(z1lepn, z2lepn) < 0.02) countdrlt0p02++;
+        if(ROOT::Math::VectorUtil::DeltaR(z2lepp, z2lepn) < 0.02) countdrlt0p02++;
+        if(countdrlt0p02 > 0) {
             return mass;
-            }
+        }            
 
-            // Z1 MASS
-            if(Z1.M() < 40.0) {
-                return mass;
-            }
-
-            // SMART CUT
-            double Z12_m = Zmass_FromLLpair(z1lepp_pt, z1lepp_eta, z1lepp_phi, z1lepp_fsrgammaidx,
-                                            z2lepn_pt, z2lepn_eta, z2lepn_phi, z2lepn_fsrgammaidx,
-                                            0.0, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
-            double Z21_m = Zmass_FromLLpair(z2lepp_pt, z2lepp_eta, z2lepp_phi, z2lepp_fsrgammaidx,
-                                            z1lepn_pt, z1lepn_eta, z1lepn_phi, z1lepn_fsrgammaidx,
-                                            0.0, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
-            double Za_m = (abs(Z12_m-z_m) < abs(Z21_m-z_m)) ? Z12_m : Z21_m;
-            double Zb_m = (abs(Z12_m-z_m) < abs(Z21_m-z_m)) ? Z21_m : Z12_m;
-            if( (abs(Za_m-z_m) < abs(Z1.M()-z_m)) && (Zb_m < 12) ) {
-                return mass;
-            }
-
-            mass = (Z1+Z2).M();
-
+        // LEPTON PT
+        if(z1lepp_pt<20 && z1lepn_pt<20 && z2lepp_pt<20 && z2lepn_pt<20) {
             return mass;
         }
+
+        int countptgt10 = 0;
+        if(z1lepp_pt > 10) countptgt10++;
+        if(z1lepn_pt > 10) countptgt10++;
+        if(z2lepp_pt > 10) countptgt10++;
+        if(z2lepn_pt > 10) countptgt10++;
+        if(countptgt10 < 2) {
+            return mass;
+        }
+
+        // QCD SUPRESSION
+        int countqcdsupression = 0;
+        if((z1lepp+z1lepn).M() < 4) countqcdsupression++;
+        if((z1lepp+z2lepn).M() < 4) countqcdsupression++;
+        if((z2lepp+z1lepn).M() < 4) countqcdsupression++;
+        if((z2lepp+z2lepn).M() < 4) countqcdsupression++;
+        if(countqcdsupression > 0) {
+        return mass;
+        }
+
+        // Z1 MASS
+        if(Z1.M() < 40.0) {
+            return mass;
+        }
+
+        // SMART CUT
+        double Z12_m = Zmass_FromLLpair(z1lepp_pt, z1lepp_eta, z1lepp_phi, z1lepp_fsrgammaidx,
+                                        z2lepn_pt, z2lepn_eta, z2lepn_phi, z2lepn_fsrgammaidx,
+                                        0.0, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+        double Z21_m = Zmass_FromLLpair(z2lepp_pt, z2lepp_eta, z2lepp_phi, z2lepp_fsrgammaidx,
+                                        z1lepn_pt, z1lepn_eta, z1lepn_phi, z1lepn_fsrgammaidx,
+                                        0.0, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+        double Za_m = (abs(Z12_m-z_m) < abs(Z21_m-z_m)) ? Z12_m : Z21_m;
+        double Zb_m = (abs(Z12_m-z_m) < abs(Z21_m-z_m)) ? Z21_m : Z12_m;
+        if( (abs(Za_m-z_m) < abs(Z1.M()-z_m)) && (Zb_m < 12) ) {
+            return mass;
+        }
+
+        mass = (Z1+Z2).M();
+
+        return mass;
+    }
     """
 
     ROOT.gInterpreter.Declare(CPPFUNC_HiggsAna_4Lep)
+
+    # Define a function to find non-overlapping ZZ -> mu+ mu- candidates
+    # Includes none of the leptons should be within DeltaR < 0.02 of each other
+    CPPFUNC_Find_NonOverlappingZZTo2Mu2El = """
+    ROOT::VecOps::RVec<double> Find_NonOverlappingZZ_To_2Mu2El(ROOT::VecOps::RVec<double> mu_pt,
+                                                               ROOT::VecOps::RVec<double> mu_eta,
+                                                               ROOT::VecOps::RVec<double> mu_phi,
+                                                               ROOT::VecOps::RVec<double> mu_q,
+                                                               ROOT::VecOps::RVec<int> mu_fsrgammaidx,
+                                                               ROOT::VecOps::RVec<double> el_pt,
+                                                               ROOT::VecOps::RVec<double> el_eta,
+                                                               ROOT::VecOps::RVec<double> el_phi,
+                                                               ROOT::VecOps::RVec<double> el_q,
+                                                               ROOT::VecOps::RVec<double> fsrgamma_pt,
+                                                               ROOT::VecOps::RVec<double> fsrgamma_eta,
+                                                               ROOT::VecOps::RVec<double> fsrgamma_phi) {
+
+        ROOT::VecOps::RVec<int> ZZTo4LepIdxs;
+        double z_m = 91.19;
+        double mu_m = 0.10565;
+        double el_m = 0.00051;
+
+        if( mu_pt.size() < 2 || (mu_pt.size() != mu_eta.size()) || (mu_pt.size() != mu_phi.size()) 
+            || (mu_pt.size() != mu_q.size()) ) {
+            return ZZTo4LepIdxs;
+        }
+
+        if( el_pt.size() < 2 || (el_pt.size() != el_eta.size()) || (el_pt.size() != el_phi.size()) 
+            || (el_pt.size() != el_q.size()) ) {
+            return ZZTo4LepIdxs;
+        }
+
+        int mup = -1, mun = -1;
+        double ZMucandmass = -1.0;
+        for(unsigned int i=0; i<mu_pt.size(); i++) {
+            ROOT::Math::PtEtaPhiMVector mui(mu_pt[i], mu_eta[i], mu_phi[i], mu_m);
+            for(unsigned int j=i+1; j<mu_pt.size(); j++) {
+                ROOT::Math::PtEtaPhiMVector muj(mu_pt[j], mu_eta[j], mu_phi[j], mu_m);
+                if(mu_q[i]*mu_q[j] < 0 && ROOT::Math::VectorUtil::DeltaR(mui, muj) > 0.02) {
+                    double mass = Zmass_FromLLpair(mu_pt[i], mu_eta[i], mu_phi[i],
+                                                   mu_fsrgammaidx[i],
+                                                   mu_pt[j], mu_eta[j], mu_phi[j],
+                                                   mu_fsrgammaidx[j], mu_m,
+                                                   fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+                    if(mass > 12 && mass < 120) {
+                        if(ZMucandmass == -1.0) {
+                            ZMucandmass = mass;
+                            mup = mu_q[i] > 0 ? i : j;
+                            mun = mu_q[i] < 0 ? i : j;
+                        }
+                        else {
+                            if(abs(mass-z_m) < abs(ZMucandmass-z_m)) {
+                                ZMucandmass = mass;
+                                mup = mu_q[i] > 0 ? i : j;
+                                mun = mu_q[i] < 0 ? i : j;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        ROOT::Math::PtEtaPhiMVector zmup(mu_pt[mup], mu_eta[mup], mu_phi[mup], mu_m);
+        ROOT::Math::PtEtaPhiMVector zmun(mu_pt[mun], mu_eta[mun], mu_phi[mun], mu_m);
+
+        int elp = -1, eln = -1;
+        double ZElcandmass = -1.0;
+        for(unsigned int i=0; i<el_pt.size(); i++) {
+
+            ROOT::Math::PtEtaPhiMVector eli(el_pt[i], el_eta[i], el_phi[i], el_m);
+            if(ROOT::Math::VectorUtil::DeltaR(eli, zmup) < 0.02 ||
+               ROOT::Math::VectorUtil::DeltaR(eli, zmun) < 0.02) continue;
+
+            for(unsigned int j=i+1; j<el_pt.size(); j++) {
+
+                ROOT::Math::PtEtaPhiMVector elj(el_pt[j], el_eta[j], el_phi[j], el_m);
+                if(ROOT::Math::VectorUtil::DeltaR(elj, zmup) < 0.02 ||
+                   ROOT::Math::VectorUtil::DeltaR(elj, zmun) < 0.02) continue;
+
+                if(el_q[i]*el_q[j] < 0 && ROOT::Math::VectorUtil::DeltaR(eli, elj) > 0.02) {
+                    double mass = Zmass_FromLLpair(el_pt[i], el_eta[i], el_phi[i],
+                                                   -1,
+                                                   el_pt[j], el_eta[j], el_phi[j],
+                                                   -1, el_m,
+                                                   fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+                    if(mass > 12 && mass < 120) {
+                        if(ZElcandmass == -1.0) {
+                            ZElcandmass = mass;
+                            elp = el_q[i] > 0 ? i : j;
+                            eln = el_q[i] < 0 ? i : j;
+                        }
+                        else {
+                            if(abs(mass-z_m) < abs(ZElcandmass-z_m)) {
+                                ZElcandmass = mass;
+                                elp = el_q[i] > 0 ? i : j;
+                                eln = el_q[i] < 0 ? i : j;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        ZZTo4LepIdxs.push_back(mup);
+        ZZTo4LepIdxs.push_back(mun);
+        ZZTo4LepIdxs.push_back(elp);
+        ZZTo4LepIdxs.push_back(eln);
+
+        return ZZTo4LepIdxs;
+    }
+    """
+
+    ROOT.gInterpreter.Declare(CPPFUNC_Find_NonOverlappingZZTo2Mu2El)
+
+    # Define a function to perform Higgs Analysis and calculate the invariant mass of four leptons
+    CPPFUNC_HiggsAna_HTo2Mu2El = """
+    double Analysis_HTo2Mu2El(double zmup_pt, double zmup_eta, double zmup_phi, int zmup_fsrgammaidx,
+                              double zmun_pt, double zmun_eta, double zmun_phi, int zmun_fsrgammaidx,
+                              double zelp_pt, double zelp_eta, double zelp_phi,
+                              double zeln_pt, double zeln_eta, double zeln_phi,
+                              ROOT::VecOps::RVec<double> fsrgamma_pt,
+                              ROOT::VecOps::RVec<double> fsrgamma_eta,
+                              ROOT::VecOps::RVec<double> fsrgamma_phi) {
+
+        double mu_m = 0.10565;
+        double el_m = 0.00051;
+
+        double zmu_m = Zmass_FromLLpair(zmup_pt, zmup_eta, zmup_phi, zmup_fsrgammaidx,
+                                        zmun_pt, zmun_eta, zmun_phi, zmun_fsrgammaidx, mu_m,
+                                        fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+
+        double zel_m = Zmass_FromLLpair(zelp_pt, zelp_eta, zelp_phi, -1,
+                                        zeln_pt, zeln_eta, zeln_phi, -1, el_m,
+                                        fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+
+        double z_m = 91.19;
+        double zz_m = -1;
+
+        if( abs(z_m - zmu_m) < abs(z_m - zel_m) ) {
+            zz_m = Analysis_HTo4Lep(zmup_pt, zmup_eta, zmup_phi, zmup_fsrgammaidx,
+                                    zmun_pt, zmun_eta, zmun_phi, zmun_fsrgammaidx,
+                                    zelp_pt, zelp_eta, zelp_phi, -1,
+                                    zeln_pt, zeln_eta, zeln_phi, -1,
+                                    mu_m, el_m, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+        }
+        else {
+            zz_m = Analysis_HTo4Lep(zelp_pt, zelp_eta, zelp_phi, -1,
+                                    zeln_pt, zeln_eta, zeln_phi, -1,
+                                    zmup_pt, zmup_eta, zmup_phi, zmup_fsrgammaidx,
+                                    zmun_pt, zmun_eta, zmun_phi, zmun_fsrgammaidx,
+                                    el_m, mu_m, fsrgamma_pt, fsrgamma_eta, fsrgamma_phi);
+        }
+
+        return zz_m;
+    }
+    """
+
+    ROOT.gInterpreter.Declare(CPPFUNC_HiggsAna_HTo2Mu2El)

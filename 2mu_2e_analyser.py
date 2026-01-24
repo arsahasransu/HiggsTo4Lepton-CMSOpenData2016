@@ -47,13 +47,24 @@ def analyse_2mu2e_data(input_file, output_file, lumi_json_path="", save_snapshot
     # ==================================
     # Step 1 - HLT Filter and Atleast 1 good primary vertex
     # ==================================
-    # TODO Combine all HLT filters from all final states
+    #              HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL == 1 || -- problematic
+    #              HLT_Mu23_TrkIsoVVL_Ele8_CaloIdL_TrackIdL_IsoVL == 1 || -- problematic
     HLTstr = """ HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL == 1 ||
                  HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL == 1 ||
                  HLT_TripleMu_12_10_5 == 1 ||
                  HLT_IsoMu20 == 1 || HLT_IsoMu22 == 1 || HLT_IsoMu24 == 1 ||
-                 HLT_IsoTkMu20 == 1 || HLT_IsoTkMu22 == 1 || HLT_IsoTkMu24 == 1
-             """
+                 HLT_IsoTkMu20 == 1 || HLT_IsoTkMu22 == 1 || HLT_IsoTkMu24 == 1 ||
+                 HLT_Ele17_Ele12_CaloIdL_TrackIdL_IsoVL_DZ == 1 ||
+                 HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ == 1 ||
+                 HLT_Ele25_eta2p1_WPTight_Gsf == 1 ||
+                 HLT_Ele27_eta2p1_WPLoose_Gsf == 1 ||
+                 HLT_Mu8_TrkIsoVVL == 1 ||
+                 HLT_Mu8_TrkIsoVVL_Ele17_CaloIdL_TrackIdL_IsoVL == 1 ||
+                 HLT_Mu8_DiEle12_CaloIdL_TrackIdL == 1 ||
+                 HLT_Mu17_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL == 1 ||
+                 HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL == 1 ||
+                 HLT_DiMu9_Ele9_CaloIdL_TrackIdL == 1
+                 """
     df = df.Filter(HLTstr)
     df_s1 = df.Filter(f"PV_npvsGood >= 1")
 
@@ -219,6 +230,131 @@ def analyse_2mu2e_data(input_file, output_file, lumi_json_path="", save_snapshot
                                      100, 0, 1),
                                      "ElTight_pfRelIso03_all"))
 
+    # ==================================
+    # Step 3 - Make Z
+    # ==================================
+    df_s2 = df_s2.Define("M_ZToMuMu", "FindAll_ZToLPLN(MuTight_pt, MuTight_eta, MuTight_phi, MuTight_charge, MuTight_fsrPhotonIdx," \
+                                                       "0.10565, FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+    df_s2 = df_s2.Define("n_ZToMuMu", f"M_ZToMuMu.size()")
+
+    df_s2 = df_s2.Define("ElTight_fsrPhotonIdx", "ROOT::VecOps::RVec<int>(ElTight_pt.size(), -1)")
+    df_s2 = df_s2.Define("M_ZToElEl", "FindAll_ZToLPLN(ElTight_pt, ElTight_eta, ElTight_phi, ElTight_charge, ElTight_fsrPhotonIdx," \
+                                                       "0.00051, FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+    df_s2 = df_s2.Define("n_ZToElEl", f"M_ZToElEl.size()")
+
+    histograms.append(df_s2.Histo1D(("hprefilt_n_ZToMuMu", "Z #rightarrow #mu #mu N; N; Events", 15, -1, 14), "n_ZToMuMu"))
+    histograms.append(df_s2.Histo1D(("hprefilt_n_ZToElEl", "Z #rightarrow e e; N; Events", 15, -1, 14), "n_ZToElEl"))
+    df_s3 = df_s2.Filter("n_ZToMuMu > 0 && n_ZToElEl > 0")
+
+    # Add histograms after finding atleast one Z -> ee and Z -> mumu candidate in the event
+    histograms.append(df_s3.Histo1D(("hpostfilt_n_ZToMuMu", "Z #rightarrow #mu #mu N; N; Events", 15, -1, 14), "n_ZToMuMu"))
+    histograms.append(df_s3.Histo1D(("h_mass_ZToMuMu", "M; M (GeV/c); Events", 160, -10, 150), "M_ZToMuMu"))
+
+    histograms.append(df_s3.Histo1D(("hpostfilt_n_ZToElEl", "Z #rightarrow e e; N; Events", 15, -1, 14), "n_ZToElEl"))
+    histograms.append(df_s3.Histo1D(("h_mass_ZToElEl", "M; M (GeV/c); Events", 160, -10, 150), "M_ZToElEl"))
+
+    # Histograms for lepton kinematics - Post Z finding
+    histograms.append(df_s3.Histo1D(("h_allZmumu_n", "Muon N; N; Events", 20, 0, 20), "MuTight_n"))
+    histograms.append(df_s3.Histo1D(("h_allZmumu_pt", "Muon p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "MuTight_pt"))
+    histograms.append(df_s3.Histo1D(("h_allZmumu_eta", "Muon #eta; #eta; Events", 52, -2.6, 2.6), "MuTight_eta"))
+    histograms.append(df_s3.Histo1D(("h_allZmumu_phi", "Muon #phi; #phi; Events", 68, -3.4, 3.4), "MuTight_phi"))
+    histograms.append(df_s3.Histo1D(("h_allZmumu_charge", "Muon charge; charge; Events", 10, -5, 5), "MuTight_charge"))
+    histograms.append(df_s3.Histo1D(("h_allZmumu_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "MuTight_fsrPhotonIdx"))
+
+    histograms.append(df_s3.Histo1D(("h_allZelel_n", "Electron N; N; Events", 20, 0, 20), "ElTight_n"))
+    histograms.append(df_s3.Histo1D(("h_allZelel_pt", "Electron p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "ElTight_pt"))
+    histograms.append(df_s3.Histo1D(("h_allZelel_eta", "Electron #eta; #eta; Events", 52, -2.6, 2.6), "ElTight_eta"))
+    histograms.append(df_s3.Histo1D(("h_allZelel_phi", "Electron #phi; #phi; Events", 68, -3.4, 3.4), "ElTight_phi"))
+    histograms.append(df_s3.Histo1D(("h_allZelel_charge", "Electron charge; charge; Events", 10, -5, 5), "ElTight_charge"))
+
+    # ==================================
+    # Step 4 - Find two non-overlapping Z candidates
+    # ==================================
+    df_s3 = df_s3.Define("ZZ2Mu2ElIdxs", "Find_NonOverlappingZZ_To_2Mu2El(MuTight_pt, MuTight_eta, MuTight_phi," \
+                                         "MuTight_charge, MuTight_fsrPhotonIdx," \
+                                         "ElTight_pt, ElTight_eta, ElTight_phi," \
+                                         "ElTight_charge," \
+                                         "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+    df_s3 = df_s3.Define("ZZ2Mu2ElIdxs_n", "ZZ2Mu2ElIdxs.size()")
+
+    histograms.append(df_s3.Histo1D(("h_allZZ2Mu2ElIdxs_n", "ZZCand N; N; Events", 10, 0, 10), "ZZ2Mu2ElIdxs_n"))
+    df_s4 = df_s3.Filter("ZZ2Mu2ElIdxs_n == 4")
+
+    df_s4 = df_s4.Define("zmupidx", "ZZ2Mu2ElIdxs[0]")
+    df_s4 = df_s4.Define("zmup_pt", "MuTight_pt[zmupidx]")
+    df_s4 = df_s4.Define("zmup_eta", "MuTight_eta[zmupidx]")
+    df_s4 = df_s4.Define("zmup_phi", "MuTight_phi[zmupidx]")
+    df_s4 = df_s4.Define("zmup_charge", "MuTight_charge[zmupidx]")
+    df_s4 = df_s4.Define("zmup_fsrPhotonIdx", "MuTight_fsrPhotonIdx[zmupidx]")
+    df_s4 = df_s4.Define("zmunidx", "ZZ2Mu2ElIdxs[1]")
+    df_s4 = df_s4.Define("zmun_pt", "MuTight_pt[zmunidx]")
+    df_s4 = df_s4.Define("zmun_eta", "MuTight_eta[zmunidx]")
+    df_s4 = df_s4.Define("zmun_phi", "MuTight_phi[zmunidx]")
+    df_s4 = df_s4.Define("zmun_charge", "MuTight_charge[zmunidx]")
+    df_s4 = df_s4.Define("zmun_fsrPhotonIdx", "MuTight_fsrPhotonIdx[zmunidx]")
+    df_s4 = df_s4.Define("zmu_mass", "Zmass_FromLLpair(zmup_pt, zmup_eta, zmup_phi, zmup_fsrPhotonIdx,"\
+                                     "zmun_pt, zmun_eta, zmun_phi, zmun_fsrPhotonIdx, 0.10565,"\
+                                     "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+
+    histograms.append(df_s4.Histo1D(("h_zmupidx", "Muon Index; Index; Events", 20, 0, 20), "zmupidx"))
+    histograms.append(df_s4.Histo1D(("h_zmup_pt", "Muon p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "zmup_pt"))
+    histograms.append(df_s4.Histo1D(("h_zmup_eta", "Muon #eta; #eta; Events", 52, -2.6, 2.6), "zmup_eta"))
+    histograms.append(df_s4.Histo1D(("h_zmup_phi", "Muon #phi; #phi; Events", 68, -3.4, 3.4), "zmup_phi"))
+    histograms.append(df_s4.Histo1D(("h_zmup_charge", "Muon charge; charge; Events", 10, -5, 5), "zmup_charge"))
+    histograms.append(df_s4.Histo1D(("h_zmup_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "zmup_fsrPhotonIdx"))
+    histograms.append(df_s4.Histo1D(("h_zmunidx", "Muon Index; Index; Events", 20, 0, 20), "zmunidx"))
+    histograms.append(df_s4.Histo1D(("h_zmun_pt", "Muon p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "zmun_pt"))
+    histograms.append(df_s4.Histo1D(("h_zmun_eta", "Muon #eta; #eta; Events", 52, -2.6, 2.6), "zmun_eta"))
+    histograms.append(df_s4.Histo1D(("h_zmun_phi", "Muon #phi; #phi; Events", 68, -3.4, 3.4), "zmun_phi"))
+    histograms.append(df_s4.Histo1D(("h_zmun_charge", "Muon charge; charge; Events", 10, -5, 5), "zmun_charge"))
+    histograms.append(df_s4.Histo1D(("h_zmun_fsrPhotonIdx", "Muon #gamma_idx; #gamma_idx; Events", 10, -1, 9), "zmun_fsrPhotonIdx"))
+    histograms.append(df_s4.Histo1D(("h_zmu_mass", "M; M (GeV/c); Events", 160, -10, 150), "zmu_mass"))
+
+    df_s4 = df_s4.Define("zelpidx", "ZZ2Mu2ElIdxs[2]")
+    df_s4 = df_s4.Define("zelp_pt", "ElTight_pt[zelpidx]")
+    df_s4 = df_s4.Define("zelp_eta", "ElTight_eta[zelpidx]")
+    df_s4 = df_s4.Define("zelp_phi", "ElTight_phi[zelpidx]")
+    df_s4 = df_s4.Define("zelp_charge", "ElTight_charge[zelpidx]")
+    df_s4 = df_s4.Define("zelnidx", "ZZ2Mu2ElIdxs[3]")
+    df_s4 = df_s4.Define("zeln_pt", "ElTight_pt[zelnidx]")
+    df_s4 = df_s4.Define("zeln_eta", "ElTight_eta[zelnidx]")
+    df_s4 = df_s4.Define("zeln_phi", "ElTight_phi[zelnidx]")
+    df_s4 = df_s4.Define("zeln_charge", "ElTight_charge[zelnidx]")
+    df_s4 = df_s4.Define("zel_mass", "Zmass_FromLLpair(zelp_pt, zelp_eta, zelp_phi, -1," \
+                                     "zeln_pt, zeln_eta, zeln_phi, -1, 0.00051," \
+                                     "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+
+    histograms.append(df_s4.Histo1D(("h_zelpidx", "Electron Index; Index; Events", 20, 0, 20), "zelpidx"))
+    histograms.append(df_s4.Histo1D(("h_zelp_pt", "Electron p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "zelp_pt"))
+    histograms.append(df_s4.Histo1D(("h_zelp_eta", "Electron #eta; #eta; Events", 52, -2.6, 2.6), "zelp_eta"))
+    histograms.append(df_s4.Histo1D(("h_zelp_phi", "Electron #phi; #phi; Events", 68, -3.4, 3.4), "zelp_phi"))
+    histograms.append(df_s4.Histo1D(("h_zelp_charge", "Electron charge; charge; Events", 10, -5, 5), "zelp_charge"))
+    histograms.append(df_s4.Histo1D(("h_zelnidx", "Electron Index; Index; Events", 20, 0, 20), "zelnidx"))
+    histograms.append(df_s4.Histo1D(("h_zeln_pt", "Electron p_{T}; p_{T} (GeV/c); Events", 250, 0, 250), "zeln_pt"))
+    histograms.append(df_s4.Histo1D(("h_zeln_eta", "Electron #eta; #eta; Events", 52, -2.6, 2.6), "zeln_eta"))
+    histograms.append(df_s4.Histo1D(("h_zeln_phi", "Electron #phi; #phi; Events", 68, -3.4, 3.4), "zeln_phi"))
+    histograms.append(df_s4.Histo1D(("h_zeln_charge", "Electron charge; charge; Events", 10, -5, 5), "zeln_charge"))
+    histograms.append(df_s4.Histo1D(("h_zel_mass", "M; M (GeV/c); Events", 160, -10, 150), "zel_mass"))
+
+    # Calculate the invariant mass of the four muons
+    df_s4 = df_s4.Define("M2Mu2El", "Analysis_HTo2Mu2El(zmup_pt, zmup_eta, zmup_phi, zmup_fsrPhotonIdx," \
+                                                        "zmun_pt, zmun_eta, zmun_phi, zmun_fsrPhotonIdx," \
+                                                        "zelp_pt, zelp_eta, zelp_phi," \
+                                                        "zeln_pt, zeln_eta, zeln_phi," \
+                                                        "FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+    # Special Filter below for the one histogram only
+    df_4muM = df_s4.Filter("M2Mu2El > 0")
+    histograms.append(df_4muM.Histo1D(("h_ZZ_M", "ZZ M; M (GeV/c); Events", 250, 0, 500), "M2Mu2El"))
+
+    # Keep the higgs event details for later
+    df_4muM = df_4muM.Filter("M2Mu2El > 0")
+    if save_snapshot_path is not None:
+        cols_to_keep = ["run", "luminosityBlock", "event", "M2Mu2El"]
+        try:
+            utils.write_event_snapshot(df_4muM, save_snapshot_path, cols_to_keep, tree_name="Events")
+        except Exception as e:
+            warnings.warn(f"write_event_snapshot failed: {e}")
+
     # Write the histograms to the output file
     output_file = TFile(output_file, "RECREATE")
     for hist in histograms:
@@ -232,18 +368,30 @@ if __name__ == "__main__":
 
     cpp_utils.cpp_utils()
 
-    # TODO Combine all datasets - Double/Single Electron, Double/Single Muon, MuEG
-    # analyse_2mu2e_data("./Datasets/SingleMuon/Year2016EraH/*.root",
-    #                  "2mu2e_partout_onemu_2016H.root", "muon_2016_cert.txt", "2mu2e_onemu_parthiggs_2016H")
-    analyse_2mu2e_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
-                     "2mu2e_partout_twomu_2016H.root", "muon_2016_cert.txt", "2mu2e_twomu_parthiggs_2016H")
+    # analyse_2mu2e_data("./Datasets/DoubleMuon/Year2016EraH/*.root",
+    #                  "2mu2e_partout_twomu_2016H.root", "muon_2016_cert.txt", "2mu2e_twomu_parthiggs_2016H")
 
-    # TODO Combine all datasets - Double/Single Electron, Double/Single Muon, MuEG
-    # analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "2mu2e_output_file_doublemuon_2016H.root", "muon_2016_cert.txt", "2mu2e_doublemu_2016H")
-    # analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
-    #                  "2mu2e_output_file_doublemuon_2016G.root", "muon_2016_cert.txt", "2mu2e_doublemu_2016G")
-    # analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "2mu2e_output_file_singlemuon_2016H.root", "muon_2016_cert.txt", "2mu2e_singlemu_2016H")
-    # analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
-    #                  "2mu2e_output_file_singlemuon_2016G.root", "muon_2016_cert.txt", "2mu2e_singlemu_2016G")
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                       "2mu2e_output_file_doublemuon_2016H.root", "muon_2016_cert.txt", "2mu2e_doublemu_2016H")
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v2/*/*.root",
+                       "2mu2e_output_file_doublemuon_2016G.root", "muon_2016_cert.txt", "2mu2e_doublemu_2016G")
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                       "2mu2e_output_file_singlemuon_2016H.root", "muon_2016_cert.txt", "2mu2e_singlemu_2016H")
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleMuon/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                       "2mu2e_output_file_singlemuon_2016G.root", "muon_2016_cert.txt", "2mu2e_singlemu_2016G")
+
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/DoubleEG/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                       "2mu2e_output_file_doubleelectron_2016H.root", "all_2016_cert.txt", "2mu2e_doubleel_2016H")
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/DoubleEG/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                       "2mu2e_output_file_doubleelectron_2016G.root", "all_2016_cert.txt", "2mu2e_doubleel_2016G")
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/SingleElectron/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                       "2mu2e_output_file_singleelectron_2016H.root", "all_2016_cert.txt", "2mu2e_singleel_2016H")
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/SingleElectron/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                       "2mu2e_output_file_singleelectron_2016G.root", "all_2016_cert.txt", "2mu2e_singleel_2016G")
+
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016H/MuonEG/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                       "2mu2e_output_file_mueg_2016H.root", "all_2016_cert.txt", "2mu2e_mueg_2016H")
+    analyse_2mu2e_data("root://eospublic.cern.ch//eos/opendata/cms/Run2016G/MuonEG/NANOAOD/UL2016_MiniAODv2_NanoAODv9-v1/*/*.root",
+                       "2mu2e_output_file_mueg_2016G.root", "all_2016_cert.txt", "2mu2e_mueg_2016G")
+
+
