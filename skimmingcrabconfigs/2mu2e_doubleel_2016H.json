@@ -1,0 +1,830 @@
+[
+  {
+    "run": 282814,
+    "luminosityBlock": 1831,
+    "event": 3388114352,
+    "M2Mu2El": 168.79723745594157
+  },
+  {
+    "run": 282814,
+    "luminosityBlock": 397,
+    "event": 770288126,
+    "M2Mu2El": 194.71537666653134
+  },
+  {
+    "run": 283820,
+    "luminosityBlock": 762,
+    "event": 1345040615,
+    "M2Mu2El": 276.8412486803333
+  },
+  {
+    "run": 283877,
+    "luminosityBlock": 1423,
+    "event": 2490963909,
+    "M2Mu2El": 201.9673995069222
+  },
+  {
+    "run": 283884,
+    "luminosityBlock": 521,
+    "event": 563594618,
+    "M2Mu2El": 182.24769815870656
+  },
+  {
+    "run": 283408,
+    "luminosityBlock": 840,
+    "event": 1413033926,
+    "M2Mu2El": 83.15673626718268
+  },
+  {
+    "run": 282814,
+    "luminosityBlock": 768,
+    "event": 1470620473,
+    "M2Mu2El": 192.75183591021042
+  },
+  {
+    "run": 282814,
+    "luminosityBlock": 1652,
+    "event": 3074136953,
+    "M2Mu2El": 149.3219021539457
+  },
+  {
+    "run": 281707,
+    "luminosityBlock": 1058,
+    "event": 1754749445,
+    "M2Mu2El": 307.0901874104206
+  },
+  {
+    "run": 282037,
+    "luminosityBlock": 1603,
+    "event": 2791002166,
+    "M2Mu2El": 254.20395425937198
+  },
+  {
+    "run": 283306,
+    "luminosityBlock": 214,
+    "event": 388471539,
+    "M2Mu2El": 126.05654674560127
+  },
+  {
+    "run": 283307,
+    "luminosityBlock": 146,
+    "event": 267209414,
+    "M2Mu2El": 127.71807811272284
+  },
+  {
+    "run": 283308,
+    "luminosityBlock": 326,
+    "event": 631231974,
+    "M2Mu2El": 366.3487880554282
+  },
+  {
+    "run": 282735,
+    "luminosityBlock": 1508,
+    "event": 2809201914,
+    "M2Mu2El": 219.97520317385238
+  },
+  {
+    "run": 282735,
+    "luminosityBlock": 1774,
+    "event": 3279914581,
+    "M2Mu2El": 200.44556997861062
+  },
+  {
+    "run": 282919,
+    "luminosityBlock": 34,
+    "event": 67790360,
+    "M2Mu2El": 315.1446051857402
+  },
+  {
+    "run": 281976,
+    "luminosityBlock": 948,
+    "event": 1679160650,
+    "M2Mu2El": 250.87850598854283
+  },
+  {
+    "run": 283934,
+    "luminosityBlock": 971,
+    "event": 1681313659,
+    "M2Mu2El": 242.79366465802843
+  },
+  {
+    "run": 283353,
+    "luminosityBlock": 703,
+    "event": 1125962139,
+    "M2Mu2El": 468.2768378034102
+  },
+  {
+    "run": 282092,
+    "luminosityBlock": 1452,
+    "event": 2393503980,
+    "M2Mu2El": 220.6557067945554
+  },
+  {
+    "run": 282807,
+    "luminosityBlock": 281,
+    "event": 553135460,
+    "M2Mu2El": 94.4634127274518
+  },
+  {
+    "run": 283877,
+    "luminosityBlock": 229,
+    "event": 419596643,
+    "M2Mu2El": 208.0159524104441
+  },
+  {
+    "run": 283884,
+    "luminosityBlock": 485,
+    "event": 509406748,
+    "M2Mu2El": 219.81371466499212
+  },
+  {
+    "run": 283270,
+    "luminosityBlock": 1105,
+    "event": 1830906324,
+    "M2Mu2El": 277.1195877381648
+  },
+  {
+    "run": 283478,
+    "luminosityBlock": 261,
+    "event": 338862793,
+    "M2Mu2El": 332.42160966906056
+  },
+  {
+    "run": 283478,
+    "luminosityBlock": 411,
+    "event": 574375000,
+    "M2Mu2El": 320.3780181518286
+  },
+  {
+    "run": 283820,
+    "luminosityBlock": 1443,
+    "event": 2542500908,
+    "M2Mu2El": 241.41300046375895
+  },
+  {
+    "run": 283946,
+    "luminosityBlock": 1261,
+    "event": 2110311137,
+    "M2Mu2El": 201.44807295332484
+  },
+  {
+    "run": 283408,
+    "luminosityBlock": 1513,
+    "event": 2639788455,
+    "M2Mu2El": 202.46962284990568
+  },
+  {
+    "run": 283270,
+    "luminosityBlock": 496,
+    "event": 746914116,
+    "M2Mu2El": 243.27559562079085
+  },
+  {
+    "run": 282923,
+    "luminosityBlock": 49,
+    "event": 94663375,
+    "M2Mu2El": 203.40076973250555
+  },
+  {
+    "run": 283877,
+    "luminosityBlock": 1039,
+    "event": 1884216184,
+    "M2Mu2El": 194.1135843865198
+  },
+  {
+    "run": 283308,
+    "luminosityBlock": 88,
+    "event": 157265850,
+    "M2Mu2El": 356.2794106754218
+  },
+  {
+    "run": 283052,
+    "luminosityBlock": 75,
+    "event": 124332542,
+    "M2Mu2El": 283.9310847770927
+  },
+  {
+    "run": 283946,
+    "luminosityBlock": 157,
+    "event": 134448349,
+    "M2Mu2El": 432.09792017704933
+  },
+  {
+    "run": 281976,
+    "luminosityBlock": 363,
+    "event": 640370397,
+    "M2Mu2El": 181.60316387065157
+  },
+  {
+    "run": 283052,
+    "luminosityBlock": 105,
+    "event": 173778110,
+    "M2Mu2El": 183.41329746094613
+  },
+  {
+    "run": 283270,
+    "luminosityBlock": 886,
+    "event": 1435709677,
+    "M2Mu2El": 311.6836400218638
+  },
+  {
+    "run": 283885,
+    "luminosityBlock": 156,
+    "event": 281148351,
+    "M2Mu2El": 172.0573570527744
+  },
+  {
+    "run": 283934,
+    "luminosityBlock": 1074,
+    "event": 1865687044,
+    "M2Mu2El": 195.04973229520724
+  },
+  {
+    "run": 282735,
+    "luminosityBlock": 237,
+    "event": 479727360,
+    "M2Mu2El": 263.52379521825685
+  },
+  {
+    "run": 283308,
+    "luminosityBlock": 857,
+    "event": 1587455049,
+    "M2Mu2El": 332.2843014764031
+  },
+  {
+    "run": 283884,
+    "luminosityBlock": 572,
+    "event": 644454046,
+    "M2Mu2El": 205.2644234858472
+  },
+  {
+    "run": 283885,
+    "luminosityBlock": 1499,
+    "event": 2572292955,
+    "M2Mu2El": 268.33647977022287
+  },
+  {
+    "run": 284036,
+    "luminosityBlock": 307,
+    "event": 541189930,
+    "M2Mu2El": 207.2015357675439
+  },
+  {
+    "run": 281641,
+    "luminosityBlock": 202,
+    "event": 343915641,
+    "M2Mu2El": 180.37674509792083
+  },
+  {
+    "run": 283820,
+    "luminosityBlock": 511,
+    "event": 897821591,
+    "M2Mu2El": 291.54778198425254
+  },
+  {
+    "run": 282730,
+    "luminosityBlock": 131,
+    "event": 102788656,
+    "M2Mu2El": 129.97559331615037
+  },
+  {
+    "run": 283358,
+    "luminosityBlock": 3,
+    "event": 4235888,
+    "M2Mu2El": 179.60129787617063
+  },
+  {
+    "run": 282814,
+    "luminosityBlock": 1393,
+    "event": 2594900636,
+    "M2Mu2El": 210.53674094567546
+  },
+  {
+    "run": 282842,
+    "luminosityBlock": 34,
+    "event": 63160080,
+    "M2Mu2El": 213.662263413864
+  },
+  {
+    "run": 283358,
+    "luminosityBlock": 236,
+    "event": 424232620,
+    "M2Mu2El": 230.95282383014975
+  },
+  {
+    "run": 283353,
+    "luminosityBlock": 316,
+    "event": 451644695,
+    "M2Mu2El": 159.61642406759321
+  },
+  {
+    "run": 283830,
+    "luminosityBlock": 232,
+    "event": 414413316,
+    "M2Mu2El": 237.5649683775232
+  },
+  {
+    "run": 281693,
+    "luminosityBlock": 176,
+    "event": 326387678,
+    "M2Mu2El": 183.7929800622881
+  },
+  {
+    "run": 281707,
+    "luminosityBlock": 412,
+    "event": 548190874,
+    "M2Mu2El": 276.054466133186
+  },
+  {
+    "run": 283416,
+    "luminosityBlock": 180,
+    "event": 349065421,
+    "M2Mu2El": 90.43068287167101
+  },
+  {
+    "run": 282923,
+    "luminosityBlock": 103,
+    "event": 207647879,
+    "M2Mu2El": 275.43077576631197
+  },
+  {
+    "run": 283283,
+    "luminosityBlock": 1579,
+    "event": 2743379140,
+    "M2Mu2El": 283.2267850162591
+  },
+  {
+    "run": 283043,
+    "luminosityBlock": 476,
+    "event": 903428790,
+    "M2Mu2El": 187.93019780460904
+  },
+  {
+    "run": 283408,
+    "luminosityBlock": 14,
+    "event": 24538444,
+    "M2Mu2El": 273.79347170824394
+  },
+  {
+    "run": 281693,
+    "luminosityBlock": 366,
+    "event": 691365900,
+    "M2Mu2El": 227.61853140788767
+  },
+  {
+    "run": 281797,
+    "luminosityBlock": 1054,
+    "event": 1709995047,
+    "M2Mu2El": 308.0323704087489
+  },
+  {
+    "run": 281797,
+    "luminosityBlock": 1254,
+    "event": 2082355656,
+    "M2Mu2El": 585.8842743574808
+  },
+  {
+    "run": 282814,
+    "luminosityBlock": 1402,
+    "event": 2612022039,
+    "M2Mu2El": 230.68210610467617
+  },
+  {
+    "run": 283830,
+    "luminosityBlock": 75,
+    "event": 141972509,
+    "M2Mu2El": 80.36305404958553
+  },
+  {
+    "run": 283358,
+    "luminosityBlock": 662,
+    "event": 1217657860,
+    "M2Mu2El": 199.033347812567
+  },
+  {
+    "run": 283946,
+    "luminosityBlock": 96,
+    "event": 41762122,
+    "M2Mu2El": 228.83954562272714
+  },
+  {
+    "run": 283050,
+    "luminosityBlock": 55,
+    "event": 88740730,
+    "M2Mu2El": 227.71119190118685
+  },
+  {
+    "run": 283934,
+    "luminosityBlock": 543,
+    "event": 913580454,
+    "M2Mu2El": 291.9031183835353
+  },
+  {
+    "run": 282735,
+    "luminosityBlock": 353,
+    "event": 708774573,
+    "M2Mu2El": 243.1433947971752
+  },
+  {
+    "run": 283934,
+    "luminosityBlock": 118,
+    "event": 199809504,
+    "M2Mu2El": 285.66007705597036
+  },
+  {
+    "run": 283934,
+    "luminosityBlock": 1280,
+    "event": 2254161118,
+    "M2Mu2El": 343.0025539195862
+  },
+  {
+    "run": 283964,
+    "luminosityBlock": 76,
+    "event": 129762939,
+    "M2Mu2El": 124.15116297995667
+  },
+  {
+    "run": 284006,
+    "luminosityBlock": 111,
+    "event": 65707751,
+    "M2Mu2El": 162.67824207787794
+  },
+  {
+    "run": 283478,
+    "luminosityBlock": 383,
+    "event": 533726111,
+    "M2Mu2El": 186.9334692218684
+  },
+  {
+    "run": 283682,
+    "luminosityBlock": 41,
+    "event": 76857300,
+    "M2Mu2El": 149.924618779173
+  },
+  {
+    "run": 282735,
+    "luminosityBlock": 1172,
+    "event": 2147854409,
+    "M2Mu2El": 328.0328001695882
+  },
+  {
+    "run": 282037,
+    "luminosityBlock": 1072,
+    "event": 1919149248,
+    "M2Mu2El": 524.2197845806731
+  },
+  {
+    "run": 283820,
+    "luminosityBlock": 69,
+    "event": 92905536,
+    "M2Mu2El": 179.4551417341196
+  },
+  {
+    "run": 283820,
+    "luminosityBlock": 187,
+    "event": 313336689,
+    "M2Mu2El": 120.14490812207231
+  },
+  {
+    "run": 281693,
+    "luminosityBlock": 264,
+    "event": 498913396,
+    "M2Mu2El": 172.65059302860155
+  },
+  {
+    "run": 281707,
+    "luminosityBlock": 620,
+    "event": 933124789,
+    "M2Mu2El": 172.22678480228487
+  },
+  {
+    "run": 282814,
+    "luminosityBlock": 15,
+    "event": 29513844,
+    "M2Mu2El": 333.8482648223129
+  },
+  {
+    "run": 283307,
+    "luminosityBlock": 386,
+    "event": 730351573,
+    "M2Mu2El": 219.32412046936972
+  },
+  {
+    "run": 281797,
+    "luminosityBlock": 1934,
+    "event": 3243753769,
+    "M2Mu2El": 100.1681697769397
+  },
+  {
+    "run": 283283,
+    "luminosityBlock": 277,
+    "event": 574249276,
+    "M2Mu2El": 185.778588198769
+  },
+  {
+    "run": 283283,
+    "luminosityBlock": 1209,
+    "event": 2198580672,
+    "M2Mu2El": 255.97126543934348
+  },
+  {
+    "run": 283408,
+    "luminosityBlock": 1217,
+    "event": 2089520476,
+    "M2Mu2El": 282.7551972027651
+  },
+  {
+    "run": 283270,
+    "luminosityBlock": 1081,
+    "event": 1786057885,
+    "M2Mu2El": 300.11904566410243
+  },
+  {
+    "run": 283270,
+    "luminosityBlock": 1302,
+    "event": 2203344935,
+    "M2Mu2El": 268.90004961618513
+  },
+  {
+    "run": 283876,
+    "luminosityBlock": 609,
+    "event": 966438675,
+    "M2Mu2El": 370.4460050007971
+  },
+  {
+    "run": 284014,
+    "luminosityBlock": 142,
+    "event": 248761085,
+    "M2Mu2El": 214.816458585976
+  },
+  {
+    "run": 281693,
+    "luminosityBlock": 1548,
+    "event": 2840408838,
+    "M2Mu2El": 172.9420352333058
+  },
+  {
+    "run": 282735,
+    "luminosityBlock": 1550,
+    "event": 2889347131,
+    "M2Mu2El": 260.3299632944061
+  },
+  {
+    "run": 282731,
+    "luminosityBlock": 3,
+    "event": 5680479,
+    "M2Mu2El": 191.59607796307662
+  },
+  {
+    "run": 283877,
+    "luminosityBlock": 1079,
+    "event": 1944739423,
+    "M2Mu2El": 228.1800268600869
+  },
+  {
+    "run": 281726,
+    "luminosityBlock": 208,
+    "event": 393201805,
+    "M2Mu2El": 310.4962491065876
+  },
+  {
+    "run": 283876,
+    "luminosityBlock": 152,
+    "event": 179889674,
+    "M2Mu2El": 217.17823658991685
+  },
+  {
+    "run": 283934,
+    "luminosityBlock": 77,
+    "event": 130616823,
+    "M2Mu2El": 231.3301538094103
+  },
+  {
+    "run": 283934,
+    "luminosityBlock": 850,
+    "event": 1448982909,
+    "M2Mu2El": 236.89149318612667
+  },
+  {
+    "run": 281797,
+    "luminosityBlock": 895,
+    "event": 1410597770,
+    "M2Mu2El": 450.92543397789814
+  },
+  {
+    "run": 281797,
+    "luminosityBlock": 635,
+    "event": 925209937,
+    "M2Mu2El": 362.1338185911658
+  },
+  {
+    "run": 281976,
+    "luminosityBlock": 426,
+    "event": 755720434,
+    "M2Mu2El": 268.2527038185612
+  },
+  {
+    "run": 283059,
+    "luminosityBlock": 419,
+    "event": 791723999,
+    "M2Mu2El": 219.73393148975325
+  },
+  {
+    "run": 283408,
+    "luminosityBlock": 1525,
+    "event": 2660314435,
+    "M2Mu2El": 212.94609909251466
+  },
+  {
+    "run": 283283,
+    "luminosityBlock": 175,
+    "event": 365523176,
+    "M2Mu2El": 282.8232363502295
+  },
+  {
+    "run": 283283,
+    "luminosityBlock": 881,
+    "event": 1682551097,
+    "M2Mu2El": 188.37315253285013
+  },
+  {
+    "run": 283358,
+    "luminosityBlock": 435,
+    "event": 803166176,
+    "M2Mu2El": 271.8677509979383
+  },
+  {
+    "run": 283877,
+    "luminosityBlock": 348,
+    "event": 652790232,
+    "M2Mu2El": 91.32157449142424
+  },
+  {
+    "run": 283885,
+    "luminosityBlock": 101,
+    "event": 183491837,
+    "M2Mu2El": 259.02878188151965
+  },
+  {
+    "run": 282807,
+    "luminosityBlock": 128,
+    "event": 256949522,
+    "M2Mu2El": 411.34214404066057
+  },
+  {
+    "run": 282919,
+    "luminosityBlock": 26,
+    "event": 51905111,
+    "M2Mu2El": 204.4930025741629
+  },
+  {
+    "run": 282037,
+    "luminosityBlock": 1073,
+    "event": 1919452253,
+    "M2Mu2El": 308.04744628572985
+  },
+  {
+    "run": 282092,
+    "luminosityBlock": 364,
+    "event": 474634113,
+    "M2Mu2El": 129.94042109991742
+  },
+  {
+    "run": 282092,
+    "luminosityBlock": 791,
+    "event": 1205127016,
+    "M2Mu2El": 204.74673350932844
+  },
+  {
+    "run": 281639,
+    "luminosityBlock": 54,
+    "event": 85071477,
+    "M2Mu2El": 350.8294068896655
+  },
+  {
+    "run": 282092,
+    "luminosityBlock": 1698,
+    "event": 2768239803,
+    "M2Mu2El": 320.72734471880875
+  },
+  {
+    "run": 283050,
+    "luminosityBlock": 158,
+    "event": 278879877,
+    "M2Mu2El": 289.7629726471994
+  },
+  {
+    "run": 283934,
+    "luminosityBlock": 468,
+    "event": 777872589,
+    "M2Mu2El": 228.7606622528581
+  },
+  {
+    "run": 283270,
+    "luminosityBlock": 341,
+    "event": 496911967,
+    "M2Mu2El": 187.639633332328
+  },
+  {
+    "run": 283307,
+    "luminosityBlock": 114,
+    "event": 211520851,
+    "M2Mu2El": 136.54660683555971
+  },
+  {
+    "run": 283877,
+    "luminosityBlock": 80,
+    "event": 139016716,
+    "M2Mu2El": 89.5930500689845
+  },
+  {
+    "run": 283877,
+    "luminosityBlock": 1424,
+    "event": 2492468356,
+    "M2Mu2El": 877.309707664842
+  },
+  {
+    "run": 283353,
+    "luminosityBlock": 494,
+    "event": 752387145,
+    "M2Mu2El": 291.0414868418168
+  },
+  {
+    "run": 284037,
+    "luminosityBlock": 243,
+    "event": 450332277,
+    "M2Mu2El": 90.93856788591849
+  },
+  {
+    "run": 283685,
+    "luminosityBlock": 312,
+    "event": 303213818,
+    "M2Mu2El": 236.93489753443362
+  },
+  {
+    "run": 283876,
+    "luminosityBlock": 696,
+    "event": 1126579804,
+    "M2Mu2El": 251.28538052045596
+  },
+  {
+    "run": 283884,
+    "luminosityBlock": 511,
+    "event": 546338192,
+    "M2Mu2El": 251.46628103350716
+  },
+  {
+    "run": 283308,
+    "luminosityBlock": 613,
+    "event": 1176960231,
+    "M2Mu2El": 274.7132394775458
+  },
+  {
+    "run": 283934,
+    "luminosityBlock": 289,
+    "event": 464534921,
+    "M2Mu2El": 163.94832019485688
+  },
+  {
+    "run": 283043,
+    "luminosityBlock": 95,
+    "event": 169109680,
+    "M2Mu2El": 449.5499857478195
+  },
+  {
+    "run": 282037,
+    "luminosityBlock": 153,
+    "event": 296043455,
+    "M2Mu2El": 218.81724689863105
+  },
+  {
+    "run": 283946,
+    "luminosityBlock": 1323,
+    "event": 2232901220,
+    "M2Mu2El": 279.46449748839433
+  },
+  {
+    "run": 283946,
+    "luminosityBlock": 834,
+    "event": 1303265517,
+    "M2Mu2El": 478.8275747754529
+  },
+  {
+    "run": 282092,
+    "luminosityBlock": 1651,
+    "event": 2700446627,
+    "M2Mu2El": 221.3120712022896
+  },
+  {
+    "run": 282092,
+    "luminosityBlock": 1079,
+    "event": 1732354569,
+    "M2Mu2El": 108.43662059660144
+  },
+  {
+    "run": 282037,
+    "luminosityBlock": 818,
+    "event": 1462230863,
+    "M2Mu2El": 280.86186852003704
+  }
+]
