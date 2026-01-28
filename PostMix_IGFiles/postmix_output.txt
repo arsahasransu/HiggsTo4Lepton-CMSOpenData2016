@@ -1,0 +1,1262 @@
+25 50
+10
+Length of unique signal events:  859
+
+Ratio of signal composition: (250:383:226) (4mu:2mu2e:4e)
+
+Required number of background events:  391
+Existing size of background set:  1000
+Condition met - background events 391/1000 (Required/Available)
+
+Shuffling datasets and generating outreach data!
+
+{'run': 279841, 'luminosityBlock': 839, 'event': 1417518501, 'M4El': 87.95389530854702, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279760, 'luminosityBlock': 196, 'event': 246976205, 'M4Mu': 130.2767641901137, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 279715, 'luminosityBlock': 618, 'event': 1028237013, 'M4Mu': 359.42208985633056, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 280191, 'luminosityBlock': 698, 'event': 1295326685, 'M4El': 132.346558451641, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 278820, 'luminosityBlock': 1235, 'event': 2281378869, 'M2Mu2El': 258.8324049482925, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279931, 'luminosityBlock': 2243, 'event': 3856979122, 'M2Mu2El': 466.0497339050595, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278923, 'luminosityBlock': 333, 'event': 531524644, 'M2Mu2El': 137.01067904876234, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279841, 'luminosityBlock': 1891, 'event': 3282231397, 'M4El': 121.98410181142077, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283934, 'luminosityBlock': 1115, 'event': 1947771137, 'M4Mu': 199.71473955613914, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 281693, 'luminosityBlock': 157, 'event': 292807373, 'M2Mu2El': 189.75262953103368, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 283307, 'luminosityBlock': 114, 'event': 211520851, 'M2Mu2El': 136.54660683555971, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 279024, 'luminosityBlock': 107, 'event': 80936001, 'M2Mu2El': 88.92978714652398, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 281693, 'luminosityBlock': 119, 'event': 224952078, 'M4El': 214.18924989431065, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283876, 'luminosityBlock': 609, 'event': 966438675, 'M2Mu2El': 370.54673635629257, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283408, 'luminosityBlock': 1487, 'event': 2592435151, 'M4El': 181.539144958848, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283820, 'luminosityBlock': 228, 'event': 386494896, 'M4Mu': 126.46249997029054, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 279931, 'luminosityBlock': 1266, 'event': 2208865996, 'M2Mu2El': 62.78892375090161, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 282037, 'luminosityBlock': 944, 'event': 1692647482, 'M4Mu': 201.67608950202515, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'file': 'background'}
+{'run': 279794, 'luminosityBlock': 793, 'event': 1335833307, 'M4Mu': 179.35604795021922, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 279024, 'luminosityBlock': 117, 'event': 101884963, 'M4El': 342.6379326586008, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 280330, 'luminosityBlock': 355, 'event': 678125664, 'M4Mu': 125.22108368956448, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 282092, 'luminosityBlock': 311, 'event': 387613933, 'M4Mu': 188.24140664553838, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283877, 'luminosityBlock': 1423, 'event': 2490963909, 'M2Mu2El': 201.9673995069222, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 280015, 'luminosityBlock': 59, 'event': 101903785, 'M2Mu2El': 209.7938455794051, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 278820, 'luminosityBlock': 1084, 'event': 2002648713, 'M4El': 181.39108241132513, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282092, 'luminosityBlock': 1990, 'event': 3261620538, 'M2Mu2El': 173.09182125926108, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 278969, 'luminosityBlock': 1447, 'event': 2521295771, 'M4El': 210.34843871090908, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 282807, 'luminosityBlock': 128, 'event': 256949522, 'M2Mu2El': 411.34214404066057, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280017, 'luminosityBlock': 330, 'event': 590215992, 'M2Mu2El': 186.82497583108938, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279588, 'luminosityBlock': 530, 'event': 861837327, 'M4El': 230.9194256980391, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279588, 'luminosityBlock': 360, 'event': 538131448, 'M2Mu2El': 178.22666042096543, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 282735, 'luminosityBlock': 1335, 'event': 2475004530, 'M4Mu': 89.0990332364276, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279715, 'luminosityBlock': 276, 'event': 393607542, 'M2Mu2El': 221.73936466481078, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282092, 'luminosityBlock': 1382, 'event': 2278273446, 'M4Mu': 270.751503994343, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283270, 'luminosityBlock': 1186, 'event': 1989840486, 'M4El': 341.84941150254747, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279024, 'luminosityBlock': 288, 'event': 436734328, 'M4El': 106.61935397466438, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280363, 'luminosityBlock': 38, 'event': 60579267, 'M4Mu': 157.66005756726622, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 280024, 'luminosityBlock': 232, 'event': 330897034, 'M4El': 122.66030761583812, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 282092, 'luminosityBlock': 1510, 'event': 2486442198, 'M4El': 316.9691033661146, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 280249, 'luminosityBlock': 434, 'event': 811579923, 'M2Mu2El': 148.54458562274516, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283884, 'luminosityBlock': 485, 'event': 509406748, 'M2Mu2El': 219.81371466499212, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283876, 'luminosityBlock': 104, 'event': 91508466, 'M2Mu2El': 170.9764723313821, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283946, 'luminosityBlock': 1323, 'event': 2232901220, 'M2Mu2El': 279.46449748839433, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 283685, 'luminosityBlock': 40, 'event': 71294519, 'M4El': 337.375129088266, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279694, 'luminosityBlock': 2218, 'event': 3999167551, 'M4El': 162.80935404953507, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279794, 'luminosityBlock': 841, 'event': 1422360309, 'M4Mu': 218.8185004382241, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283934, 'luminosityBlock': 36, 'event': 58578498, 'M4Mu': 105.63131287118271, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283052, 'luminosityBlock': 75, 'event': 124332542, 'M2Mu2El': 283.9310847770927, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 283876, 'luminosityBlock': 152, 'event': 179889674, 'M2Mu2El': 217.17823658991685, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283934, 'luminosityBlock': 736, 'event': 1245318273, 'M4Mu': 250.49784146153434, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 282037, 'luminosityBlock': 214, 'event': 398951918, 'M4El': 286.3809143461103, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 280249, 'luminosityBlock': 581, 'event': 1092809122, 'M4El': 123.29096052963465, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282037, 'luminosityBlock': 503, 'event': 917119444, 'M2Mu2El': 123.64647323177684, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'file': 'background'}
+{'run': 282037, 'luminosityBlock': 1032, 'event': 1849510257, 'M2Mu2El': 251.5782024302156, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279694, 'luminosityBlock': 258, 'event': 461368672, 'M2Mu2El': 305.0619545241628, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 283453, 'luminosityBlock': 112, 'event': 83005950, 'M4El': 104.32051666671019, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 281693, 'luminosityBlock': 305, 'event': 580013806, 'M2Mu2El': 242.45014496816438, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 283682, 'luminosityBlock': 41, 'event': 76857300, 'M2Mu2El': 149.924618779173, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 281797, 'luminosityBlock': 695, 'event': 1036290524, 'M4Mu': 312.8597633305165, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 281693, 'luminosityBlock': 2089, 'event': 3797848254, 'M4El': 236.29211398703046, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 279823, 'luminosityBlock': 256, 'event': 359368798, 'M4El': 324.09173079605887, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282814, 'luminosityBlock': 15, 'event': 29513844, 'M2Mu2El': 333.85177706631276, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282923, 'luminosityBlock': 103, 'event': 207647879, 'M2Mu2El': 275.43077576631197, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 282735, 'luminosityBlock': 120, 'event': 242689002, 'M4Mu': 112.42674977247042, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 281797, 'luminosityBlock': 1514, 'event': 2571021056, 'M4Mu': 122.68706934605959, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283682, 'luminosityBlock': 208, 'event': 381916943, 'M4Mu': 90.44953737402324, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 280385, 'luminosityBlock': 1933, 'event': 3478220602, 'M4El': 201.25781052386503, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 278820, 'luminosityBlock': 704, 'event': 1289720638, 'M4Mu': 154.1308157958357, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280385, 'luminosityBlock': 728, 'event': 1360443489, 'M2Mu2El': 258.4470008297618, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283478, 'luminosityBlock': 697, 'event': 1067462262, 'M2Mu2El': 89.68008330466185, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 283876, 'luminosityBlock': 696, 'event': 1126579804, 'M2Mu2El': 251.28514888299398, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279841, 'luminosityBlock': 349, 'event': 543045378, 'M4El': 121.63443490790753, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282918, 'luminosityBlock': 17, 'event': 30480158, 'M4Mu': 222.25803338992947, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 279716, 'luminosityBlock': 291, 'event': 547733128, 'M4Mu': 286.3151274937192, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280018, 'luminosityBlock': 740, 'event': 1284092331, 'M4El': 92.3961828927975, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279887, 'luminosityBlock': 136, 'event': 119600206, 'M4Mu': 228.07816269371173, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 278875, 'luminosityBlock': 363, 'event': 659484934, 'M4El': 317.32963342656126, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280385, 'luminosityBlock': 1206, 'event': 2266853868, 'M2Mu2El': 92.66883491792711, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 284037, 'luminosityBlock': 24, 'event': 45192111, 'M2Mu2El': 254.19822104364772, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283358, 'luminosityBlock': 3, 'event': 4235888, 'M2Mu2El': 179.60129787617063, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279794, 'luminosityBlock': 251, 'event': 343662422, 'M2Mu2El': 163.05456750031556, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282037, 'luminosityBlock': 18, 'event': 35088330, 'M2Mu2El': 160.43477278288574, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283043, 'luminosityBlock': 246, 'event': 457616283, 'M4Mu': 195.47149252683528, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283830, 'luminosityBlock': 491, 'event': 862360256, 'M4El': 399.24731889138354, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 278923, 'luminosityBlock': 231, 'event': 354354673, 'M2Mu2El': 279.0793448106343, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 283830, 'luminosityBlock': 257, 'event': 454984321, 'M4El': 188.50319780244297, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 283270, 'luminosityBlock': 1081, 'event': 1786057885, 'M2Mu2El': 300.11904566410243, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 282800, 'luminosityBlock': 305, 'event': 575147217, 'M4Mu': 433.22567450241456, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 279887, 'luminosityBlock': 116, 'event': 83549884, 'M2Mu2El': 278.8050143444857, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 281976, 'luminosityBlock': 1487, 'event': 2650088920, 'M4El': 129.19056087559247, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 284006, 'luminosityBlock': 138, 'event': 114422764, 'M4El': 171.01827791339605, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283934, 'luminosityBlock': 230, 'event': 372206877, 'M4El': 188.58652501364574, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 281693, 'luminosityBlock': 39, 'event': 73669645, 'M4El': 145.31182967763837, 'file': '../Datasets/IG Files/SingleElectron2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 284006, 'luminosityBlock': 86, 'event': 34448418, 'M4El': 301.6755595521126, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 280015, 'luminosityBlock': 524, 'event': 976757482, 'M2Mu2El': 131.4211308047426, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283408, 'luminosityBlock': 512, 'event': 847095636, 'M2Mu2El': 180.86931610427106, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 279766, 'luminosityBlock': 211, 'event': 402209732, 'M4El': 93.45390715404201, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 278822, 'luminosityBlock': 886, 'event': 1552021295, 'M4El': 169.21838911367337, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 283358, 'luminosityBlock': 603, 'event': 1109105659, 'M4El': 189.24048516118853, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 279966, 'luminosityBlock': 296, 'event': 415100217, 'M4Mu': 94.83200754295665, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 278969, 'luminosityBlock': 494, 'event': 783237967, 'M2Mu2El': 219.50108463261748, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283308, 'luminosityBlock': 164, 'event': 314872094, 'M4Mu': 139.9126726851814, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 278820, 'luminosityBlock': 870, 'event': 1598413594, 'M2Mu2El': 257.2728014553862, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280249, 'luminosityBlock': 1181, 'event': 2092818039, 'M4Mu': 194.1127998104483, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283043, 'luminosityBlock': 329, 'event': 623408924, 'M4El': 144.0549013750629, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 282919, 'luminosityBlock': 34, 'event': 67790360, 'M2Mu2El': 314.84687306232837, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283830, 'luminosityBlock': 100, 'event': 188554429, 'M4El': 189.17168008927715, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 280018, 'luminosityBlock': 1178, 'event': 2012803045, 'M2Mu2El': 308.28873570818797, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279975, 'luminosityBlock': 855, 'event': 1448066285, 'M4El': 268.52658851056975, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283934, 'luminosityBlock': 363, 'event': 591428198, 'M4Mu': 92.72343298047666, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 280249, 'luminosityBlock': 728, 'event': 1358577225, 'M4Mu': 198.74615685135936, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283308, 'luminosityBlock': 112, 'event': 203982846, 'M4Mu': 139.91392346277266, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 283877, 'luminosityBlock': 1424, 'event': 2492468356, 'M2Mu2El': 877.309707664842, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283478, 'luminosityBlock': 261, 'event': 338862793, 'M2Mu2El': 332.42160966906056, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279841, 'luminosityBlock': 1764, 'event': 3078389815, 'M4Mu': 300.76583827092134, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283877, 'luminosityBlock': 1079, 'event': 1944739423, 'M2Mu2El': 228.1800268600869, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283884, 'luminosityBlock': 511, 'event': 546338192, 'M2Mu2El': 251.51083043140895, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283830, 'luminosityBlock': 391, 'event': 662476714, 'M4Mu': 272.1042545484068, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 281976, 'luminosityBlock': 1882, 'event': 3319463435, 'M4Mu': 505.4883729329847, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 281727, 'luminosityBlock': 1129, 'event': 1915241934, 'M4El': 94.5283088348763, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 283934, 'luminosityBlock': 636, 'event': 1071087181, 'M4Mu': 206.01419924715242, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 281797, 'luminosityBlock': 688, 'event': 1023309268, 'M4El': 192.6253377994613, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 279760, 'luminosityBlock': 293, 'event': 420592601, 'M4El': 203.83340934890327, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279716, 'luminosityBlock': 1260, 'event': 2191493255, 'M2Mu2El': 162.96915649324353, 'file': '../Datasets/IG Files/MuonEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283865, 'luminosityBlock': 195, 'event': 339540371, 'M2Mu2El': 114.88525592416244, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279716, 'luminosityBlock': 1083, 'event': 1929024075, 'M4El': 327.9030266249536, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 283820, 'luminosityBlock': 666, 'event': 1172165290, 'M4Mu': 81.20015491897513, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283308, 'luminosityBlock': 857, 'event': 1587455049, 'M2Mu2El': 332.2843014764031, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 282092, 'luminosityBlock': 1094, 'event': 1762209472, 'M4Mu': 168.6663341415391, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 281976, 'luminosityBlock': 458, 'event': 811986763, 'M2Mu2El': 214.0006200408188, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 279931, 'luminosityBlock': 1072, 'event': 1839019911, 'M2Mu2El': 247.20258870376918, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279975, 'luminosityBlock': 314, 'event': 457702387, 'M2Mu2El': 137.9603001917007, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 283308, 'luminosityBlock': 613, 'event': 1176960231, 'M2Mu2El': 274.70444486055493, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 279694, 'luminosityBlock': 281, 'event': 506773653, 'M2Mu2El': 120.15155801558554, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 280330, 'luminosityBlock': 756, 'event': 1445951197, 'M4Mu': 303.38785008763887, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283059, 'luminosityBlock': 419, 'event': 791723999, 'M2Mu2El': 219.73393148975325, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 281727, 'luminosityBlock': 971, 'event': 1647479766, 'M2Mu2El': 269.2131376299378, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 278822, 'luminosityBlock': 748, 'event': 1318214232, 'M2Mu2El': 197.96872741027235, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 279667, 'luminosityBlock': 300, 'event': 422065782, 'M4El': 242.28178361390945, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 278822, 'luminosityBlock': 178, 'event': 262945025, 'M4El': 114.71305380982828, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283884, 'luminosityBlock': 521, 'event': 563594618, 'M2Mu2El': 182.24769815870656, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283416, 'luminosityBlock': 180, 'event': 349065421, 'M2Mu2El': 90.43068287167101, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279931, 'luminosityBlock': 1274, 'event': 2224263738, 'M4Mu': 322.3402951605743, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279931, 'luminosityBlock': 1181, 'event': 2048997014, 'M2Mu2El': 229.97474461183234, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283408, 'luminosityBlock': 273, 'event': 454425071, 'M4Mu': 92.546990518035, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 282730, 'luminosityBlock': 131, 'event': 102788656, 'M2Mu2El': 129.97559331615037, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 282734, 'luminosityBlock': 155, 'event': 313916022, 'M4Mu': 197.1156171165501, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 280018, 'luminosityBlock': 12, 'event': 17502143, 'M2Mu2El': 332.38604437332424, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 280188, 'luminosityBlock': 135, 'event': 241790309, 'M4El': 99.18010646959262, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278975, 'luminosityBlock': 25, 'event': 43531924, 'M2Mu2El': 101.03525558227265, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282814, 'luminosityBlock': 1393, 'event': 2594900636, 'M2Mu2El': 210.53674094567546, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 278875, 'luminosityBlock': 411, 'event': 739984931, 'M2Mu2El': 135.81846663235575, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 279694, 'luminosityBlock': 409, 'event': 748861290, 'M4Mu': 235.35354047875316, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282735, 'luminosityBlock': 483, 'event': 975081093, 'M2Mu2El': 184.7003587956172, 'file': '../Datasets/IG Files/MuonEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279841, 'luminosityBlock': 1861, 'event': 3233861354, 'M4El': 631.1556183012839, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280385, 'luminosityBlock': 674, 'event': 1255018538, 'M2Mu2El': 109.20428139970836, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 281707, 'luminosityBlock': 236, 'event': 234085729, 'M2Mu2El': 237.7923069176103, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 281727, 'luminosityBlock': 933, 'event': 1582244928, 'M4Mu': 220.004097748202, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 280385, 'luminosityBlock': 1605, 'event': 2966572683, 'M2Mu2El': 283.41500385084, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 283308, 'luminosityBlock': 117, 'event': 216371271, 'M2Mu2El': 180.57532987631438, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 278822, 'luminosityBlock': 36, 'event': 53612225, 'M4El': 382.56639996708844, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279823, 'luminosityBlock': 187, 'event': 238697226, 'M2Mu2El': 320.91697688468366, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283877, 'luminosityBlock': 1039, 'event': 1884216184, 'M2Mu2El': 194.1135843865198, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279844, 'luminosityBlock': 211, 'event': 255949218, 'M4Mu': 187.66546872818282, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283353, 'luminosityBlock': 703, 'event': 1125962139, 'M2Mu2El': 468.8608423710414, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 284014, 'luminosityBlock': 142, 'event': 248289861, 'M4El': 255.1766609942766, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 282735, 'luminosityBlock': 1430, 'event': 2661783477, 'M2Mu2El': 89.19902359984329, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 279841, 'luminosityBlock': 1494, 'event': 2619225776, 'M2Mu2El': 205.03099069271403, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279841, 'luminosityBlock': 622, 'event': 1027130960, 'M2Mu2El': 200.30390751758273, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283052, 'luminosityBlock': 105, 'event': 173778110, 'M2Mu2El': 183.41329746094613, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283308, 'luminosityBlock': 658, 'event': 1256673071, 'M4Mu': 200.05926579378323, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279654, 'luminosityBlock': 852, 'event': 1615198545, 'M2Mu2El': 238.45962619433797, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279116, 'luminosityBlock': 284, 'event': 504980946, 'M4El': 188.4827840627957, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279975, 'luminosityBlock': 624, 'event': 1022546290, 'M2Mu2El': 231.21917294736465, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 279767, 'luminosityBlock': 3, 'event': 4831734, 'M2Mu2El': 89.82662098727897, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 281976, 'luminosityBlock': 1007, 'event': 1778638971, 'M4Mu': 220.64736630030185, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279794, 'luminosityBlock': 104, 'event': 75532126, 'M4El': 233.1240386428987, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279654, 'luminosityBlock': 220, 'event': 418148449, 'M2Mu2El': 205.33204329027, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279694, 'luminosityBlock': 1257, 'event': 2338308963, 'M4El': 126.76728185438147, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 279588, 'luminosityBlock': 424, 'event': 655133946, 'M4El': 144.29877527307596, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 280015, 'luminosityBlock': 539, 'event': 1003771126, 'M4Mu': 219.8236630958227, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283884, 'luminosityBlock': 572, 'event': 644454046, 'M2Mu2El': 205.2644234858472, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 279716, 'luminosityBlock': 68, 'event': 128935003, 'M4Mu': 297.5858108469052, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 281707, 'luminosityBlock': 996, 'event': 1638421417, 'M4Mu': 217.92928313108965, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 278923, 'luminosityBlock': 146, 'event': 202032719, 'M4Mu': 146.80110429319652, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 283478, 'luminosityBlock': 308, 'event': 416445666, 'M4Mu': 118.03981812954474, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 282814, 'luminosityBlock': 1831, 'event': 3388114352, 'M2Mu2El': 168.79723745594157, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 278923, 'luminosityBlock': 447, 'event': 746734732, 'M2Mu2El': 133.4551563652055, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283453, 'luminosityBlock': 255, 'event': 344805586, 'M4Mu': 277.12629973145994, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 281797, 'luminosityBlock': 1289, 'event': 2152659557, 'M4El': 191.51687718985733, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279029, 'luminosityBlock': 234, 'event': 381854956, 'M2Mu2El': 361.2113046054382, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 281797, 'luminosityBlock': 420, 'event': 527256056, 'M4Mu': 324.1394999580319, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 283283, 'luminosityBlock': 1579, 'event': 2743379140, 'M2Mu2El': 283.2267850162591, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283478, 'luminosityBlock': 756, 'event': 1167748368, 'M4El': 180.34711290564138, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 281976, 'luminosityBlock': 948, 'event': 1679160650, 'M2Mu2El': 250.87850598854283, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 282814, 'luminosityBlock': 289, 'event': 571110292, 'M2Mu2El': 125.5854719729731, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279766, 'luminosityBlock': 983, 'event': 1780178466, 'M4Mu': 227.73204329793603, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283408, 'luminosityBlock': 1217, 'event': 2089520476, 'M2Mu2El': 282.85533860085934, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 282092, 'luminosityBlock': 2100, 'event': 3464189283, 'M4El': 308.5988806130354, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282733, 'luminosityBlock': 148, 'event': 277542266, 'M2Mu2El': 199.45575387123316, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 280191, 'luminosityBlock': 147, 'event': 267950662, 'M4Mu': 97.45719218304119, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283876, 'luminosityBlock': 314, 'event': 452117243, 'M4El': 251.28461914450335, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 281797, 'luminosityBlock': 828, 'event': 1283556241, 'M4Mu': 435.47109723237406, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 278975, 'luminosityBlock': 292, 'event': 482379342, 'M4El': 129.23291487450416, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 278923, 'luminosityBlock': 154, 'event': 215263333, 'M4Mu': 686.6279570330859, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 278957, 'luminosityBlock': 103, 'event': 80784640, 'M4El': 359.25427006654655, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282733, 'luminosityBlock': 115, 'event': 216161847, 'M4Mu': 92.52820540370861, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 283820, 'luminosityBlock': 1298, 'event': 2288711057, 'M2Mu2El': 86.56375085341581, 'file': '../Datasets/IG Files/MuonEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279694, 'luminosityBlock': 518, 'event': 939318098, 'M2Mu2El': 225.26853032597717, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283408, 'luminosityBlock': 1136, 'event': 1943077973, 'M4El': 89.59870789375934, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 281976, 'luminosityBlock': 1663, 'event': 2962625357, 'M4El': 309.2992959245078, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282092, 'luminosityBlock': 1646, 'event': 2693637558, 'M4El': 91.58263405185055, 'file': '../Datasets/IG Files/SingleElectron2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 283885, 'luminosityBlock': 1128, 'event': 2013829388, 'M4El': 163.66705163660103, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 283934, 'luminosityBlock': 77, 'event': 130616823, 'M2Mu2El': 231.3301538094103, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282037, 'luminosityBlock': 1790, 'event': 3151738516, 'M4El': 193.37895990974667, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 279766, 'luminosityBlock': 564, 'event': 1053131651, 'M4Mu': 191.98444209476693, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 282092, 'luminosityBlock': 419, 'event': 559132102, 'M4Mu': 233.3677785187834, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 279715, 'luminosityBlock': 387, 'event': 600222391, 'M2Mu2El': 115.08129064985876, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279654, 'luminosityBlock': 917, 'event': 1745864387, 'M2Mu2El': 263.67262784819866, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279654, 'luminosityBlock': 246, 'event': 464936132, 'M4Mu': 209.12359328107914, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 280020, 'luminosityBlock': 10, 'event': 14393911, 'M4Mu': 207.14974463434513, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279975, 'luminosityBlock': 424, 'event': 658003404, 'M2Mu2El': 210.24482380558536, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 279654, 'luminosityBlock': 101, 'event': 197370803, 'M2Mu2El': 334.01563181492327, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 281726, 'luminosityBlock': 208, 'event': 393201805, 'M2Mu2El': 310.4962491065876, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 279667, 'luminosityBlock': 997, 'event': 1738465351, 'M2Mu2El': 446.83372008984645, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 284037, 'luminosityBlock': 53, 'event': 102546131, 'M4Mu': 274.70110227128936, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283283, 'luminosityBlock': 175, 'event': 365523176, 'M2Mu2El': 282.8232363502295, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279716, 'luminosityBlock': 886, 'event': 1618641794, 'M4Mu': 163.3577866049771, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279760, 'luminosityBlock': 265, 'event': 370874369, 'M2Mu2El': 210.1332024932669, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 280364, 'luminosityBlock': 878, 'event': 1568410505, 'M4El': 296.8215617950586, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279887, 'luminosityBlock': 353, 'event': 480893451, 'M4El': 135.91604090329173, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279654, 'luminosityBlock': 484, 'event': 912426098, 'M4Mu': 216.3959339173959, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279024, 'luminosityBlock': 378, 'event': 605981517, 'M4El': 249.36926426844704, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282814, 'luminosityBlock': 105, 'event': 204923291, 'M4El': 182.70909860236094, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 283820, 'luminosityBlock': 905, 'event': 1599515738, 'M4Mu': 208.0455553025094, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279844, 'luminosityBlock': 134, 'event': 117413533, 'M2Mu2El': 273.4494494886189, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 281693, 'luminosityBlock': 366, 'event': 691365900, 'M2Mu2El': 227.64511381204494, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 278923, 'luminosityBlock': 407, 'event': 672579252, 'M4Mu': 103.43659239717603, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 280188, 'luminosityBlock': 8, 'event': 11904301, 'M2Mu2El': 194.06851434226226, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283877, 'luminosityBlock': 80, 'event': 139016716, 'M2Mu2El': 89.5930500689845, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 282923, 'luminosityBlock': 49, 'event': 94663375, 'M2Mu2El': 203.40076973250555, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 278874, 'luminosityBlock': 264, 'event': 515797216, 'M4El': 234.2510823845108, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 283307, 'luminosityBlock': 339, 'event': 629647855, 'M2Mu2El': 191.7141685940879, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 283885, 'luminosityBlock': 214, 'event': 380480579, 'M4El': 197.37798048048504, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279667, 'luminosityBlock': 480, 'event': 762982515, 'M4El': 114.35468434255708, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279694, 'luminosityBlock': 1509, 'event': 2781922754, 'M2Mu2El': 233.6806418387567, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 278874, 'luminosityBlock': 396, 'event': 755093624, 'M2Mu2El': 172.3773343465937, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 284029, 'luminosityBlock': 105, 'event': 173803295, 'M4Mu': 340.16620949327387, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 280191, 'luminosityBlock': 140, 'event': 256459368, 'M2Mu2El': 180.5659413319298, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283934, 'luminosityBlock': 1280, 'event': 2254161118, 'M2Mu2El': 343.0025539195862, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 278822, 'luminosityBlock': 1494, 'event': 2491818005, 'M4Mu': 236.98016460382067, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 284043, 'luminosityBlock': 72, 'event': 112883254, 'M4Mu': 92.42447403782835, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283358, 'luminosityBlock': 236, 'event': 424232620, 'M2Mu2El': 230.95282383014975, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 281976, 'luminosityBlock': 709, 'event': 1246329507, 'M4Mu': 390.36825176718315, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 279760, 'luminosityBlock': 478, 'event': 761755067, 'M2Mu2El': 322.91910467056334, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 283934, 'luminosityBlock': 971, 'event': 1681313659, 'M2Mu2El': 242.79366465802843, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283876, 'luminosityBlock': 398, 'event': 582796619, 'M4Mu': 182.2121014561624, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 283885, 'luminosityBlock': 1460, 'event': 2507204885, 'M4Mu': 239.6748090376533, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283359, 'luminosityBlock': 304, 'event': 445890354, 'M2Mu2El': 397.2910835651016, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 279694, 'luminosityBlock': 1374, 'event': 2553089346, 'M2Mu2El': 125.42909590347037, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 278963, 'luminosityBlock': 78, 'event': 135565169, 'M4Mu': 192.8495712376246, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 280385, 'luminosityBlock': 895, 'event': 1681867421, 'M4Mu': 234.14175570762168, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 280385, 'luminosityBlock': 1703, 'event': 3126678580, 'M2Mu2El': 133.65256469918154, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 279794, 'luminosityBlock': 250, 'event': 341948151, 'M4El': 103.7999903582032, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 281975, 'luminosityBlock': 161, 'event': 272377349, 'M2Mu2El': 125.60753221331876, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'file': 'background'}
+{'run': 283820, 'luminosityBlock': 215, 'event': 362578828, 'M4Mu': 131.8563627158633, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 282735, 'luminosityBlock': 1113, 'event': 2035117054, 'M4El': 179.49195473283325, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 280024, 'luminosityBlock': 68, 'event': 98406678, 'M2Mu2El': 146.9419975137148, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283408, 'luminosityBlock': 308, 'event': 511705548, 'M2Mu2El': 281.90027557061717, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279667, 'luminosityBlock': 78, 'event': 34785118, 'M2Mu2El': 123.708248285281, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 278820, 'luminosityBlock': 141, 'event': 239869361, 'M4El': 183.18189129574174, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279823, 'luminosityBlock': 78, 'event': 31821596, 'M2Mu2El': 189.0893067717374, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 281797, 'luminosityBlock': 1724, 'event': 2922246273, 'M2Mu2El': 243.7828080189843, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 279654, 'luminosityBlock': 278, 'event': 521836040, 'M2Mu2El': 369.58045555058845, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 282814, 'luminosityBlock': 643, 'event': 1248243100, 'M4Mu': 177.3156061027932, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282092, 'luminosityBlock': 104, 'event': 43995998, 'M4Mu': 204.61233595961403, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 281707, 'luminosityBlock': 761, 'event': 1192225093, 'M4El': 244.75345188301705, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279841, 'luminosityBlock': 1150, 'event': 1985392026, 'M4El': 267.8130725043545, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282735, 'luminosityBlock': 1774, 'event': 3279914581, 'M2Mu2El': 200.43240401828047, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 278975, 'luminosityBlock': 343, 'event': 562393987, 'M2Mu2El': 176.95996629911457, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283270, 'luminosityBlock': 1240, 'event': 2092052285, 'M2Mu2El': 268.31147179414046, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279841, 'luminosityBlock': 2117, 'event': 3628175437, 'M4El': 261.0216977236016, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279716, 'luminosityBlock': 901, 'event': 1642130823, 'M2Mu2El': 206.98948311990281, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 283408, 'luminosityBlock': 400, 'event': 658905729, 'M4Mu': 167.4286187566687, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279931, 'luminosityBlock': 1758, 'event': 3019386595, 'M4El': 228.02687896892178, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 280191, 'luminosityBlock': 810, 'event': 1509057547, 'M2Mu2El': 250.25539429642026, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279716, 'luminosityBlock': 347, 'event': 646151836, 'M4Mu': 120.92228019318804, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 282092, 'luminosityBlock': 1745, 'event': 2835713476, 'M4Mu': 471.39218138815414, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 278874, 'luminosityBlock': 176, 'event': 346630162, 'M2Mu2El': 184.97970094462784, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283358, 'luminosityBlock': 75, 'event': 128341371, 'M4El': 212.5079773827487, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283946, 'luminosityBlock': 1111, 'event': 1828953287, 'M4El': 234.2090080451631, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279588, 'luminosityBlock': 782, 'event': 1338729560, 'M2Mu2El': 117.83557665233988, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 282092, 'luminosityBlock': 1633, 'event': 2674213233, 'M2Mu2El': 113.27144026650073, 'file': '../Datasets/IG Files/MuonEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283820, 'luminosityBlock': 544, 'event': 956937276, 'M2Mu2El': 213.20424167745466, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283946, 'luminosityBlock': 92, 'event': 35931931, 'M2Mu2El': 95.035059672706, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279716, 'luminosityBlock': 1059, 'event': 1891723718, 'M4El': 532.709362903741, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 278975, 'luminosityBlock': 462, 'event': 736798710, 'M4El': 261.676831392295, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 279931, 'luminosityBlock': 978, 'event': 1672834881, 'M2Mu2El': 214.03578130286408, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279766, 'luminosityBlock': 748, 'event': 1383977772, 'M4El': 406.2026044541759, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 279841, 'luminosityBlock': 456, 'event': 734172065, 'M4El': 91.8251421589121, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279694, 'luminosityBlock': 576, 'event': 1051796811, 'M4El': 484.3345741727748, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279115, 'luminosityBlock': 441, 'event': 679737392, 'M4El': 211.3471573312849, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 278875, 'luminosityBlock': 565, 'event': 1003839216, 'M4Mu': 131.81700634035084, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 280249, 'luminosityBlock': 1418, 'event': 2512369054, 'M4Mu': 195.87775315873307, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 278969, 'luminosityBlock': 240, 'event': 329792148, 'M2Mu2El': 230.49038341816217, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283059, 'luminosityBlock': 130, 'event': 239735240, 'M4Mu': 223.9124636909756, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279794, 'luminosityBlock': 753, 'event': 1260818907, 'M2Mu2El': 294.36125597307716, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283408, 'luminosityBlock': 1397, 'event': 2425827816, 'M4El': 228.26152230775202, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 282034, 'luminosityBlock': 6, 'event': 12225150, 'M4Mu': 141.52694120972816, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279966, 'luminosityBlock': 435, 'event': 666137498, 'M4El': 147.41774444930275, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 283283, 'luminosityBlock': 881, 'event': 1682551097, 'M2Mu2El': 188.37315253285013, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 280242, 'luminosityBlock': 354, 'event': 642122747, 'M4El': 131.76021147217313, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 283682, 'luminosityBlock': 372, 'event': 695528316, 'M2Mu2El': 158.47128484791548, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283408, 'luminosityBlock': 1469, 'event': 2560572463, 'M4El': 135.56004294530476, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 280017, 'luminosityBlock': 44, 'event': 81502614, 'M4El': 146.70304185462345, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 281797, 'luminosityBlock': 895, 'event': 1410597770, 'M2Mu2El': 450.7866222749622, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 281693, 'luminosityBlock': 176, 'event': 326387678, 'M2Mu2El': 183.7937401978234, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283283, 'luminosityBlock': 1582, 'event': 2746990003, 'M2Mu2El': 203.50928942087538, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279694, 'luminosityBlock': 785, 'event': 1444885184, 'M2Mu2El': 200.17968042989457, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279654, 'luminosityBlock': 360, 'event': 676969523, 'M2Mu2El': 173.80785997662076, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 278820, 'luminosityBlock': 213, 'event': 379759672, 'M4Mu': 220.5650853506907, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 279767, 'luminosityBlock': 317, 'event': 549591551, 'M4Mu': 238.200149480725, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 278820, 'luminosityBlock': 740, 'event': 1357278818, 'M2Mu2El': 83.7500418903119, 'file': '../Datasets/IG Files/MuonEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 278969, 'luminosityBlock': 461, 'event': 723797732, 'M2Mu2El': 102.11165629564283, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282735, 'luminosityBlock': 1508, 'event': 2809201914, 'M2Mu2El': 219.87605289861278, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279588, 'luminosityBlock': 1164, 'event': 2064497641, 'M2Mu2El': 106.35867604815543, 'file': '../Datasets/IG Files/SingleElectron2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279931, 'luminosityBlock': 2273, 'event': 3910937418, 'M2Mu2El': 323.1897705632255, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 281797, 'luminosityBlock': 1054, 'event': 1709995047, 'M2Mu2El': 307.9505922789511, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 278962, 'luminosityBlock': 82, 'event': 50304222, 'M4El': 266.3517958596263, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 281797, 'luminosityBlock': 1952, 'event': 3269874639, 'M4El': 194.39767013301287, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 281797, 'luminosityBlock': 635, 'event': 925209937, 'M2Mu2El': 361.63740719652463, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 284006, 'luminosityBlock': 111, 'event': 65707751, 'M2Mu2El': 162.67824207787794, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283283, 'luminosityBlock': 1473, 'event': 2591063637, 'M4Mu': 183.6909109919969, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283270, 'luminosityBlock': 1302, 'event': 2203344935, 'M2Mu2El': 268.8998844454105, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283408, 'luminosityBlock': 77, 'event': 117661588, 'M2Mu2El': 169.27819170182917, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 281726, 'luminosityBlock': 32, 'event': 54399177, 'M4Mu': 249.14717502936887, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 283865, 'luminosityBlock': 688, 'event': 1205502295, 'M4El': 255.47791373981534, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 282814, 'luminosityBlock': 1402, 'event': 2612022039, 'M2Mu2El': 230.6828485598619, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 282814, 'luminosityBlock': 130, 'event': 251581511, 'M4El': 357.73116466620803, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 281976, 'luminosityBlock': 1682, 'event': 2995111456, 'M4Mu': 222.8626683765491, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283408, 'luminosityBlock': 1513, 'event': 2639788455, 'M2Mu2El': 202.46962284990568, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279760, 'luminosityBlock': 465, 'event': 738943193, 'M4El': 316.60402852095376, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 280385, 'luminosityBlock': 1589, 'event': 2939404733, 'M4El': 93.15194077523051, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 279994, 'luminosityBlock': 14, 'event': 24558697, 'M4El': 263.711301679112, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 280349, 'luminosityBlock': 19, 'event': 34033420, 'M4El': 272.56319624364323, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283877, 'luminosityBlock': 818, 'event': 1523092503, 'M4El': 222.2927503985549, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 279716, 'luminosityBlock': 104, 'event': 199571182, 'M2Mu2El': 219.69655070410073, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 280385, 'luminosityBlock': 1199, 'event': 2253635455, 'M2Mu2El': 204.20387524582702, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 284035, 'luminosityBlock': 48, 'event': 74160703, 'M4Mu': 439.9462267843093, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 280330, 'luminosityBlock': 204, 'event': 383497038, 'M2Mu2El': 92.39731150703972, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283934, 'luminosityBlock': 393, 'event': 641044586, 'M4El': 130.28089261932533, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282923, 'luminosityBlock': 170, 'event': 339563919, 'M2Mu2El': 131.84882642192485, 'file': '../Datasets/IG Files/MuonEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 283933, 'luminosityBlock': 190, 'event': 209134450, 'M2Mu2El': 177.81964255047723, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283307, 'luminosityBlock': 146, 'event': 267209414, 'M2Mu2El': 127.71807811272284, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279653, 'luminosityBlock': 186, 'event': 230931739, 'M2Mu2El': 210.1877297810899, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 280017, 'luminosityBlock': 399, 'event': 706337406, 'M2Mu2El': 263.63956177519367, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 280251, 'luminosityBlock': 284, 'event': 515083055, 'M2Mu2El': 200.4626720175311, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279715, 'luminosityBlock': 445, 'event': 707074692, 'M2Mu2El': 138.87106706182956, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279841, 'luminosityBlock': 1807, 'event': 3149829264, 'M4Mu': 215.58684954689113, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279931, 'luminosityBlock': 1824, 'event': 3116713355, 'M4El': 84.10863886687406, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 278969, 'luminosityBlock': 859, 'event': 1440321989, 'M4Mu': 133.522697005855, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 279887, 'luminosityBlock': 242, 'event': 291694769, 'M2Mu2El': 242.5624167325652, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 279841, 'luminosityBlock': 1792, 'event': 3124065658, 'M4El': 112.64834024544537, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 282037, 'luminosityBlock': 173, 'event': 328600245, 'M4Mu': 124.63721894904634, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 280363, 'luminosityBlock': 87, 'event': 141067601, 'M2Mu2El': 236.91784199933997, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283353, 'luminosityBlock': 316, 'event': 451644695, 'M2Mu2El': 159.61642406759321, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 282037, 'luminosityBlock': 1072, 'event': 1919149248, 'M2Mu2El': 524.2197845806731, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279667, 'luminosityBlock': 307, 'event': 434202303, 'M4El': 264.12856632588625, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279931, 'luminosityBlock': 2000, 'event': 3400448448, 'M2Mu2El': 83.15926446370581, 'file': '../Datasets/IG Files/MuonEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279588, 'luminosityBlock': 919, 'event': 1598611402, 'M2Mu2El': 459.70687755415867, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 283270, 'luminosityBlock': 708, 'event': 1120702736, 'M4Mu': 104.753388771443, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278962, 'luminosityBlock': 213, 'event': 275833577, 'M4Mu': 191.52157077403263, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283353, 'luminosityBlock': 289, 'event': 404145412, 'M4El': 115.88480889554407, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282037, 'luminosityBlock': 823, 'event': 1472273380, 'M2Mu2El': 326.63351299087753, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282735, 'luminosityBlock': 1742, 'event': 3223296662, 'M4El': 265.0499352096532, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279841, 'luminosityBlock': 1177, 'event': 2029486783, 'M4Mu': 124.4855147348705, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283270, 'luminosityBlock': 1909, 'event': 3241584481, 'M4Mu': 129.05669593874566, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 280330, 'luminosityBlock': 637, 'event': 1214606302, 'M4El': 433.994597595727, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283308, 'luminosityBlock': 88, 'event': 157265850, 'M2Mu2El': 356.28085226113643, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 280191, 'luminosityBlock': 821, 'event': 1530172660, 'M4Mu': 92.21663096698762, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279691, 'luminosityBlock': 89, 'event': 44319678, 'M2Mu2El': 177.70534701643692, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 281707, 'luminosityBlock': 405, 'event': 535301235, 'M4Mu': 209.84373343734197, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 281976, 'luminosityBlock': 1095, 'event': 1934415101, 'M4El': 373.2396075755151, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279588, 'luminosityBlock': 1124, 'event': 1990111112, 'M4El': 167.8568848777025, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 283885, 'luminosityBlock': 1620, 'event': 2815371819, 'M4El': 181.9188144369639, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 282092, 'luminosityBlock': 935, 'event': 1477939006, 'M4El': 220.0694168092605, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279966, 'luminosityBlock': 427, 'event': 648902974, 'M4Mu': 90.9305624482514, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 282735, 'luminosityBlock': 859, 'event': 1641774782, 'M4El': 224.68704579045138, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 282735, 'luminosityBlock': 1279, 'event': 2363662801, 'M4Mu': 371.1972718091469, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 281797, 'luminosityBlock': 1254, 'event': 2082355656, 'M2Mu2El': 585.8842743574808, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 283408, 'luminosityBlock': 262, 'event': 436216815, 'M4Mu': 115.21816092794593, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 279654, 'luminosityBlock': 361, 'event': 680711341, 'M4El': 216.89992570920325, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 283358, 'luminosityBlock': 435, 'event': 803166176, 'M2Mu2El': 271.4488438171102, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 284036, 'luminosityBlock': 307, 'event': 541189930, 'M2Mu2El': 207.34886400026713, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283358, 'luminosityBlock': 38, 'event': 61876518, 'M4Mu': 201.1250824887532, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279760, 'luminosityBlock': 181, 'event': 220799367, 'M2Mu2El': 505.64153123029325, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 280015, 'luminosityBlock': 518, 'event': 967050218, 'M4El': 88.39223198846314, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279694, 'luminosityBlock': 823, 'event': 1518790573, 'M2Mu2El': 210.56973276154326, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 280385, 'luminosityBlock': 1625, 'event': 3000323656, 'M2Mu2El': 207.31501772689793, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279841, 'luminosityBlock': 1740, 'event': 3039212347, 'M2Mu2El': 115.60954224747414, 'file': '../Datasets/IG Files/SingleElectron2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 282735, 'luminosityBlock': 237, 'event': 479727360, 'M2Mu2El': 263.52379521825685, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 280191, 'luminosityBlock': 552, 'event': 1033767924, 'M4El': 202.33738670951223, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 282842, 'luminosityBlock': 14, 'event': 27868082, 'M4Mu': 165.20031395342244, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279931, 'luminosityBlock': 2069, 'event': 3533853121, 'M4El': 236.91645221226096, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 283408, 'luminosityBlock': 1525, 'event': 2660314435, 'M2Mu2El': 212.94609909251466, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 282735, 'luminosityBlock': 1823, 'event': 3361634035, 'M4El': 372.11623537460156, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 281976, 'luminosityBlock': 75, 'event': 143964877, 'M4Mu': 339.04271635782084, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283885, 'luminosityBlock': 156, 'event': 281148351, 'M2Mu2El': 172.0573570527744, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 278969, 'luminosityBlock': 1319, 'event': 2289692824, 'M2Mu2El': 133.519182249026, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 281641, 'luminosityBlock': 202, 'event': 343915641, 'M2Mu2El': 180.37674509792083, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 279694, 'luminosityBlock': 7, 'event': 11968298, 'M4El': 118.61131752974914, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 283408, 'luminosityBlock': 1332, 'event': 2298921279, 'M4Mu': 131.20317545671767, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 283478, 'luminosityBlock': 721, 'event': 1110285183, 'M4El': 228.91142525111806, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 279716, 'luminosityBlock': 865, 'event': 1583688526, 'M4Mu': 129.38398297642246, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283270, 'luminosityBlock': 366, 'event': 540344626, 'M4Mu': 126.10640436635235, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 281727, 'luminosityBlock': 783, 'event': 1311225441, 'M4Mu': 413.5752420408616, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 283270, 'luminosityBlock': 558, 'event': 860696909, 'M4Mu': 327.2855009126675, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282918, 'luminosityBlock': 12, 'event': 19802421, 'M4Mu': 342.95811151150946, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 281976, 'luminosityBlock': 741, 'event': 1308493829, 'M4Mu': 325.0214519948645, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 283283, 'luminosityBlock': 364, 'event': 746081582, 'M4Mu': 264.257286175686, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 282037, 'luminosityBlock': 818, 'event': 1462230863, 'M2Mu2El': 280.86186852003704, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 280385, 'luminosityBlock': 708, 'event': 1321859861, 'M4Mu': 185.98673920322298, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 278923, 'luminosityBlock': 432, 'event': 718701263, 'M2Mu2El': 90.19295075764106, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283885, 'luminosityBlock': 1231, 'event': 2174581623, 'M4El': 153.32216025579717, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 284029, 'luminosityBlock': 82, 'event': 135415491, 'M4Mu': 240.6794788089387, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 282092, 'luminosityBlock': 1531, 'event': 2519534515, 'M4El': 141.88892817721424, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 280349, 'luminosityBlock': 349, 'event': 668961450, 'M4Mu': 91.35486121504478, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 278874, 'luminosityBlock': 452, 'event': 866800834, 'M4Mu': 150.3632618068474, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 282842, 'luminosityBlock': 34, 'event': 63160080, 'M2Mu2El': 213.662263413864, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282092, 'luminosityBlock': 1698, 'event': 2768239803, 'M2Mu2El': 320.72461544609155, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 278875, 'luminosityBlock': 506, 'event': 894272344, 'M4Mu': 89.84945620624087, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 281707, 'luminosityBlock': 328, 'event': 395755642, 'M4Mu': 367.12405919592095, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280349, 'luminosityBlock': 182, 'event': 342392005, 'M2Mu2El': 238.74462471093221, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278820, 'luminosityBlock': 982, 'event': 1803485446, 'M2Mu2El': 349.42872797811134, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283820, 'luminosityBlock': 1172, 'event': 2069466787, 'M2Mu2El': 301.4004802019123, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283877, 'luminosityBlock': 229, 'event': 419596643, 'M2Mu2El': 208.00960417826516, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 279794, 'luminosityBlock': 934, 'event': 1599274888, 'M2Mu2El': 266.2813291733097, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 279794, 'luminosityBlock': 553, 'event': 892561942, 'M4El': 160.14620213070256, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 280249, 'luminosityBlock': 486, 'event': 914023761, 'M2Mu2El': 188.4875958255236, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283820, 'luminosityBlock': 511, 'event': 897821591, 'M2Mu2El': 291.54687953148516, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 282735, 'luminosityBlock': 1417, 'event': 2635964381, 'M4Mu': 316.7264382808417, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283820, 'luminosityBlock': 762, 'event': 1345040615, 'M2Mu2El': 276.840289621678, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283270, 'luminosityBlock': 446, 'event': 670441761, 'M4El': 122.68169929688004, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279931, 'luminosityBlock': 3019, 'event': 5123592417, 'M4Mu': 124.03807316388007, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 280249, 'luminosityBlock': 703, 'event': 1314204612, 'M4El': 183.48206773779623, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 278822, 'luminosityBlock': 1461, 'event': 2441649588, 'M2Mu2El': 321.3147547478022, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283884, 'luminosityBlock': 655, 'event': 783893469, 'M2Mu2El': 90.17444948712924, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 280191, 'luminosityBlock': 555, 'event': 1039234549, 'M2Mu2El': 213.21844774718235, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 280385, 'luminosityBlock': 119, 'event': 219778155, 'M2Mu2El': 216.50476699108623, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 283358, 'luminosityBlock': 845, 'event': 1536079452, 'M4Mu': 255.07161750063847, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 281797, 'luminosityBlock': 1934, 'event': 3243753769, 'M2Mu2El': 100.1681697769397, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283934, 'luminosityBlock': 769, 'event': 1306284596, 'M4Mu': 171.7281814912896, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283306, 'luminosityBlock': 214, 'event': 388471539, 'M2Mu2El': 126.10140551103811, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278820, 'luminosityBlock': 413, 'event': 738271001, 'M4Mu': 125.44588063638648, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 281641, 'luminosityBlock': 228, 'event': 389991452, 'M4Mu': 220.70637893043332, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283059, 'luminosityBlock': 131, 'event': 241865320, 'M2Mu2El': 86.83532768904406, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283865, 'luminosityBlock': 864, 'event': 1530281652, 'M4El': 117.72377998042708, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283885, 'luminosityBlock': 1499, 'event': 2572292955, 'M2Mu2El': 268.33647977022287, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 280018, 'luminosityBlock': 1057, 'event': 1818780649, 'M4Mu': 209.94383512334898, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279794, 'luminosityBlock': 408, 'event': 629563703, 'M2Mu2El': 233.9977354355167, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 280330, 'luminosityBlock': 416, 'event': 785702881, 'M4El': 169.12504099295634, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 281797, 'luminosityBlock': 470, 'event': 621107704, 'M4El': 93.7364543971683, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279667, 'luminosityBlock': 381, 'event': 579280026, 'M2Mu2El': 288.56684407155944, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 284035, 'luminosityBlock': 260, 'event': 436426670, 'M2Mu2El': 292.1133835166871, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 278963, 'luminosityBlock': 45, 'event': 78966616, 'M4El': 87.1782100643581, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 280385, 'luminosityBlock': 422, 'event': 782246491, 'M4Mu': 171.17752077139463, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283876, 'luminosityBlock': 655, 'event': 1051965349, 'M4Mu': 202.0788641980509, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283408, 'luminosityBlock': 255, 'event': 424066403, 'M4Mu': 92.7135374054542, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 281797, 'luminosityBlock': 350, 'event': 401635042, 'M4Mu': 148.0654567883259, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 280017, 'luminosityBlock': 464, 'event': 813205409, 'M2Mu2El': 106.37825027741258, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279654, 'luminosityBlock': 576, 'event': 1093155540, 'M4Mu': 88.65380302694855, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 280385, 'luminosityBlock': 421, 'event': 780973418, 'M4Mu': 91.02245632586144, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 281976, 'luminosityBlock': 1747, 'event': 3102255281, 'M4Mu': 345.3024499943905, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279841, 'luminosityBlock': 1746, 'event': 3048957995, 'M4Mu': 104.28644571968273, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 279760, 'luminosityBlock': 714, 'event': 1204880849, 'M2Mu2El': 179.69724384053248, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283885, 'luminosityBlock': 1143, 'event': 2037440756, 'M4El': 142.32859410182678, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 279029, 'luminosityBlock': 142, 'event': 231908903, 'M4El': 264.5567173171603, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282733, 'luminosityBlock': 16, 'event': 25626411, 'M4Mu': 359.31755297830745, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 278969, 'luminosityBlock': 354, 'event': 526042346, 'M4Mu': 442.50823764146503, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 283416, 'luminosityBlock': 233, 'event': 427981409, 'M4El': 155.5247976458039, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283050, 'luminosityBlock': 196, 'event': 352160885, 'M4El': 286.98945276370006, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279685, 'luminosityBlock': 68, 'event': 124331542, 'M4Mu': 209.66129038316325, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 278969, 'luminosityBlock': 679, 'event': 1108529870, 'M4Mu': 124.8785127895147, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 281693, 'luminosityBlock': 1253, 'event': 2365855938, 'M4El': 149.7236971310467, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283307, 'luminosityBlock': 108, 'event': 199438691, 'M4Mu': 123.95967091100482, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283059, 'luminosityBlock': 60, 'event': 105960874, 'M4Mu': 224.54899503036634, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279841, 'luminosityBlock': 2105, 'event': 3610565638, 'M4Mu': 267.8583588096667, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278923, 'luminosityBlock': 147, 'event': 203074351, 'M2Mu2El': 122.80045506452096, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 280364, 'luminosityBlock': 569, 'event': 1055647309, 'M4El': 247.03826160759564, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283964, 'luminosityBlock': 222, 'event': 369073503, 'M4Mu': 204.16193701382244, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283865, 'luminosityBlock': 733, 'event': 1282305614, 'M4Mu': 154.7769418524042, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283830, 'luminosityBlock': 61, 'event': 116936765, 'M4El': 185.92391977696693, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 281976, 'luminosityBlock': 363, 'event': 640370397, 'M2Mu2El': 181.60278845168924, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 278874, 'luminosityBlock': 474, 'event': 911321130, 'M4Mu': 181.89548515237502, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 282800, 'luminosityBlock': 374, 'event': 712420585, 'M4Mu': 441.2619035925841, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279116, 'luminosityBlock': 281, 'event': 499346939, 'M2Mu2El': 112.62338349841352, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283308, 'luminosityBlock': 503, 'event': 977096094, 'M4El': 180.68145344643796, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283820, 'luminosityBlock': 187, 'event': 313336689, 'M2Mu2El': 120.14490812207231, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279931, 'luminosityBlock': 922, 'event': 1571279103, 'M4El': 147.21874259713624, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282807, 'luminosityBlock': 52, 'event': 100075033, 'M4El': 232.9345264905483, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 281693, 'luminosityBlock': 1548, 'event': 2840408838, 'M2Mu2El': 173.04306079927147, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283964, 'luminosityBlock': 199, 'event': 335120409, 'M4Mu': 277.92290800344733, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 281641, 'luminosityBlock': 144, 'event': 238302991, 'M4Mu': 165.8399188940191, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 283353, 'luminosityBlock': 164, 'event': 175179993, 'M4El': 217.9109608245698, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283408, 'luminosityBlock': 840, 'event': 1413611164, 'M4El': 206.083822924517, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 279588, 'luminosityBlock': 789, 'event': 1352575042, 'M2Mu2El': 497.3013323914897, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 278962, 'luminosityBlock': 171, 'event': 200405697, 'M4El': 126.64199961393611, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 282735, 'luminosityBlock': 353, 'event': 708774573, 'M2Mu2El': 243.1433947971752, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283964, 'luminosityBlock': 76, 'event': 129762939, 'M2Mu2El': 124.15116297995667, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283877, 'luminosityBlock': 451, 'event': 845430025, 'M4El': 268.9165243545317, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279931, 'luminosityBlock': 85, 'event': 35606279, 'M4Mu': 318.61746731305004, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 279715, 'luminosityBlock': 222, 'event': 289782675, 'M4El': 198.86574051083457, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283059, 'luminosityBlock': 42, 'event': 74808565, 'M4Mu': 176.77834999599335, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 281726, 'luminosityBlock': 244, 'event': 459390905, 'M4El': 182.26156503902334, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 282037, 'luminosityBlock': 320, 'event': 596128631, 'M4El': 88.13457195990125, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283358, 'luminosityBlock': 448, 'event': 826975595, 'M4Mu': 186.52317584297603, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 280015, 'luminosityBlock': 147, 'event': 269235802, 'M4Mu': 303.0936336251644, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 282814, 'luminosityBlock': 1652, 'event': 3074136953, 'M2Mu2El': 149.3219021539457, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280242, 'luminosityBlock': 213, 'event': 379199010, 'M2Mu2El': 269.84870142747036, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 279694, 'luminosityBlock': 5, 'event': 8513225, 'M2Mu2El': 195.79147837325746, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279841, 'luminosityBlock': 1437, 'event': 2515477009, 'M4El': 273.34498766370996, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 278820, 'luminosityBlock': 1159, 'event': 2143299549, 'M2Mu2El': 273.4401384264092, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 278975, 'luminosityBlock': 702, 'event': 1139586099, 'M2Mu2El': 202.11415876251922, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279931, 'luminosityBlock': 1192, 'event': 2069872974, 'M2Mu2El': 85.91832992986703, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 278875, 'luminosityBlock': 470, 'event': 836646797, 'M2Mu2El': 122.15983781772808, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 282922, 'luminosityBlock': 92, 'event': 169498804, 'M4Mu': 200.12008633337845, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 283877, 'luminosityBlock': 537, 'event': 1006135573, 'M2Mu2El': 229.3422400565316, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 278962, 'luminosityBlock': 110, 'event': 91930198, 'M4Mu': 272.99186358457746, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283934, 'luminosityBlock': 118, 'event': 199809504, 'M2Mu2El': 285.57740952402315, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 281976, 'luminosityBlock': 426, 'event': 755720434, 'M2Mu2El': 268.2527038185612, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279823, 'luminosityBlock': 386, 'event': 589565482, 'M4Mu': 89.8485376908662, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283685, 'luminosityBlock': 36, 'event': 63930915, 'M2Mu2El': 164.02497351314693, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 280249, 'luminosityBlock': 91, 'event': 172342638, 'M2Mu2El': 225.9349470314311, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 279694, 'luminosityBlock': 1994, 'event': 3576406139, 'M4Mu': 92.98450957001924, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 282814, 'luminosityBlock': 206, 'event': 406132010, 'M4El': 333.2263900465602, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 283876, 'luminosityBlock': 153, 'event': 180280596, 'M4El': 244.94690249331376, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282919, 'luminosityBlock': 26, 'event': 51905111, 'M2Mu2El': 202.48930002621088, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 281693, 'luminosityBlock': 320, 'event': 607960648, 'M4El': 199.88713189818037, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283548, 'luminosityBlock': 231, 'event': 182888890, 'M4Mu': 126.40288110671516, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282919, 'luminosityBlock': 122, 'event': 234390314, 'M4Mu': 194.6433907590821, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 279841, 'luminosityBlock': 1479, 'event': 2592107724, 'M2Mu2El': 360.5291714120566, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279844, 'luminosityBlock': 233, 'event': 298108506, 'M2Mu2El': 248.3603684249059, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283934, 'luminosityBlock': 688, 'event': 1155808345, 'M4Mu': 174.09550498485635, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279966, 'luminosityBlock': 164, 'event': 185321229, 'M2Mu2El': 157.07954037561547, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279588, 'luminosityBlock': 253, 'event': 336762156, 'M4Mu': 91.09739394435663, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 281693, 'luminosityBlock': 264, 'event': 498913396, 'M2Mu2El': 172.65059302860155, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 279794, 'luminosityBlock': 603, 'event': 979614439, 'M4El': 253.5598387507101, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278923, 'luminosityBlock': 117, 'event': 146713901, 'M4El': 793.6232504676383, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282735, 'luminosityBlock': 1172, 'event': 2147854409, 'M2Mu2El': 328.09639474299604, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280017, 'luminosityBlock': 286, 'event': 515805424, 'M2Mu2El': 326.1414811503346, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282814, 'luminosityBlock': 768, 'event': 1470620473, 'M2Mu2El': 192.74889882945646, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 281707, 'luminosityBlock': 412, 'event': 548190874, 'M2Mu2El': 276.10313260792503, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279766, 'luminosityBlock': 426, 'event': 789491726, 'M2Mu2El': 274.13906305334666, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 279588, 'luminosityBlock': 218, 'event': 277421350, 'M2Mu2El': 255.66125643087517, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 283270, 'luminosityBlock': 1668, 'event': 2861973820, 'M4El': 193.16112161982886, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 280385, 'luminosityBlock': 1050, 'event': 1968414468, 'M2Mu2El': 178.2925719703352, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280249, 'luminosityBlock': 1264, 'event': 2215390486, 'M2Mu2El': 232.27569395422742, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 283830, 'luminosityBlock': 83, 'event': 157971547, 'M4El': 146.74664554520928, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 279684, 'luminosityBlock': 20, 'event': 34145787, 'M2Mu2El': 213.830970621431, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282037, 'luminosityBlock': 370, 'event': 680949581, 'M4Mu': 519.7262986789428, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 278969, 'luminosityBlock': 1323, 'event': 2297601846, 'M2Mu2El': 453.7620320311192, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 280018, 'luminosityBlock': 918, 'event': 1588260341, 'M2Mu2El': 144.07133817102834, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 280249, 'luminosityBlock': 77, 'event': 144754846, 'M4Mu': 497.77932963361724, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 282733, 'luminosityBlock': 91, 'event': 172302832, 'M4Mu': 91.3720591060333, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279667, 'luminosityBlock': 872, 'event': 1504745343, 'M2Mu2El': 220.0280500630513, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282814, 'luminosityBlock': 1065, 'event': 1944396792, 'M4El': 196.21058116756518, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 279931, 'luminosityBlock': 401, 'event': 602772946, 'M2Mu2El': 206.6931072316195, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 283877, 'luminosityBlock': 332, 'event': 621123469, 'M4El': 281.640457110575, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 280249, 'luminosityBlock': 1096, 'event': 1963777077, 'M2Mu2El': 119.92512001720024, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 278969, 'luminosityBlock': 457, 'event': 715081231, 'M4Mu': 179.92588227759092, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283270, 'luminosityBlock': 830, 'event': 1341054409, 'M4El': 152.5443563696372, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 280249, 'luminosityBlock': 888, 'event': 1630819334, 'M4El': 264.60467512113996, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283934, 'luminosityBlock': 468, 'event': 777872589, 'M2Mu2El': 228.73819084539983, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 281707, 'luminosityBlock': 620, 'event': 933124789, 'M2Mu2El': 172.22678480228487, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279667, 'luminosityBlock': 72, 'event': 22971279, 'M2Mu2El': 224.21945468945802, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 283830, 'luminosityBlock': 232, 'event': 414413316, 'M2Mu2El': 237.5649683775232, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283885, 'luminosityBlock': 405, 'event': 730919707, 'M4Mu': 82.29908663896761, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279667, 'luminosityBlock': 837, 'event': 1435434485, 'M4Mu': 178.26027546718407, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 278822, 'luminosityBlock': 1124, 'event': 1932429740, 'M2Mu2El': 188.9303201883575, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283270, 'luminosityBlock': 1703, 'event': 2920076999, 'M4Mu': 124.98763150972992, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283682, 'luminosityBlock': 311, 'event': 577770225, 'M4El': 159.50019129704623, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283270, 'luminosityBlock': 341, 'event': 496911967, 'M2Mu2El': 187.06471300180237, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 279116, 'luminosityBlock': 421, 'event': 757682911, 'M4Mu': 90.99733293725414, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 280251, 'luminosityBlock': 314, 'event': 567460814, 'M4Mu': 198.84748177430393, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 282712, 'luminosityBlock': 34, 'event': 64863685, 'M4Mu': 404.4283633955656, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 280194, 'luminosityBlock': 120, 'event': 190847521, 'M4El': 184.1622279868482, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279667, 'luminosityBlock': 123, 'event': 108322568, 'M4El': 195.04380813876048, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283865, 'luminosityBlock': 676, 'event': 1186362046, 'M4Mu': 131.5485717337886, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283270, 'luminosityBlock': 886, 'event': 1435709677, 'M2Mu2El': 311.6836400218638, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278962, 'luminosityBlock': 190, 'event': 232783847, 'M2Mu2El': 203.7574946722292, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283685, 'luminosityBlock': 312, 'event': 303213818, 'M2Mu2El': 236.93489753443362, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283050, 'luminosityBlock': 55, 'event': 88740730, 'M2Mu2El': 227.71119190118685, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 282734, 'luminosityBlock': 293, 'event': 584679771, 'M4Mu': 292.08464616297636, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 283059, 'luminosityBlock': 342, 'event': 641394296, 'M4El': 110.86140320676128, 'file': '../Datasets/IG Files/SingleElectron2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279658, 'luminosityBlock': 69, 'event': 107039269, 'M4Mu': 186.4835271030891, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 280364, 'luminosityBlock': 238, 'event': 454315935, 'M4El': 127.99116421893443, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 281797, 'luminosityBlock': 422, 'event': 530538446, 'M4El': 121.22846725188879, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 278874, 'luminosityBlock': 406, 'event': 774765847, 'M4El': 258.48527723311315, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 278820, 'luminosityBlock': 165, 'event': 286717419, 'M4El': 125.97511843651381, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 279694, 'luminosityBlock': 647, 'event': 1185506506, 'M4El': 250.18957634839802, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 283830, 'luminosityBlock': 518, 'event': 918136861, 'M4El': 89.55653666198442, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279667, 'luminosityBlock': 265, 'event': 361236341, 'M2Mu2El': 190.05789735445214, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 283408, 'luminosityBlock': 2312, 'event': 3928210731, 'M4El': 251.24758496501173, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 283934, 'luminosityBlock': 294, 'event': 473589099, 'M4El': 227.43566211260415, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 282092, 'luminosityBlock': 2270, 'event': 3758011612, 'M4Mu': 131.64558760575778, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 278923, 'luminosityBlock': 331, 'event': 529378896, 'M4El': 260.7599221822544, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279931, 'luminosityBlock': 2747, 'event': 4704056131, 'M2Mu2El': 123.74830802288365, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283353, 'luminosityBlock': 202, 'event': 250679126, 'M4Mu': 279.18833859017997, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 281975, 'luminosityBlock': 43, 'event': 61881217, 'M4Mu': 266.2425232351518, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 278873, 'luminosityBlock': 81, 'event': 30801674, 'M2Mu2El': 217.71277669789362, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 284037, 'luminosityBlock': 150, 'event': 285700675, 'M4Mu': 279.99177345385044, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 280385, 'luminosityBlock': 1125, 'event': 2115295967, 'M4Mu': 217.01205191271268, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282731, 'luminosityBlock': 75, 'event': 143007430, 'M4El': 324.6172504891962, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283885, 'luminosityBlock': 1688, 'event': 2947488730, 'M4Mu': 123.95344374721441, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283835, 'luminosityBlock': 42, 'event': 66628411, 'M2Mu2El': 83.84944383613666, 'file': '../Datasets/IG Files/MuonEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282814, 'luminosityBlock': 397, 'event': 770288126, 'M2Mu2El': 194.71537666653134, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 280191, 'luminosityBlock': 374, 'event': 692500473, 'M4Mu': 513.9602029439103, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279794, 'luminosityBlock': 640, 'event': 1045083748, 'M4El': 215.17910727346995, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 281727, 'luminosityBlock': 238, 'event': 391597434, 'M4El': 91.9394300464271, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 281693, 'luminosityBlock': 1884, 'event': 3418236113, 'M4Mu': 185.22800903816116, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 278875, 'luminosityBlock': 395, 'event': 712497669, 'M4Mu': 253.519245672502, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 280242, 'luminosityBlock': 582, 'event': 1063761528, 'M2Mu2El': 188.9961049558181, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 279975, 'luminosityBlock': 492, 'event': 775930764, 'M2Mu2El': 259.6864478299514, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283478, 'luminosityBlock': 411, 'event': 574375000, 'M2Mu2El': 320.3780181518286, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 280015, 'luminosityBlock': 274, 'event': 498552415, 'M2Mu2El': 142.17873877657948, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 283478, 'luminosityBlock': 924, 'event': 1455705861, 'M4Mu': 85.36972949138718, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283308, 'luminosityBlock': 79, 'event': 143466899, 'M4El': 91.41713682108421, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 281693, 'luminosityBlock': 1448, 'event': 2687129909, 'M4El': 292.59462636104985, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 282731, 'luminosityBlock': 3, 'event': 5680479, 'M2Mu2El': 191.68401347513486, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279841, 'luminosityBlock': 1387, 'event': 2425862852, 'M2Mu2El': 214.9002069886878, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 283680, 'luminosityBlock': 6, 'event': 7270957, 'M4El': 106.50414542155916, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283478, 'luminosityBlock': 436, 'event': 615190126, 'M4Mu': 125.71965651064525, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279694, 'luminosityBlock': 2211, 'event': 3989731853, 'M2Mu2El': 200.09267189591193, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 282735, 'luminosityBlock': 201, 'event': 409806624, 'M4Mu': 343.43811712463287, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279479, 'luminosityBlock': 93, 'event': 42938076, 'M2Mu2El': 212.91170427820003, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 278969, 'luminosityBlock': 1240, 'event': 2139367920, 'M2Mu2El': 371.262808639986, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 283820, 'luminosityBlock': 1303, 'event': 2298365539, 'M4Mu': 272.10263704391633, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 279766, 'luminosityBlock': 776, 'event': 1432226686, 'M4Mu': 337.2351721492404, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 284043, 'luminosityBlock': 220, 'event': 322614318, 'M4Mu': 234.77888128145912, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283306, 'luminosityBlock': 98, 'event': 181831573, 'M4El': 198.12765416372022, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 278923, 'luminosityBlock': 288, 'event': 455532479, 'M4Mu': 100.13063177103872, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283270, 'luminosityBlock': 496, 'event': 746914116, 'M2Mu2El': 243.27559562079085, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279715, 'luminosityBlock': 135, 'event': 128613034, 'M4El': 243.60060864981446, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283408, 'luminosityBlock': 857, 'event': 1441064636, 'M2Mu2El': 234.7178965897163, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 279716, 'luminosityBlock': 1247, 'event': 2172247042, 'M2Mu2El': 206.3843160966785, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 280191, 'luminosityBlock': 476, 'event': 889053582, 'M2Mu2El': 260.3473883740612, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 282731, 'luminosityBlock': 41, 'event': 81943091, 'M4Mu': 129.24783867299894, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 283306, 'luminosityBlock': 53, 'event': 100561747, 'M2Mu2El': 118.81386553267237, 'file': '../Datasets/IG Files/MuonEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 280330, 'luminosityBlock': 401, 'event': 757616776, 'M4El': 88.85608187362818, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279715, 'luminosityBlock': 424, 'event': 669557839, 'M4Mu': 247.7446019571278, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283408, 'luminosityBlock': 1272, 'event': 2188096033, 'M4El': 153.34218093863439, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283306, 'luminosityBlock': 34, 'event': 62943891, 'M4El': 230.4015998344966, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 280364, 'luminosityBlock': 313, 'event': 596724770, 'M2Mu2El': 218.7130990036102, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283059, 'luminosityBlock': 147, 'event': 272021935, 'M4Mu': 125.9784738590081, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 280251, 'luminosityBlock': 325, 'event': 588002986, 'M4El': 128.51223132234782, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283946, 'luminosityBlock': 1275, 'event': 2137919142, 'M4El': 128.42386257736203, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 279681, 'luminosityBlock': 78, 'event': 24678115, 'M4El': 162.8514608694418, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279931, 'luminosityBlock': 2771, 'event': 4742902929, 'M4Mu': 238.0574147837924, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 281641, 'luminosityBlock': 101, 'event': 168213038, 'M4Mu': 156.40581616734468, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 280249, 'luminosityBlock': 136, 'event': 258406656, 'M4Mu': 120.23375005724127, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 278820, 'luminosityBlock': 1161, 'event': 2148682964, 'M4Mu': 245.82293415496494, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279975, 'luminosityBlock': 697, 'event': 1151595035, 'M4Mu': 110.19302234998615, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283408, 'luminosityBlock': 138, 'event': 225452396, 'M4El': 215.37029232324082, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 278820, 'luminosityBlock': 1179, 'event': 2181350042, 'M2Mu2El': 261.2517450812504, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 279931, 'luminosityBlock': 401, 'event': 602263219, 'M2Mu2El': 185.79085387796133, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 282814, 'luminosityBlock': 1626, 'event': 3027057658, 'M4El': 204.021605554942, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282092, 'luminosityBlock': 351, 'event': 452333173, 'M4Mu': 574.9326404818179, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 283358, 'luminosityBlock': 662, 'event': 1217657860, 'M2Mu2El': 199.033347812567, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 283308, 'luminosityBlock': 281, 'event': 545761064, 'M4Mu': 210.99905695261904, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 280191, 'luminosityBlock': 154, 'event': 280537968, 'M4Mu': 193.75735299201403, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 279794, 'luminosityBlock': 824, 'event': 1391770885, 'M4Mu': 219.33373760043028, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 282814, 'luminosityBlock': 1625, 'event': 3025093375, 'M2Mu2El': 200.9456745998448, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283884, 'luminosityBlock': 489, 'event': 516553964, 'M4Mu': 196.99041963854464, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 280330, 'luminosityBlock': 802, 'event': 1534717904, 'M4El': 550.8006355915993, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279931, 'luminosityBlock': 1741, 'event': 2993800908, 'M2Mu2El': 192.03025387681078, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 280349, 'luminosityBlock': 145, 'event': 266543120, 'M4El': 178.9731775085297, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 283283, 'luminosityBlock': 1209, 'event': 2198580672, 'M2Mu2El': 255.97126543934348, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283478, 'luminosityBlock': 206, 'event': 245426597, 'M4Mu': 288.0041144882954, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279667, 'luminosityBlock': 725, 'event': 1220766211, 'M4Mu': 274.87544238424266, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 279931, 'luminosityBlock': 1064, 'event': 1826222506, 'M2Mu2El': 124.38947418273011, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283283, 'luminosityBlock': 1482, 'event': 2603424373, 'M4El': 90.15932280317972, 'file': '../Datasets/IG Files/SingleElectron2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279588, 'luminosityBlock': 401, 'event': 613238417, 'M2Mu2El': 254.27850177378184, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279715, 'luminosityBlock': 382, 'event': 591325039, 'M4El': 125.57148161229739, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 281693, 'luminosityBlock': 120, 'event': 227312388, 'M4Mu': 332.1356639114185, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283050, 'luminosityBlock': 158, 'event': 278879877, 'M2Mu2El': 289.7629726471994, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 281975, 'luminosityBlock': 180, 'event': 308864751, 'M4Mu': 105.67484456969774, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 278874, 'luminosityBlock': 405, 'event': 771589870, 'M4El': 224.05268356209797, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 281707, 'luminosityBlock': 1058, 'event': 1754749445, 'M2Mu2El': 307.0901874104206, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 279966, 'luminosityBlock': 417, 'event': 628606275, 'M2Mu2El': 210.4985586131646, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 280015, 'luminosityBlock': 464, 'event': 866333085, 'M4El': 203.07151558643577, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 280349, 'luminosityBlock': 216, 'event': 410277057, 'M4El': 265.03765893199875, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 281976, 'luminosityBlock': 521, 'event': 917601896, 'M4El': 98.51532815671543, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283359, 'luminosityBlock': 13, 'event': 19400466, 'M4Mu': 242.74135153509792, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 282735, 'luminosityBlock': 378, 'event': 761320453, 'M4Mu': 220.91167557220234, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279116, 'luminosityBlock': 294, 'event': 522382979, 'M4Mu': 87.56617213817134, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 282033, 'luminosityBlock': 109, 'event': 54134638, 'M2Mu2El': 231.03346761224657, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 280330, 'luminosityBlock': 625, 'event': 1191361410, 'M4Mu': 147.9781268637064, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279694, 'luminosityBlock': 1174, 'event': 2182032453, 'M4El': 183.0786148901969, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283830, 'luminosityBlock': 75, 'event': 141972509, 'M2Mu2El': 80.36305404958553, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 279654, 'luminosityBlock': 36, 'event': 68513802, 'M2Mu2El': 259.1816698064329, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283885, 'luminosityBlock': 101, 'event': 183491837, 'M2Mu2El': 259.02878188151965, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 278820, 'luminosityBlock': 1233, 'event': 2276764059, 'M2Mu2El': 234.62878926017882, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 280349, 'luminosityBlock': 353, 'event': 676878052, 'M4Mu': 90.08311670419769, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 282037, 'luminosityBlock': 153, 'event': 296043455, 'M2Mu2El': 218.81724689863105, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279694, 'luminosityBlock': 994, 'event': 1833653302, 'M4El': 199.72442347151284, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 280024, 'luminosityBlock': 263, 'event': 374584867, 'M2Mu2El': 296.9178327990018, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 278822, 'luminosityBlock': 414, 'event': 705032441, 'M2Mu2El': 181.19313854564055, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282735, 'luminosityBlock': 571, 'event': 1142832101, 'M4El': 129.5198417581148, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 282092, 'luminosityBlock': 236, 'event': 257331934, 'M2Mu2El': 107.95171289482005, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283934, 'luminosityBlock': 213, 'event': 348843005, 'M4El': 224.3783658873999, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 278923, 'luminosityBlock': 76, 'event': 77121379, 'M4El': 128.1146962420032, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283884, 'luminosityBlock': 712, 'event': 885768974, 'M2Mu2El': 204.50156736634813, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279794, 'luminosityBlock': 923, 'event': 1578283741, 'M2Mu2El': 339.267040076376, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 281797, 'luminosityBlock': 1492, 'event': 2531954664, 'M4Mu': 214.17672323662896, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 279694, 'luminosityBlock': 2008, 'event': 3605352256, 'M2Mu2El': 361.1161382371637, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 283830, 'luminosityBlock': 23, 'event': 43219961, 'M4Mu': 119.4498106246097, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 280017, 'luminosityBlock': 498, 'event': 865880838, 'M2Mu2El': 478.4337606876846, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283270, 'luminosityBlock': 926, 'event': 1503825779, 'M4El': 90.16031585092307, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 281639, 'luminosityBlock': 102, 'event': 165371126, 'M4El': 213.44303485969962, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 280188, 'luminosityBlock': 124, 'event': 222006768, 'M2Mu2El': 274.16428836918845, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283946, 'luminosityBlock': 1261, 'event': 2110311137, 'M2Mu2El': 201.44807295332484, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 281797, 'luminosityBlock': 1460, 'event': 2475018176, 'M4El': 116.71029408469656, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 278969, 'luminosityBlock': 1105, 'event': 1893799210, 'M4Mu': 91.07427971501603, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 282807, 'luminosityBlock': 281, 'event': 553135460, 'M2Mu2El': 94.48370617094943, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283408, 'luminosityBlock': 1023, 'event': 1733489147, 'M4Mu': 216.4868744026447, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 283353, 'luminosityBlock': 494, 'event': 752387145, 'M2Mu2El': 291.0414868418168, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'run': 281639, 'luminosityBlock': 54, 'event': 85071477, 'M2Mu2El': 350.8227335314701, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 281693, 'luminosityBlock': 1075, 'event': 2047484904, 'M4El': 140.12249480250904, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283865, 'luminosityBlock': 226, 'event': 390554212, 'M4Mu': 364.00056680482265, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 280385, 'luminosityBlock': 547, 'event': 1020280319, 'M2Mu2El': 189.74746670159576, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283283, 'luminosityBlock': 500, 'event': 1007449973, 'M4El': 328.4421311695596, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283270, 'luminosityBlock': 1599, 'event': 2745591108, 'M2Mu2El': 207.8442171909872, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278969, 'luminosityBlock': 767, 'event': 1274310281, 'M4Mu': 138.10051018789892, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 279841, 'luminosityBlock': 1210, 'event': 2088020035, 'M2Mu2El': 400.1569659819094, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 283408, 'luminosityBlock': 232, 'event': 384415927, 'M4Mu': 136.60601145670523, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 279766, 'luminosityBlock': 616, 'event': 1147711338, 'M4Mu': 116.51866613410182, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282735, 'luminosityBlock': 491, 'event': 989682042, 'M4El': 289.6525066806539, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 278820, 'luminosityBlock': 1501, 'event': 2722812804, 'M2Mu2El': 186.76481148697832, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 283946, 'luminosityBlock': 876, 'event': 1384411459, 'M4El': 132.49558459030078, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283059, 'luminosityBlock': 233, 'event': 434472521, 'M4Mu': 191.20863340042877, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 282092, 'luminosityBlock': 539, 'event': 759153050, 'M4Mu': 585.653724028793, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 279760, 'luminosityBlock': 557, 'event': 906756539, 'M4El': 207.09581028934755, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279887, 'luminosityBlock': 138, 'event': 123114034, 'M4Mu': 198.32419276687284, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 283308, 'luminosityBlock': 617, 'event': 1184217302, 'M4El': 190.54752903224525, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 281707, 'luminosityBlock': 633, 'event': 955006381, 'M4Mu': 135.44676150181147, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 278962, 'luminosityBlock': 117, 'event': 104460941, 'M2Mu2El': 213.24860583749694, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 278820, 'luminosityBlock': 608, 'event': 1108631891, 'M4El': 125.49455481906442, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279685, 'luminosityBlock': 133, 'event': 252496330, 'M4Mu': 189.96479431972776, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 280015, 'luminosityBlock': 282, 'event': 514039000, 'M4El': 260.08353146525866, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 278969, 'luminosityBlock': 347, 'event': 513761715, 'M2Mu2El': 257.79031166281067, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 282092, 'luminosityBlock': 1114, 'event': 1801502637, 'M4El': 233.13786448314173, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 282092, 'luminosityBlock': 791, 'event': 1205127016, 'M2Mu2El': 204.74673350932844, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 279715, 'luminosityBlock': 214, 'event': 273697327, 'M2Mu2El': 258.9323885138855, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279975, 'luminosityBlock': 1007, 'event': 1736902820, 'M4Mu': 397.1761022538125, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279716, 'luminosityBlock': 750, 'event': 1393680355, 'M2Mu2El': 534.0712577972714, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279694, 'luminosityBlock': 291, 'event': 525878391, 'M2Mu2El': 391.8812308850874, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283043, 'luminosityBlock': 95, 'event': 169109680, 'M2Mu2El': 449.4443756232808, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 279694, 'luminosityBlock': 656, 'event': 1203272521, 'M4El': 204.5501399526314, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 283934, 'luminosityBlock': 543, 'event': 913580454, 'M2Mu2El': 291.90447875688096, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 280385, 'luminosityBlock': 1628, 'event': 3004645493, 'M4Mu': 88.90871118662488, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279024, 'luminosityBlock': 266, 'event': 395928275, 'M4Mu': 178.78002706627382, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279071, 'luminosityBlock': 236, 'event': 310137488, 'M4Mu': 190.79372302977316, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 282092, 'luminosityBlock': 662, 'event': 965014883, 'M4Mu': 243.9270256523811, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283934, 'luminosityBlock': 1074, 'event': 1865687044, 'M2Mu2El': 195.04973229520724, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 278962, 'luminosityBlock': 346, 'event': 527658350, 'M4Mu': 235.29261209234002, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 280330, 'luminosityBlock': 713, 'event': 1359686117, 'M4El': 114.29942314029577, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 280364, 'luminosityBlock': 234, 'event': 445527561, 'M2Mu2El': 208.59844545427256, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 282814, 'luminosityBlock': 1326, 'event': 2460142140, 'M2Mu2El': 230.58393715663442, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282037, 'luminosityBlock': 1603, 'event': 2791002166, 'M2Mu2El': 254.20395425937198, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279766, 'luminosityBlock': 1374, 'event': 2376726435, 'M2Mu2El': 86.72071375529357, 'file': '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279931, 'luminosityBlock': 663, 'event': 1087104206, 'M4El': 225.0730975682869, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279931, 'luminosityBlock': 2692, 'event': 4617026502, 'M2Mu2El': 633.1651861578017, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 282092, 'luminosityBlock': 1452, 'event': 2393503980, 'M2Mu2El': 220.65513944516604, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279716, 'luminosityBlock': 328, 'event': 613197969, 'M2Mu2El': 306.2422813292504, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 278820, 'luminosityBlock': 478, 'event': 862916703, 'M2Mu2El': 182.85443995068948, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'run': 279685, 'luminosityBlock': 35, 'event': 59289247, 'M4Mu': 90.08321083647205, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 281797, 'luminosityBlock': 437, 'event': 558141906, 'M4El': 223.6795231183416, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279715, 'luminosityBlock': 563, 'event': 924137662, 'M2Mu2El': 358.9027330550821, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 279588, 'luminosityBlock': 1115, 'event': 1972368386, 'M2Mu2El': 420.89704238946234, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 282092, 'luminosityBlock': 1969, 'event': 3222986131, 'M4Mu': 185.3507595309882, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283308, 'luminosityBlock': 326, 'event': 631231974, 'M2Mu2El': 366.3588818864996, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 282037, 'luminosityBlock': 173, 'event': 328621184, 'M4Mu': 212.62955012812296, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279658, 'luminosityBlock': 313, 'event': 542041120, 'M4El': 484.27113948304157, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283306, 'luminosityBlock': 73, 'event': 136152694, 'M4El': 174.9602959311238, 'file': '../Datasets/IG Files/SingleElectron2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279794, 'luminosityBlock': 576, 'event': 933087261, 'M2Mu2El': 90.7736656027447, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 280249, 'luminosityBlock': 367, 'event': 687273605, 'M2Mu2El': 223.10032628262795, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 282092, 'luminosityBlock': 1079, 'event': 1732354569, 'M2Mu2El': 108.43662059660144, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283408, 'luminosityBlock': 14, 'event': 24538444, 'M2Mu2El': 273.79347170824394, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283283, 'luminosityBlock': 277, 'event': 574249276, 'M2Mu2El': 184.8086201672704, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283946, 'luminosityBlock': 96, 'event': 41762122, 'M2Mu2El': 228.78038707433117, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283934, 'luminosityBlock': 439, 'event': 722925232, 'M4Mu': 237.61252979435653, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'run': 282092, 'luminosityBlock': 1651, 'event': 2700446627, 'M2Mu2El': 221.3206109462506, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 278969, 'luminosityBlock': 1131, 'event': 1940395692, 'M2Mu2El': 217.83492700294894, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 283946, 'luminosityBlock': 157, 'event': 134448349, 'M2Mu2El': 432.0176543079171, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 278820, 'luminosityBlock': 1465, 'event': 2663714224, 'M4Mu': 121.96245365731723, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283548, 'luminosityBlock': 196, 'event': 119043196, 'M4Mu': 201.9210106603494, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 279071, 'luminosityBlock': 121, 'event': 92907807, 'M2Mu2El': 271.5591265252182, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 282735, 'luminosityBlock': 1550, 'event': 2889347131, 'M2Mu2El': 260.3299632944061, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 279654, 'luminosityBlock': 1170, 'event': 2226893993, 'M2Mu2El': 106.4634741535965, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 279654, 'luminosityBlock': 1173, 'event': 2232567437, 'M4Mu': 305.8085543477426, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 278975, 'luminosityBlock': 271, 'event': 447602235, 'M4El': 180.60386494237477, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 280188, 'luminosityBlock': 231, 'event': 412455491, 'M4El': 160.4477522426847, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 283270, 'luminosityBlock': 1105, 'event': 1830906324, 'M2Mu2El': 277.1142857744029, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 281693, 'luminosityBlock': 419, 'event': 784483359, 'M4El': 232.34465462123222, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 283478, 'luminosityBlock': 383, 'event': 533726111, 'M2Mu2El': 186.9334692218684, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_7.ig'}
+{'run': 279116, 'luminosityBlock': 382, 'event': 682944364, 'M2Mu2El': 301.6574444900802, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279654, 'luminosityBlock': 40, 'event': 76309134, 'M2Mu2El': 135.65650848923363, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279588, 'luminosityBlock': 759, 'event': 1294103090, 'M2Mu2El': 120.7121816189172, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 283307, 'luminosityBlock': 146, 'event': 266738670, 'M4Mu': 125.97506447640389, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 279766, 'luminosityBlock': 225, 'event': 428328878, 'M4Mu': 212.04496343430262, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 283059, 'luminosityBlock': 32, 'event': 57432661, 'M4Mu': 112.45138537099471, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 279658, 'luminosityBlock': 260, 'event': 438211873, 'M4El': 139.6554338506119, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 279681, 'luminosityBlock': 95, 'event': 55188023, 'M2Mu2El': 201.7594775169093, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280013, 'luminosityBlock': 24, 'event': 36365305, 'M2Mu2El': 210.2555263189461, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279024, 'luminosityBlock': 267, 'event': 396602073, 'M4Mu': 351.45381736881455, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'file': 'background'}
+{'run': 278975, 'luminosityBlock': 53, 'event': 91135904, 'M4El': 322.9447768875182, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 283478, 'luminosityBlock': 631, 'event': 948068487, 'M4El': 173.20396474763456, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'file': 'background'}
+{'run': 279667, 'luminosityBlock': 507, 'event': 812208114, 'M2Mu2El': 301.9254868657044, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 282735, 'luminosityBlock': 770, 'event': 1494194716, 'M4Mu': 138.17803216418787, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'file': 'background'}
+{'run': 283934, 'luminosityBlock': 850, 'event': 1448982909, 'M2Mu2El': 236.87512916477317, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283408, 'luminosityBlock': 840, 'event': 1413033926, 'M2Mu2El': 83.17718277431582, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283820, 'luminosityBlock': 1443, 'event': 2542500908, 'M2Mu2El': 241.3574180946128, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 283283, 'luminosityBlock': 1069, 'event': 1985111309, 'M4El': 152.62741683190575, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 280191, 'luminosityBlock': 877, 'event': 1632906927, 'M4Mu': 290.8629113836858, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279931, 'luminosityBlock': 1242, 'event': 2164136930, 'M4Mu': 264.09148009227124, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 284037, 'luminosityBlock': 243, 'event': 450332277, 'M2Mu2El': 90.93856788591849, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'file': 'background'}
+{'run': 279767, 'luminosityBlock': 141, 'event': 247114169, 'M2Mu2El': 322.1736735126344, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 280015, 'luminosityBlock': 109, 'event': 194791200, 'M2Mu2El': 112.8962809214298, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283043, 'luminosityBlock': 476, 'event': 903428790, 'M2Mu2El': 187.93019780460904, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'file': 'background'}
+{'run': 283308, 'luminosityBlock': 650, 'event': 1242257636, 'M2Mu2El': 301.21934519955266, 'file': '../Datasets/IG Files/SingleElectron2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 281641, 'luminosityBlock': 17, 'event': 24484383, 'M4Mu': 125.85094984482805, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 281797, 'luminosityBlock': 2044, 'event': 3401286920, 'M4Mu': 80.01398520238297, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 280385, 'luminosityBlock': 552, 'event': 1029096450, 'M2Mu2El': 200.3749081661244, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278820, 'luminosityBlock': 676, 'event': 1235461762, 'M4Mu': 147.11564808649953, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'run': 284014, 'luminosityBlock': 142, 'event': 248761085, 'M2Mu2El': 214.816458585976, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'file': 'background'}
+{'run': 281797, 'luminosityBlock': 2141, 'event': 3540008334, 'M4Mu': 125.84142709406501, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'file': 'background'}
+{'run': 280349, 'luminosityBlock': 334, 'event': 640701791, 'M4Mu': 84.61210626156112, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 282037, 'luminosityBlock': 960, 'event': 1722114538, 'M4El': 117.39231141017572, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'file': 'background'}
+{'run': 280364, 'luminosityBlock': 1254, 'event': 2144536577, 'M2Mu2El': 300.0440213311087, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279694, 'luminosityBlock': 697, 'event': 1280331379, 'M2Mu2El': 184.31972504054085, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_8.ig'}
+{'file': 'background'}
+{'run': 283946, 'luminosityBlock': 834, 'event': 1303265517, 'M2Mu2El': 478.8485521164343, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 281693, 'luminosityBlock': 2165, 'event': 3936067754, 'M4Mu': 443.9372717376744, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 280249, 'luminosityBlock': 1357, 'event': 2395659661, 'M2Mu2El': 125.219416144521, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 279966, 'luminosityBlock': 424, 'event': 642990900, 'M2Mu2El': 171.01846438572994, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'file': 'background'}
+{'run': 283877, 'luminosityBlock': 348, 'event': 652790232, 'M2Mu2El': 91.32157449142424, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_9.ig'}
+{'run': 283820, 'luminosityBlock': 69, 'event': 92905536, 'M2Mu2El': 178.13667080334145, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 283043, 'luminosityBlock': 70, 'event': 117883491, 'M2Mu2El': 125.79347680701459, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_11.ig'}
+{'run': 283307, 'luminosityBlock': 386, 'event': 730351573, 'M2Mu2El': 219.32412046936972, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 278822, 'luminosityBlock': 653, 'event': 1149482360, 'M4Mu': 676.2325872844813, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 282037, 'luminosityBlock': 1073, 'event': 1919452253, 'M2Mu2El': 308.058791264418, 'file': '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/fourlepton_finalstate_10.ig'}
+{'run': 283685, 'luminosityBlock': 34, 'event': 60441991, 'M4El': 89.67994356378512, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 279844, 'luminosityBlock': 220, 'event': 273399691, 'M2Mu2El': 127.78457102144306, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_3.ig'}
+{'file': 'background'}
+{'run': 282092, 'luminosityBlock': 364, 'event': 474634113, 'M2Mu2El': 129.94042109991742, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_6.ig'}
+{'run': 282918, 'luminosityBlock': 2, 'event': 2964560, 'M2Mu2El': 143.22168235549827, 'file': '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/fourlepton_finalstate_1.ig'}
+{'run': 283934, 'luminosityBlock': 289, 'event': 464534921, 'M2Mu2El': 163.94832019485688, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_5.ig'}
+{'run': 278975, 'luminosityBlock': 321, 'event': 526988268, 'M2Mu2El': 279.65062698637365, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_0.ig'}
+{'run': 279654, 'luminosityBlock': 1181, 'event': 2245528186, 'M4El': 195.951141896743, 'file': '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/fourlepton_finalstate_2.ig'}
+{'run': 279966, 'luminosityBlock': 112, 'event': 98362245, 'M2Mu2El': 223.37329478784355, 'file': '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/fourlepton_finalstate_4.ig'}
+{'run': 281693, 'luminosityBlock': 215, 'event': 400844853, 'M4El': 161.32354476349587, 'file': '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/fourlepton_finalstate_8.ig'}

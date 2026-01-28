@@ -63,18 +63,26 @@ def make_unique_events(sigsets):
 def make_combined_mass_plot(sevents):
 
     masses = []
+    n4mu = 0
+    n2mu2e = 0
+    n4e = 0
+
     for e in sevents:
         if 'M4Mu' in e:
             masses.append(e['M4Mu'])
+            n4mu += 1
         elif 'M2Mu2El' in e:
             masses.append(e['M2Mu2El'])
+            n2mu2e += 1
         else:
             masses.append(e['M4El'])
+            n4e += 1
     fig = plt.figure()
     
     counts, bins, _ = plt.hist(masses, 108, range=(70, 502), histtype='step')
     bin_centers = (bins[:-1] + bins[1:]) / 2
 
+    print(f'\nRatio of signal composition: ({n4mu}:{n2mu2e}:{n4e}) (4mu:2mu2e:4e)')
     plt.plot(bin_centers, counts, 'o', label="CMS Outreach 2016, $16.6\\ fb^{-1}$")
     plt.xlabel('m(l+l-l+l-) / GeV')
     plt.ylabel('Events / 4 GeV')
@@ -183,3 +191,6 @@ if __name__ == "__main__":
     
     print("\nShuffling datasets and generating outreach data!\n")
     make_shuffled_ig_sets(shuffled_events, nsets, nevtpset, bkgset)
+
+    for shuffled_event in shuffled_events:
+        print(shuffled_event)
