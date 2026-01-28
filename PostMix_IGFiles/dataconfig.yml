@@ -1,0 +1,37 @@
+General:
+  sets: 25
+  eventsperset: 50
+
+SignalSets:
+  - json: '../skimmingcrabconfigs/doublemu_2016G.json'
+    igfiles: '../Datasets/IG Files/DoubleMuon2016G_AOD_igfiles/'
+
+  - json: '../skimmingcrabconfigs/doublemu_2016H.json'
+    igfiles: '../Datasets/IG Files/DoubleMuon2016H_AOD_igfiles/'
+
+  - json: '../skimmingcrabconfigs/singlemu_2016G.json'
+    igfiles: '../Datasets/IG Files/SingleMuon2016G_AOD_igfiles/'
+
+  - json: '../skimmingcrabconfigs/singlemu_2016H.json'
+    igfiles: '../Datasets/IG Files/SingleMuon2016H_AOD_igfiles/'
+
+  - json: '../skimmingcrabconfigs/doubleel_2016G.json'
+    igfiles: '../Datasets/IG Files/DoubleEG2016G_AOD_igfiles/'
+
+  - json: '../skimmingcrabconfigs/doubleel_2016H.json'
+    igfiles: '../Datasets/IG Files/DoubleEG2016H_AOD_igfiles/'
+
+  - json: '../skimmingcrabconfigs/singleel_2016G.json'
+    igfiles: '../Datasets/IG Files/SingleElectron2016G_AOD_igfiles/'
+
+  - json: '../skimmingcrabconfigs/singleel_2016H.json'
+    igfiles: '../Datasets/IG Files/SingleElectron2016H_AOD_igfiles/'
+
+  - json: '../skimmingcrabconfigs/mueg_2016G.json'
+    igfiles: '../Datasets/IG Files/MuonEG2016G_AOD_igfiles/'
+
+  - json: '../skimmingcrabconfigs/mueg_2016H.json'
+    igfiles: '../Datasets/IG Files/MuonEG2016H_AOD_igfiles/'
+
+BackgroundSet:
+  igfiles: '../Datasets/IG Files/MET2016H_AOD_igfiles/'
