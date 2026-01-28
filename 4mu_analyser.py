@@ -224,19 +224,25 @@ def analyse_4mu_data(input_file, output_file, lumi_json_path="", save_snapshot_p
     histograms.append(df_s4.Histo1D(("h_z2_mass", "M; M (GeV/c); Events", 160, -10, 150), "z2_mass"))
 
     # Calculate the invariant mass of the four muons
-    df_s4 = df_s4.Define("M4Mu", "Analysis_HTo4Lep(z1mup_pt, z1mup_eta, z1mup_phi, z1mup_fsrPhotonIdx," \
+    df_s4 = df_s4.Define("fourlep_mass", "Analysis_HTo4Lep(z1mup_pt, z1mup_eta, z1mup_phi, z1mup_fsrPhotonIdx," \
                                                   "z1mun_pt, z1mun_eta, z1mun_phi, z1mun_fsrPhotonIdx," \
                                                   "z2mup_pt, z2mup_eta, z2mup_phi, z2mup_fsrPhotonIdx," \
                                                   "z2mun_pt, z2mun_eta, z2mun_phi, z1mun_fsrPhotonIdx," \
                                                   "0.10565, 0.10565, FsrPhoton_pt, FsrPhoton_eta, FsrPhoton_phi)")
+    df_s4 = df_s4.Define("fourlep_pts", "ROOT::VecOps::RVec<float>{z1mup_pt, z1mun_pt, z2mup_pt, z2mun_pt}")
+    df_s4 = df_s4.Define("fourlep_etas", "ROOT::VecOps::RVec<float>{z1mup_eta, z1mun_eta, z2mup_eta, z2mun_eta}")
+    df_s4 = df_s4.Define("fourlep_phis", "ROOT::VecOps::RVec<float>{z1mup_phi, z1mun_phi, z2mup_phi, z2mun_phi}")
+    df_s4 = df_s4.Define("fourlep_pids", "ROOT::VecOps::RVec<int>{13, -13, 13, -13}")
+    
     # Special Filter below for the one histogram only
-    df_4muM = df_s4.Filter("M4Mu > 0")
-    histograms.append(df_4muM.Histo1D(("h_muon_4MuM", "Muon M; M (GeV/c); Events", 250, 0, 500), "M4Mu"))
+    df_4muM = df_s4.Filter("fourlep_mass > 0")
+    histograms.append(df_4muM.Histo1D(("h_muon_4MuM", "Muon M; M (GeV/c); Events", 250, 0, 500), "fourlep_mass"))
 
     # Keep the higgs event details for later
-    df_4muM = df_4muM.Filter("M4Mu > 0")
+    df_4muM = df_4muM.Filter("fourlep_mass > 0")
     if save_snapshot_path is not None:
-        cols_to_keep = ["run", "luminosityBlock", "event", "M4Mu"]
+        cols_to_keep = ["run", "luminosityBlock", "event", "fourlep_mass",
+                        "fourlep_pts", "fourlep_etas", "fourlep_phis", "fourlep_pids"]
         try:
             utils.write_event_snapshot(df_4muM, save_snapshot_path, cols_to_keep, tree_name="Events")
         except Exception as e:

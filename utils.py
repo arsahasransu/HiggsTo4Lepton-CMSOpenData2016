@@ -1,6 +1,7 @@
 import json
 import time
 import warnings
+import numpy as np
 
 # Decorator to measure the execution time of a function
 def time_eval(func):
@@ -14,30 +15,32 @@ def time_eval(func):
     return wrapper
 
 
-def write_event_snapshot(df, save_snapshot_path: str, cols_to_keep, tree_name: str = "Events"):
-    """
-    Generated with Copilot GPT
-    Write a small ROOT snapshot and a JSON file containing selected event information.
+def write_event_snapshot(df, save_snapshot_path: str, cols_to_keep: list, tree_name: str = "Events"):
 
-    Parameters
-    - df: RDataFrame filtered to the events of interest
-    - save_snapshot_path: base path (without extension) for output files
-    - cols_to_keep: list of column names to write
-    - tree_name: name of the ROOT tree to store (default: 'Events')
+    def convert_to_serializable(obj):
+        """Convert non-JSON-serializable objects to JSON-compatible types."""
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        elif isinstance(obj, (np.integer, np.floating)):
+            return obj.item()
+        elif isinstance(obj, (bytes, bytearray)):
+            try:
+                return obj.decode()
+            except Exception:
+                return str(obj)
+        elif type(obj).__name__ == 'RVec':
+            try:
+                return list(obj)
+            except Exception:
+                return str(obj)
+        elif hasattr(obj, 'item'):
+            try:
+                return obj.item()
+            except Exception:
+                return str(obj)
+        return obj
 
-    The function will attempt to write both `{save_snapshot_path}.root` (via
-    `df.Snapshot`) and `{save_snapshot_path}.json` (by calling `df.AsNumpy` and
-    serializing entries). Warnings are issued on failure but the function
-    attempts both operations independently.
-    """
-
-    # Attempt ROOT snapshot (best-effort)
-    try:
-        df.Snapshot(tree_name, f"{save_snapshot_path}.root", cols_to_keep)
-    except Exception as e:
-        warnings.warn(f"Failed to write ROOT snapshot ({save_snapshot_path}.root): {e}")
-
-    # Attempt JSON export
+    # Attempt JSON export with RVec and ndarray support
     try:
         arrs = df.AsNumpy(cols_to_keep)
         if not arrs:
@@ -54,22 +57,11 @@ def write_event_snapshot(df, save_snapshot_path: str, cols_to_keep, tree_name: s
                         entry[col] = None
                         continue
                     v = vals[i]
-                    # convert numpy scalar to python native
-                    try:
-                        if hasattr(v, 'item'):
-                            v = v.item()
-                    except Exception:
-                        pass
-                    # decode bytes if needed
-                    if isinstance(v, (bytes, bytearray)):
-                        try:
-                            v = v.decode()
-                        except Exception:
-                            v = str(v)
-                    entry[col] = v
+                    entry[col] = convert_to_serializable(v)
                 json_list.append(entry)
 
         with open(f"{save_snapshot_path}.json", "w") as jf:
             json.dump(json_list, jf, indent=2)
+        print(f"Successfully wrote event snapshot to {save_snapshot_path}.json")
     except Exception as e:
         warnings.warn(f"Failed to write JSON snapshot ({save_snapshot_path}.json): {e}")
