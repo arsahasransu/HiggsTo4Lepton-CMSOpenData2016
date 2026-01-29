@@ -1,6 +1,6 @@
 General:
   sets: 25
-  eventsperset: 50
+  eventsperset: 40
 
 SignalSets:
   - json: '../skimmingcrabconfigs/doublemu_2016G.json'

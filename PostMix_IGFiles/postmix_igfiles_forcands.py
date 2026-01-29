@@ -147,6 +147,9 @@ def make_shuffled_ig_sets(shuffled_events, nsets, nevtpset, bkgset):
 
                     igeventdump = json.dumps(inigevent)
                     zoutset.writestr(name, igeventdump)
+        
+        with open(f'./mixedigfiles/event_info_{nset}.json', 'w') as json_dump_f:
+            json.dump(shuffled_event_set, json_dump_f, indent=4)
 
 
 if __name__ == "__main__":
@@ -189,6 +192,3 @@ if __name__ == "__main__":
     
     print("\nShuffling datasets and generating outreach data!\n")
     make_shuffled_ig_sets(shuffled_events, nsets, nevtpset, bkgset)
-
-    for shuffled_event in shuffled_events:
-        print(shuffled_event)
