@@ -9,3 +9,4 @@ Datasets/*
 *.pdf
 Outreach_Crab*
 *.ig
+PostMix_IGFiles/mixedigfiles/*.json
