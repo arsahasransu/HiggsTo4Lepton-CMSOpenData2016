@@ -68,14 +68,12 @@ def make_combined_mass_plot(sevents):
     n4e = 0
 
     for e in sevents:
-        if 'M4Mu' in e:
-            masses.append(e['M4Mu'])
+        masses.append(e["fourlep_mass"])
+        if e['type'] == '4mu':
             n4mu += 1
-        elif 'M2Mu2El' in e:
-            masses.append(e['M2Mu2El'])
+        elif e['type'] == '2mu2e':
             n2mu2e += 1
         else:
-            masses.append(e['M4El'])
             n4e += 1
     fig = plt.figure()
     
